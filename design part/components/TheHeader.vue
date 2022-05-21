@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light px-3 header">
-    <a class="navbar-brand" href="/">The Shelter</a>
+    <a class="navbar-brand" href="/">Art Town</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -31,7 +31,7 @@
 
 <style scoped>
 .header {
-  background: orange;
+  background: rgb(67, 162, 206);
 }
 .logo {
   color: white;
@@ -50,12 +50,20 @@ export default {
           path: '/',
         },
         {
-          name: 'List',
+          name: 'Evens',
           path: '/list',
+        },
+        {
+          name: 'Point Of Interesteds',
+          path: '/POI_list',
         },
         {
           name: 'About',
           path: '/about',
+        },
+        {
+          name: 'ConcatctUs',
+          path: '/contactus',
         },
       ],
     }

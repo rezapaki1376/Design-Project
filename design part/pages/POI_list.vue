@@ -2,7 +2,7 @@
   <div class="page container mt-5">
     <h1 class="display-4">List page</h1>
     <div class="row mt-3">
-      <EventDetail
+      <PoiDetail
         v-for="(cat, catIndex) of catList"
         class="col-sm-2 m-2"
         :key="`cat-index-${catIndex}`"
@@ -16,11 +16,11 @@
 </template>
 
 <script>
-import EventDetail from '~/components/EventDetail.vue'
+import PoiDetail from '~/components/PoiDetail.vue'
 export default {
   name: 'ListPage',
   components: {
-    EventDetail,
+    PoiDetail,
   },
   data() {
     return {

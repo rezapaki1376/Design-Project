@@ -5,7 +5,7 @@ const initialize = require('./initialize').default
 app.use(express.json())
 
 // Development
-const database = new Sequelize("postgres://postgres:postgres@localhost:5432/hyp")
+const database = new Sequelize("postgres://postgres:postgres@localhost:5432/ArtTown")
 
 // Production (use this code when deploying to production in Heroku)
 // const pg = require('pg')
