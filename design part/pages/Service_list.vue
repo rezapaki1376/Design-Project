@@ -2,7 +2,7 @@
   <div class="page container mt-5">
     <h1 class="display-4">List page</h1>
     <div class="row mt-3">
-      <EventDetail
+      <ServiceList
         v-for="(cat, catIndex) of catList"
         :id="cat.id"
         :key="`cat-index-${catIndex}`"
@@ -16,11 +16,11 @@
 </template>
 
 <script>
-import EventDetail from '~/components/EventDetail.vue'
+import ServiceList from '~/components/ServiceDetail.vue'
 export default {
   name: 'ListPage',
   components: {
-    EventDetail,
+    ServiceList,
   },
   data() {
     return {

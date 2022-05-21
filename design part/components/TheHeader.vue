@@ -58,6 +58,14 @@ export default {
           path: '/POI_list',
         },
         {
+          name: 'Itineraries',
+          path: '/Itineraries_list',
+        },
+        {
+          name: 'Services',
+          path: '/Service_list',
+        },
+        {
           name: 'About',
           path: '/about',
         },

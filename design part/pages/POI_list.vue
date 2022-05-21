@@ -4,9 +4,9 @@
     <div class="row mt-3">
       <PoiDetail
         v-for="(cat, catIndex) of catList"
-        class="col-sm-2 m-2"
-        :key="`cat-index-${catIndex}`"
         :id="cat.id"
+        :key="`cat-index-${catIndex}`"
+        class="col-sm-2 m-2"
         :name="cat.name"
         :img="cat.img"
         :breed="cat.breed"
