@@ -1,5 +1,5 @@
 # Design-Project
-2020-2021 Hypermedia applications web design project
+2021-2022 Hypermedia applications web design project
 
 
 
@@ -30,3 +30,12 @@ Reza Paki:
 
 
 Sajad Hamzenejadi: 
+
+
+
+
+
+
+
+
+Amin Gerard Hofmann: 
