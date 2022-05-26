@@ -1,13 +1,9 @@
-# Design-Project
-2020-2021 Hypermedia applications web design project
+# Hypermedia Applications - Web and Multimedia: Summer 2022
+## Project
+### Introduction
+This is the introduction field for our repo
 
-
-
-
-Effort Spent
-
-
-
+### Team Members:
 Mohammad Mahdi Safari:
 
 
@@ -28,5 +24,9 @@ Reza Paki:
 
 
 
-
 Sajad Hamzenejadi: 
+
+
+
+Amin Gerard Hofmann:
+
