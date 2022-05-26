@@ -1,4 +1,5 @@
 module.exports = {
+  'vue/multi-word-component-names': 'off', 
   root: true,
   env: {
     browser: true,

@@ -3,6 +3,7 @@
 </template>
 
 <script>
+
 import CustomPage from '~/components/CustomPage.vue'
 export default {
   name: 'AboutPage',
