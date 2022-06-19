@@ -162,6 +162,26 @@
   </div>
 </template>
 
+<script>
+// export default {
+//   name: 'CustomPage',
+//   props: {
+//     title: {
+//       type: String,
+//       required: true,
+//     },
+//     image: {
+//       type: String,
+//       required: true,
+//     },
+//     description: {
+//       type: String,
+//       required: true,
+//     },
+//   },
+// }
+</script>
+
 <style scoped>
 .IMG_styles {
   height: 400px;
@@ -224,23 +244,3 @@ a, a:hover, a:focus, a:active {
 background: #f6f6f6;
 }
 </style>
-
-<script>
-export default {
-  name: 'CustomPage',
-  props: {
-    title: {
-      type: String,
-      required: true,
-    },
-    image: {
-      type: String,
-      required: true,
-    },
-    description: {
-      type: String,
-      required: true,
-    },
-  },
-}
-</script>
