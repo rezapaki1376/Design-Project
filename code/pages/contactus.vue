@@ -3,6 +3,7 @@
     <div class="row col-lg-12 about-us">
       <div class="jumbotron col-lg-6 ">
         <h1>Get in touch</h1>
+        <div class="line"></div>
       <p>
         Want to get in touch? We'd love to hear from you. Here's how you can reach us...
 
@@ -126,11 +127,86 @@
     </div>
 
    </div>
+<div class="row" style="height:40px;background:black">
+
+</div>
+    <div class="container partners">
+      <div class="row">
+        <h2>Partners</h2>
+        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
+         <a href=""> <img src="partners/Assolombarda.png" alt=""></a>
+        </div>
+        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
+         <a href=""> <img src="partners/Assolombarda.png" alt=""></a>
+        </div>
+        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
+         <a href=""> <img src="partners/Assolombarda.png" alt=""></a>
+        </div>
+        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
+         <a href=""> <img src="partners/Assolombarda.png" alt=""></a>
+        </div>
+        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
+         <a href=""> <img src="partners/Assolombarda.png" alt=""></a>
+        </div>
+        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
+         <a href=""> <img src="partners/Assolombarda.png" alt=""></a>
+        </div>
+        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
+         <a href=""> <img src="partners/Assolombarda.png" alt=""></a>
+        </div>
+        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
+         <a href=""> <img src="partners/Assolombarda.png" alt=""></a>
+        </div>
+        
+        
+        
+      </div>
+      <div style="height:2px; color:black;background:black"></div>
+      <div class="row">
+        <h2>Supporting and Financing Partners</h2>
+        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
+         <a href=""> <img src="partners/Assolombarda.png" alt=""></a>
+        </div>
+        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
+         <a href=""> <img src="partners/Assolombarda.png" alt=""></a>
+        </div>
+        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
+         <a href=""> <img src="partners/Assolombarda.png" alt=""></a>
+        </div>
+      </div>
+    </div>
 
     
+    
+    <div class="social_media">
+      <div class="container">
+        <div class="row">
+      <div class="col-xlg-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+        <h2>follow us in social media</h2>
+      <a href=""><img src="socialmedia/icons8-facebook-90.png" style="width:60px" alt=""></a>
+      <a href=""><img src="socialmedia/icons8-instagram-90.png" style="width:60px" alt=""></a>
+      <a href=""><img src="socialmedia/icons8-twitter-90.png" style="width:60px" alt=""></a>
+      <a href=""><img src="socialmedia/icons8-youtube-logo-90.png" style="width:60px" alt=""></a>
+      </div>
 
-   
+      <div class="col-xlg-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+      <p>
+         Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
+      </p>
+
+    </div>
+      
+    </div>
+    
+      </div>
+      </div>
+    
+
   </div>
+
 
   
 </template>
@@ -161,13 +237,43 @@
 
 
 <style scoped>
+.social_media{
+  background: #2d3e50;
+  color: white;
+}
+.social_media.a{
+display: inline-block;
+}
+.social_media>.container{
+  padding: 10px 0;
+  
+  
+}
+.social_media>.container>div{
+  text-align: center;
+  height: 200px;
+  
+}
+.social_media>.container h2{
+  text-align: left;
+  margin: 0 0 50px 0;
+  
+}
+
+.social_media>.container>.row>div:last-child{
+  border-left: 1px solid rgb(189, 189, 189) ;
+  padding-top: 40px;
+}
+.partners img{
+  width: 160px;
+}
 form{
   text-align: left;
   padding: 10px 0 0 0;
 }
-div{
+/* div{
   margin: 0;
-}
+} */
 form button{
   margin: 10px auto;
   display: block;
@@ -227,19 +333,16 @@ background: #f6f6f6;
   /* background: rgb(243, 243, 243); */
   
 }
-/* .row {
-  padding: 5px;
-} */
+.row {
+  margin: 0;
+}
 .line{
-  visibility: hidden;
+  height: 2px;
+  width: 20%;
+  border: 1px solid rgb(255, 0, 0);
+  background: rgb(255, 0, 0);
 }
-.card:hover .line{
-  visibility: visible;
-  height: 1px;
-    width: 12%;
-    border: 1px solid rgb(255, 0, 0);
-    background: rgb(255, 0, 0);
-}
+
 a, a:hover, a:focus, a:active {
      text-decoration: none;
      color: inherit;

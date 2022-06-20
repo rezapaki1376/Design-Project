@@ -1,8 +1,26 @@
 <template>
  <div>
-    <div class="row col-lg-12 about-us">
-      <div class="jumbotron col-lg-6">
-        <h1>About us</h1>
+    <div class="row about-us">
+      <div class="jumbotron col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <h1>Find Your <br> Rome</h1>
+        
+      </div>
+      <div class="jumbotron col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <p class="lead col-lg-8 col-md-10 col-sm-12 col-xs-12">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. 
+        </p>
+      </div>
+    </div>
+
+    <div class="container description">
+      <div class="row">
+        <div class="jumbotron col-lg-6">
+        <h1>Our Mission</h1>
         <p class="lead">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -15,44 +33,87 @@
           including versions of Lorem Ipsum.
         </p>
       </div>
-      <div class="jumbotron col-lg-6">
-        <img class="IMG_styles" src="aboutus1.jpg" alt="" />
+      
+        <div class="jumbotron col-lg-6">
+        <img class="IMG_styles" src="AU1.png" alt="" />
       </div>
-    </div>
-
-    <div class="row col-lg-12 description">
-      <div class="jumbotron col-lg-6">
-        <img class="IMG_styles" src="aboutus2.jpg" alt="" />
-      </div>
-
-      <div class="jumbotron col-lg-6">
-        <h1>What we do?</h1>
-        <p class="lead">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-      </div>
-    </div>
-
-    <div class="row col-lg-12 news">
-      <h1>News</h1>
-    </div>
-
-    <div class="row">
-<NewsCard/>
-<NewsCard/>
-<NewsCard/>
-<NewsCard/>
 
       
+      </div>
+      
     </div>
+    <div class="row" style="height:40px;background:black"> </div>
+    <div class="news">
+    
+
+    <div class="container" style="padding-top:25px">
+      <div class="row">
+
+      
+      <div class="col-xlg-3 col-lg-3 col-md-7 col-sm-12">
+          
+          <div class="card first_news">
+          <h1> Our Top News</h1>
+          <div class="card-body">
+            <h4 class="card-title">Our top news</h4>
+            <p class="card-text">
+              Some example text some example text. John Doe is an architect and
+              engineer
+            </p>
+            <p class="date co-lg-12">
+              18 jun 2022
+              <div class="line"></div>
+              </p>
+          </div>
+        </div>
+        
+      </div>
+<NewsCard/>
+<NewsCard/>
+<NewsCard/>
+<NewsCard/>
+<NewsCard/>
+<NewsCard/>
+<NewsCard/>
+</div>
+      
+    </div>
+</div>
+
+<div class="community">
+    
+  <div class="container" style="padding-top:25px">
+    <h1>Our Community</h1>
+  </div>
+    <div class="container" style="padding-top:25px">
+      <div class="row">
+
+      
+      <div class="col-xlg-4 col-lg-4 col-md-4 col-sm-6 border-sm-right">
+          qqeqqr
+      </div>
+      <div class="col-xlg-4 col-lg-4 col-md-4 col-sm-6 border-sm-right">
+          qqeqqr
+      </div>
+      <div class="col-xlg-4 col-lg-4 col-md-4 col-sm-6 border-sm-right">
+          qqeqqr
+      </div>
+      <div class="col-xlg-4 col-lg-4 col-md-4 col-sm-6">
+          qqeqqr
+      </div>
+      <div class="col-xlg-4 col-lg-4 col-md-4 col-sm-6">
+          qqeqqr
+      </div>
+      <div class="col-xlg-4 col-lg-4 col-md-4 col-sm-6">
+          qqeqqr
+      </div>
+
+</div>
+      
+    </div>
+</div>
+
+
 
     <div class="row join-us">
       <div class="col-lg-6"></div>
@@ -91,6 +152,31 @@ export default {
 
 
 <style scoped>
+.community{
+  background: #33475b;
+  color: white;
+  text-align: center;
+}
+.community>.container:first-child{
+  
+}
+.first_news{
+/* display: inline-block; */
+background: #eaf0f6 !important;
+}
+.card {
+  border-radius: 0%;
+  border: 0;
+  padding: 10px;
+  /* margin: 3px; */
+  color: black;
+  height: 400px;
+}
+
+a, a:hover, a:focus, a:active {
+     text-decoration: none;
+     color: inherit;
+ }
 .IMG_styles {
   height: 400px;
   width: 100%;
@@ -101,54 +187,48 @@ export default {
   padding: 20px;
 }
 .about-us {
-  background: #ef4056;
-  color: white;
-  margin: 10px 0;
+  /* background: #ef4056; */
+  color: rgb(0, 0, 0);
+  /* margin: 10px 0; */
+  
+}
+.about-us h1{
+  color: #333333;
+  text-align: right;
+  display: block;
+  font-size: 90px;
+
 }
 .description {
-  background: #7677cc;
-  color: white;
-  margin: 10px 0;
+  /* background: #7677cc; */
+  color: rgb(0, 0, 0);
+  /* margin: 10px 0; */
+}
+.description h1{
+  text-align: center;
+}
+.about-us .lead{
+  padding: 5% 0;
 }
 .lead {
   padding: 5px;
   text-align: ltr;
 }
-.card {
-  border-radius: 0%;
-  border: 0;
-  padding: 10px;
-  margin: 3px;
-  color: black;
-  height: 400px;
-}
-.card img{
-  border-radius: 0;
-}
-.card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.2), 0 6px 20px 0 rgba(0, 0, 0,0.19);
-  /* background: rgb(243, 243, 243); */
-  
-}
-.row {
-  padding: 5px;
-}
-.line{
-  visibility: hidden;
-}
-.card:hover .line{
-  visibility: visible;
-  height: 1px;
-    width: 12%;
-    border: 1px solid rgb(255, 0, 0);
-    background: rgb(255, 0, 0);
-}
-a, a:hover, a:focus, a:active {
-     text-decoration: none;
-     color: inherit;
- }
 
+.news{
+  background: #eaf0f6;
+  padding: 10px 0;
+}
 .join-us{
 background: #f6f6f6;
+}
+.row{
+  margin: 0;
+}
+@media (min-width: 576px) {
+  .border-sm-right {
+    border-right: 1px solid #e3e7eb !important;
+    border-bottom: 1px solid #e3e7eb !important;
+  }
 }
 </style>

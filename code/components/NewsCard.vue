@@ -1,5 +1,5 @@
 <template>
-  <div class="col-xlg-3 col-lg-3 col-md-7 col-sm-12">
+  <div class="col-xlg-3 col-lg-3 col-md-7 col-sm-12 newscard">
           <a href="#">
           <div class="card">
           <img
@@ -53,13 +53,16 @@ export default {
 }
 </script>
 <style scoped>
+.newscard{
+  display: inline-block;
+}
 .card {
   border-radius: 0%;
   border: 0;
   padding: 10px;
   margin: 3px;
   color: black;
-  height: 400px;
+  height: 455px;
 }
 .card img{
   border-radius: 0;
