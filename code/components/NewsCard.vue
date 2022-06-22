@@ -62,7 +62,7 @@ export default {
   padding: 10px;
   margin: 3px;
   color: black;
-  height: 455px;
+  height: auto;
 }
 .card img{
   border-radius: 0;

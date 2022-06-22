@@ -42,6 +42,59 @@
       </div>
       
     </div>
+
+    <div class="container description">
+      <div class="row">
+        <div class="jumbotron col-lg-6">
+        <img class="IMG_styles" src="aboutus1.jpg" alt="" />
+      </div>
+
+        <div class="jumbotron col-lg-6">
+        <h1>What we do?</h1>
+        <p class="lead">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+      </div>
+      </div>
+      
+    </div>
+
+
+    <div class="container description">
+      <div class="row">
+        <div class="jumbotron col-lg-6">
+        <h1>Our history</h1>
+        <p class="lead">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+      </div>
+      
+        <div class="jumbotron col-lg-6">
+        <img class="IMG_styles" src="aboutus3.jpg" alt="" />
+      </div>
+
+      
+      </div>
+      
+    </div>
+
+
     <div class="row" style="height:40px;background:black"> </div>
     <div class="news">
     
@@ -89,24 +142,40 @@
       <div class="row">
 
       
-      <div class="col-xlg-4 col-lg-4 col-md-4 col-sm-6 border-sm-right">
-          qqeqqr
+      <div class="col-xlg-4 col-lg-4 col-md-4 col-sm-12 border-sm-right">
+        <img src="HUG-icon.svg" alt="">
+          <h1>400+</h1>
+          <p>
+            employees in
+          </p>
+            <h1>3</h1>
+          <p>
+            offices
+          </p>
       </div>
-      <div class="col-xlg-4 col-lg-4 col-md-4 col-sm-6 border-sm-right">
-          qqeqqr
+      <div class="col-xlg-4 col-lg-4 col-md-4 col-sm-12 border-sm-right">
+          <img src="Smilyface-icon.svg" alt="">
+          <h1>43,000+</h1>
+          <p>
+            customers from
+          </p>
+            <h1>40+</h1>
+          <p>
+            countries
+          </p>
       </div>
-      <div class="col-xlg-4 col-lg-4 col-md-4 col-sm-6 border-sm-right">
-          qqeqqr
+      <div class="col-xlg-4 col-lg-4 col-md-4 col-sm-12">
+          <img src="Globe-icon.svg" alt="">
+          <h1>300+</h1>
+          <p>
+            Events in
+          </p>
+            <h1>40+</h1>
+          <p>
+            Point of interests
+          </p>
       </div>
-      <div class="col-xlg-4 col-lg-4 col-md-4 col-sm-6">
-          qqeqqr
-      </div>
-      <div class="col-xlg-4 col-lg-4 col-md-4 col-sm-6">
-          qqeqqr
-      </div>
-      <div class="col-xlg-4 col-lg-4 col-md-4 col-sm-6">
-          qqeqqr
-      </div>
+      
 
 </div>
       
@@ -170,7 +239,7 @@ background: #eaf0f6 !important;
   padding: 10px;
   /* margin: 3px; */
   color: black;
-  height: 400px;
+  height: auto;
 }
 
 a, a:hover, a:focus, a:active {
@@ -225,10 +294,19 @@ background: #f6f6f6;
 .row{
   margin: 0;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .border-sm-right {
     border-right: 1px solid #e3e7eb !important;
+    /* border-bottom: 1px solid #e3e7eb !important; */
+  }
+}
+
+@media (max-width: 768px) {
+  .border-sm-right {
+    /* border-right: 1px solid #e3e7eb !important; */
+    margin: 10px 0;
     border-bottom: 1px solid #e3e7eb !important;
   }
 }
+
 </style>

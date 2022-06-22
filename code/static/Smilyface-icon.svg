@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Icons/Smilyface-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M26.399,23.64975 C23.869,25.68225 20.744,26.84225 17.499,26.94975 C14.2615,26.85225 11.1415,25.69225 8.6265,23.64975 C8.1215,23.21475 8.0665,22.45225 8.499,21.94975 C8.934,21.44725 9.6965,21.38975 10.2015,21.82475 C12.274,23.50225 14.8365,24.45975 17.499,24.54975 C20.169,24.43725 22.7315,23.48475 24.824,21.82475 C25.329,21.38975 26.089,21.44725 26.5265,21.94975 C26.9615,22.45225 26.904,23.21475 26.399,23.64975 Z M11.875,12.34975 C13.255,12.34975 14.375,13.46975 14.375,14.84975 C14.375,16.22975 13.255,17.34975 11.875,17.34975 C10.495,17.34975 9.375,16.22975 9.375,14.84975 C9.375,13.46975 10.495,12.34975 11.875,12.34975 Z M23.1495,12.39975 C24.502,12.39975 25.5995,13.49725 25.5995,14.84975 C25.5995,16.20225 24.502,17.29975 23.1495,17.29975 C21.797,17.29975 20.702,16.20225 20.702,14.84975 C20.702,13.49725 21.797,12.39975 23.1495,12.39975 Z M17.5,2.5 C9.2175,2.5 2.5,9.2175 2.5,17.5 C2.5,25.7825 9.2175,32.5 17.5,32.5 C25.7825,32.5 32.5,25.7825 32.5,17.5 C32.5,9.2175 25.7825,2.5 17.5,2.5 M17.5,35 C7.835,35 0,27.165 0,17.5 C0,7.835 7.835,0 17.5,0 C27.165,0 35,7.835 35,17.5 C35,27.165 27.165,35 17.5,35" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About-Us---Desktop" transform="translate(-703.000000, -3801.000000)">
+            <g id="Content---white" transform="translate(273.000000, 3643.000000)">
+                <g id="Group-4" transform="translate(25.000000, 158.000000)">
+                    <g id="Icons/Feedback-&amp;-Ratings/Emoji/Line-Happy" transform="translate(405.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#3F5D75" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <g id="Colors/Light-Greys/Olaf" mask="url(#mask-2)" fill="#FFFFFF" fill-rule="evenodd">
+                            <polygon id="Rectangle-3-Copy-36" points="0 0 35 0 35 35 0 35"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
