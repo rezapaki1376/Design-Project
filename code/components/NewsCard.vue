@@ -76,11 +76,13 @@ export default {
   padding: 5px;
 }
 .line{
+  height: 1px;
+  width: 12%;
   visibility: hidden;
 }
 .card:hover .line{
   visibility: visible;
-  height: 1px;
+    height: 1px;
     width: 12%;
     border: 1px solid rgb(255, 0, 0);
     background: rgb(255, 0, 0);

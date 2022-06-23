@@ -67,20 +67,20 @@
             <div class="col-xlg-6 col-lg-6">
               <div class="form-group">
       <label for="email">Name:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter name"  name="email">
+      <input id="email" type="email" class="form-control" placeholder="Enter name"  name="email">
     </div>
             </div>
     <div class="col-xlg-6 col-lg-6">
     <div class="form-group">
       <label for="pwd">Email:</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter email" name="pwd">
+      <input id="pwd" type="email"  class="form-control" placeholder="Enter email" name="pwd">
     </div>
     </div>
     </div>
     <div class="row">
       <div class="form-group">
     <label for="comment">Comment:</label>
-  <textarea class="form-control" rows="5" id="comment" placeholder="Comment"></textarea>
+  <textarea id="comment" class="form-control" rows="5" placeholder="Comment"></textarea>
 </div>
     </div>
     
@@ -328,11 +328,12 @@ background: #f6f6f6;
 .card img{
   border-radius: 0;
 }
-.card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.2), 0 6px 20px 0 rgba(0, 0, 0,0.19);
-  /* background: rgb(243, 243, 243); */
+.card {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.2), 0 6px 20px 0 rgba(0, 0, 0,0.19); */
+  /* background: rgb(243, 243, 243);  */
+  border: 1px solid #e2e2e2;
   
-}
+} 
 .row {
   margin: 0;
 }
@@ -350,9 +351,9 @@ a, a:hover, a:focus, a:active {
  .card-body{
    text-align: center;
  }
- .card-text{
-   /* padding: 5% 0 0 0; */
- }
+ /* .card-text{
+    padding: 5% 0 0 0; 
+ } */
  .phone{
    font-size: 20px;
  }
