@@ -20,5 +20,11 @@ export default {
       image,
     }
   },
+  data() {
+    return {
+      events: [],
+    }
+  },
+  async mounted() {},
 }
 </script>

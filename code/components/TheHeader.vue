@@ -29,16 +29,6 @@
   </nav>
 </template>
 
-<style scoped>
-.header {
-  background: rgb(67, 162, 206);
-}
-.logo {
-  color: white;
-  font-size: 32px;
-}
-</style>
-
 <script>
 export default {
   name: 'TheHeader',
@@ -78,3 +68,13 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.header {
+  background: rgb(67, 162, 206);
+}
+.logo {
+  color: white;
+  font-size: 32px;
+}
+</style>

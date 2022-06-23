@@ -6,7 +6,7 @@ app.use(express.json())
 
 // Development
 const database = new Sequelize(
-  'postgres://postgres:123456@localhost:5432/ArtTown'
+  'postgres://postgres:123456@localhost:5432/postgres-art-town'
 )
 
 // Production (use this code when deploying to production in Heroku)
@@ -58,6 +58,8 @@ const pageContentObject = {
 }
 
 async function runMainApi() {
+  const host = process.env.HOST || '127.0.0.1'
+  const port = process.env.PORT || 3000
   const models = await initializeDatabaseConnection()
   await initialize(models)
 
@@ -98,6 +100,8 @@ async function runMainApi() {
     await models.Cat.create(body)
     return res.sendStatus(200)
   })
+  app.listen(port, host)
+  console.log('Server listening on ' + host + ':' + port) // eslint-disable-line no-console
 }
 
 runMainApi()
