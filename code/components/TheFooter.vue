@@ -34,7 +34,7 @@
     </div>
     <div class="col-xlg-3 col-lg-3 col-md-6 col-sm-12">
       <h3>Recieve our news</h3>
-      <p> Wanna be aware about our new updates. Just enter your Emale.</p>
+      <p> Wanna be aware about our new updates. Just enter your Email.</p>
       <div class="form-group">
       
       <input id="pwd" type="email"  class="form-control" placeholder="Enter your email" name="pwd" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"

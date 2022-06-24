@@ -121,13 +121,18 @@
         </div>
         
       </div>
+       
+<NewsCard
+v-for="(image, index) of imagelist"
+:key="`news-index-${index}`"
+:img="image.src" 
+/>
+<!-- <NewsCard/>
 <NewsCard/>
 <NewsCard/>
 <NewsCard/>
 <NewsCard/>
-<NewsCard/>
-<NewsCard/>
-<NewsCard/>
+<NewsCard/> -->
 </div>
       
     </div>
@@ -185,7 +190,10 @@
 
 
     <div class="row join-us">
-      <div class="col-lg-6"></div>
+      <div class="col-lg-6">
+        
+      </div>
+        
       <div class="col-lg-6"></div>
 
 
@@ -202,9 +210,42 @@ export default {
   components: {
     NewsCard,
   },
-//   data() {
-//     return {}
-//   },
+  data() {
+    return {
+      imagelist:[
+        {
+          src : "aboutus1.jpg",
+        },
+        {
+          src : "aboutus1.jpg",
+        },
+        {
+          src : "aboutus1.jpg",
+        },
+        {
+          src : "aboutus1.jpg",
+        },
+        {
+          src : "aboutus1.jpg",
+        },
+        {
+          src : "aboutus1.jpg",
+        },
+        {
+          src : "aboutus1.jpg",
+        },
+        {
+          src : "aboutus1.jpg",
+        },
+        {
+          src : "aboutus1.jpg",
+        },
+        {
+          src : "aboutus1.jpg",
+        },
+      ],
+    }
+  },
 //   async asyncData({ $axios }) {
 //     const { data } = await $axios.get('/api/page-info/about')
 //     const title = data.title
