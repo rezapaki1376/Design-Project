@@ -123,16 +123,13 @@
       </div>
        
 <NewsCard
-v-for="(image, index) of imagelist"
+v-for="(news, index) of newslist"
 :key="`news-index-${index}`"
-:img="image.src" 
+:img="news.src"
+:title="news.title"
+:description="news.description"
+:date="news.date"
 />
-<!-- <NewsCard/>
-<NewsCard/>
-<NewsCard/>
-<NewsCard/>
-<NewsCard/>
-<NewsCard/> -->
 </div>
       
     </div>
@@ -212,37 +209,56 @@ export default {
   },
   data() {
     return {
-      imagelist:[
+      newslist:[
         {
           src : "aboutus1.jpg",
+          title: "John Doe",
+          description: "Some example text some example text. John Doe is an architect and engineer",
+          date :" 18 jun 2022 "
         },
         {
           src : "aboutus1.jpg",
+          title: "John Doe",
+          description: "Some example text some example text. John Doe is an architect and engineer",
+          date :" 18 jun 2022 "
         },
         {
           src : "aboutus1.jpg",
+          title: "John Doe",
+          description: "Some example text some example text. John Doe is an architect and engineer",
+          date :" 18 jun 2022 "
         },
         {
           src : "aboutus1.jpg",
+          title: "John Doe",
+          description: "Some example text some example text. John Doe is an architect and engineer",
+          date :" 18 jun 2022 "
         },
         {
           src : "aboutus1.jpg",
+          title: "John Doe",
+          description: "Some example text some example text. John Doe is an architect and engineer",
+          date :" 18 jun 2022 "
         },
         {
           src : "aboutus1.jpg",
+          title: "John Doe",
+          description: "Some example text some example text. John Doe is an architect and engineer",
+          date :" 18 jun 2022 "
         },
         {
           src : "aboutus1.jpg",
+          title: "John Doe",
+          description: "Some example text some example text. John Doe is an architect and engineer",
+          date :" 18 jun 2022 "
         },
         {
           src : "aboutus1.jpg",
+          title: "John Doe",
+          description: "Some example text some example text. John Doe is an architect and engineer",
+          date :" 18 jun 2022 "
         },
-        {
-          src : "aboutus1.jpg",
-        },
-        {
-          src : "aboutus1.jpg",
-        },
+        
       ],
     }
   },

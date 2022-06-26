@@ -1,3 +1,4 @@
+/* eslint-disable vue/no-unused-components */
 <template>
  <div>
     <div class="row col-lg-12 about-us">
@@ -128,51 +129,24 @@
 
    </div>
 <div class="row" style="height:40px;background:black">
-
 </div>
     <div class="container partners">
       <div class="row">
         <h2>Partners</h2>
-        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-         <a href=""> <img src="partners/Assolombarda.png" alt=""></a>
-        </div>
-        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-         <a href=""> <img src="partners/Assolombarda.png" alt=""></a>
-        </div>
-        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-         <a href=""> <img src="partners/Assolombarda.png" alt=""></a>
-        </div>
-        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-         <a href=""> <img src="partners/Assolombarda.png" alt=""></a>
-        </div>
-        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-         <a href=""> <img src="partners/Assolombarda.png" alt=""></a>
-        </div>
-        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-         <a href=""> <img src="partners/Assolombarda.png" alt=""></a>
-        </div>
-        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-         <a href=""> <img src="partners/Assolombarda.png" alt=""></a>
-        </div>
-        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-         <a href=""> <img src="partners/Assolombarda.png" alt=""></a>
-        </div>
-        
-        
-        
+           <picture1
+            v-for="(partner, index) of partners"
+            :key="`partner-index-${index}`"
+            :img="partner.src"
+          /> 
       </div>
       <div style="height:2px; color:black;background:black"></div>
       <div class="row">
         <h2>Supporting and Financing Partners</h2>
-        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-         <a href=""> <img src="partners/Assolombarda.png" alt=""></a>
-        </div>
-        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-         <a href=""> <img src="partners/Assolombarda.png" alt=""></a>
-        </div>
-        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-         <a href=""> <img src="partners/Assolombarda.png" alt=""></a>
-        </div>
+         <picture1
+            v-for="(partner, index) of partners"
+            :key="`partner-index-${index}`"
+            :img="partner.src"
+          /> 
       </div>
     </div>
 
@@ -212,15 +186,40 @@
 </template>
 
 <script>
-// import NewsCard from '~/components/NewsCard.vue'
-// export default {
-//   name: 'AboutPage',
-//   components: {
-//     NewsCard,
-//   },
-//   data() {
-//     return {}
-//   },
+import Picture1 from '~/components/Picture.vue'
+export default {
+  name: 'Contactus',
+  components: {
+    Picture1,
+  },
+  data() {
+    return {
+      partners:[
+        
+        {
+          src : "partners/Assolombarda.png",
+        },
+        {
+          src : "partners/Assolombarda.png",
+        },
+        {
+          src : "partners/Assolombarda.png",
+        },
+        {
+          src : "partners/Assolombarda.png",
+        },
+        {
+          src : "partners/Assolombarda.png",
+        },
+        {
+          src : "partners/Assolombarda.png",
+        },
+        {
+          src : "partners/Assolombarda.png",
+        },
+      ]
+    }
+  },
 //   async asyncData({ $axios }) {
 //     const { data } = await $axios.get('/api/page-info/about')
 //     const title = data.title
@@ -232,7 +231,7 @@
 //       image,
 //     }
 //   },
-// }
+}
 </script>
 
 
@@ -264,9 +263,7 @@ display: inline-block;
   border-left: 1px solid rgb(189, 189, 189) ;
   padding-top: 40px;
 }
-.partners img{
-  width: 160px;
-}
+
 form{
   text-align: left;
   padding: 10px 0 0 0;
