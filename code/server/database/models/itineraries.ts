@@ -8,7 +8,7 @@ import {
 
 const { sequelize } = require('../database')
 
-export interface PointOfInterestInterface {
+export interface ItineraryInterface {
   id: number
   title: string
   description: string

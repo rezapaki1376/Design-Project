@@ -10,7 +10,7 @@ import {
 const { sequelize } = require('../database')
 
 export interface EventInterface {
-  id: string
+  id: number
   poiId: number
   description: string
   imageUrl: string
@@ -18,7 +18,7 @@ export interface EventInterface {
   date: Date
   timeDuration: string
   eventUrl: string
-  price: string
+  price: number
   preregisterNeccessary: boolean
   address: string
   organisation: string
@@ -44,7 +44,7 @@ class Event extends Model<
   declare date: Date
   declare timeDuration: string
   declare eventUrl: string
-  declare price: string
+  declare price: number
   declare preregisterNeccessary: CreationOptional<boolean>
   declare address: string
   declare organisation: string
@@ -86,7 +86,7 @@ Event.init(
       allowNull: false,
     },
     price: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     preregisterNeccessary: {
@@ -103,7 +103,7 @@ Event.init(
     },
     season: {
       type: DataTypes.ENUM('SPRING', 'SUMMER', 'AUTUMN', 'WINTER'),
-      defaultValue: 'undefined',
+      allowNull: false,
     },
     title: {
       type: DataTypes.STRING,
