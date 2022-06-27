@@ -1,13 +1,5 @@
 import { Sequelize } from 'sequelize'
 
-console.log(
-  'Details' +
-    process.env.PGDATABASE +
-    ' ' +
-    process.env.PGUSER +
-    ' ' +
-    process.env.PGHOST
-)
 const dbName = process.env.PGDATABASE
 const dbUser = process.env.PGUSER
 const dbHost = process.env.PGHOST
@@ -37,7 +29,7 @@ const sequelize = new Sequelize(dbName, dbUser, dbPassword, {
 
 async function initializeDatabaseConnection() {
   await sequelize.authenticate()
-  await sequelize.sync({ force: true })
+  await sequelize.sync({ force: false })
 }
 
 async function createApi() {
