@@ -121,13 +121,15 @@
         </div>
         
       </div>
-<NewsCard/>
-<NewsCard/>
-<NewsCard/>
-<NewsCard/>
-<NewsCard/>
-<NewsCard/>
-<NewsCard/>
+       
+<NewsCard
+v-for="(news, index) of newslist"
+:key="`news-index-${index}`"
+:img="news.src"
+:title="news.title"
+:description="news.description"
+:date="news.date"
+/>
 </div>
       
     </div>
@@ -185,7 +187,10 @@
 
 
     <div class="row join-us">
-      <div class="col-lg-6"></div>
+      <div class="col-lg-6">
+        
+      </div>
+        
       <div class="col-lg-6"></div>
 
 
@@ -202,9 +207,61 @@ export default {
   components: {
     NewsCard,
   },
-//   data() {
-//     return {}
-//   },
+  data() {
+    return {
+      newslist:[
+        {
+          src : "aboutus1.jpg",
+          title: "John Doe",
+          description: "Some example text some example text. John Doe is an architect and engineer",
+          date :" 18 jun 2022 "
+        },
+        {
+          src : "aboutus1.jpg",
+          title: "John Doe",
+          description: "Some example text some example text. John Doe is an architect and engineer",
+          date :" 18 jun 2022 "
+        },
+        {
+          src : "aboutus1.jpg",
+          title: "John Doe",
+          description: "Some example text some example text. John Doe is an architect and engineer",
+          date :" 18 jun 2022 "
+        },
+        {
+          src : "aboutus1.jpg",
+          title: "John Doe",
+          description: "Some example text some example text. John Doe is an architect and engineer",
+          date :" 18 jun 2022 "
+        },
+        {
+          src : "aboutus1.jpg",
+          title: "John Doe",
+          description: "Some example text some example text. John Doe is an architect and engineer",
+          date :" 18 jun 2022 "
+        },
+        {
+          src : "aboutus1.jpg",
+          title: "John Doe",
+          description: "Some example text some example text. John Doe is an architect and engineer",
+          date :" 18 jun 2022 "
+        },
+        {
+          src : "aboutus1.jpg",
+          title: "John Doe",
+          description: "Some example text some example text. John Doe is an architect and engineer",
+          date :" 18 jun 2022 "
+        },
+        {
+          src : "aboutus1.jpg",
+          title: "John Doe",
+          description: "Some example text some example text. John Doe is an architect and engineer",
+          date :" 18 jun 2022 "
+        },
+        
+      ],
+    }
+  },
 //   async asyncData({ $axios }) {
 //     const { data } = await $axios.get('/api/page-info/about')
 //     const title = data.title

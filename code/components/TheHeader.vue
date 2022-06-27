@@ -1,6 +1,8 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light px-3 header">
-    <a class="navbar-brand" href="/">Art Town</a>
+    <nuxt-link to="/" class="nav-link link">
+            Art Town
+          </nuxt-link>
     <button
       class="navbar-toggler"
       type="button"
@@ -13,7 +15,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarToggler">
+    <div id="navbarToggler" class="collapse navbar-collapse" >
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li
           v-for="(navItem, navItemIndex) of headerList"
@@ -29,6 +31,22 @@
   </nav>
 </template>
 
+<<<<<<< HEAD
+=======
+<style scoped>
+.header {
+  background: rgb(67, 162, 206);
+}
+.logo {
+  color: white;
+  font-size: 32px;
+}
+.link{
+  color: black;
+}
+</style>
+
+>>>>>>> main
 <script>
 export default {
   name: 'TheHeader',

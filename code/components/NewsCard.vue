@@ -4,18 +4,17 @@
           <div class="card">
           <img
             class="card-img-top"
-            src="aboutus1.jpg"
+            :src="img"
             alt="Card image"
             style="width: 100%"
           />
           <div class="card-body">
-            <h4 class="card-title">John Doe</h4>
+            <h4 class="card-title">{{ title }}</h4>
             <p class="card-text">
-              Some example text some example text. John Doe is an architect and
-              engineer
+              {{ description }}
             </p>
             <p class="date co-lg-12">
-              18 jun 2022
+              {{ date }}
               <div class="line"></div>
               </p>
           </div>
@@ -26,21 +25,21 @@
 
 <script>
 export default {
-  name: 'CardComponent',
+  name: 'NewsComponent',
   props: {
-    name: {
-      type: String,
-      required: true,
-    },
     img: {
       type: String,
       required: true,
     },
-    id: {
-      type: Number,
+    title: {
+      type: String,
       required: true,
     },
-    breed: {
+    description: {
+      type: String,
+      required: true,
+    },
+    date: {
       type: String,
       required: true,
     },
@@ -76,11 +75,13 @@ export default {
   padding: 5px;
 }
 .line{
+  height: 1px;
+  width: 12%;
   visibility: hidden;
 }
 .card:hover .line{
   visibility: visible;
-  height: 1px;
+    height: 1px;
     width: 12%;
     border: 1px solid rgb(255, 0, 0);
     background: rgb(255, 0, 0);

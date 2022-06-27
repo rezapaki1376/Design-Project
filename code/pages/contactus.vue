@@ -1,3 +1,4 @@
+/* eslint-disable vue/no-unused-components */
 <template>
   <div>
     <div class="row col-lg-12 about-us">
@@ -58,9 +59,9 @@
                     <div class="form-group">
                       <label for="email">Name:</label>
                       <input
+                        id="email"
                         type="email"
                         class="form-control"
-                        id="email"
                         placeholder="Enter name"
                         name="email"
                       />
@@ -70,9 +71,9 @@
                     <div class="form-group">
                       <label for="pwd">Email:</label>
                       <input
-                        type="password"
-                        class="form-control"
                         id="pwd"
+                        type="email"
+                        class="form-control"
                         placeholder="Enter email"
                         name="pwd"
                       />
@@ -83,9 +84,9 @@
                   <div class="form-group">
                     <label for="comment">Comment:</label>
                     <textarea
+                      id="comment"
                       class="form-control"
                       rows="5"
-                      id="comment"
                       placeholder="Comment"
                     ></textarea>
                   </div>
@@ -134,113 +135,71 @@
     <div class="container partners">
       <div class="row">
         <h2>Partners</h2>
-        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-          <a href=""> <img src="partners/Assolombarda.png" alt="" /></a>
-        </div>
-        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-          <a href=""> <img src="partners/Assolombarda.png" alt="" /></a>
-        </div>
-        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-          <a href=""> <img src="partners/Assolombarda.png" alt="" /></a>
-        </div>
-        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-          <a href=""> <img src="partners/Assolombarda.png" alt="" /></a>
-        </div>
-        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-          <a href=""> <img src="partners/Assolombarda.png" alt="" /></a>
-        </div>
-        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-          <a href=""> <img src="partners/Assolombarda.png" alt="" /></a>
-        </div>
-        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-          <a href=""> <img src="partners/Assolombarda.png" alt="" /></a>
-        </div>
-        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-          <a href=""> <img src="partners/Assolombarda.png" alt="" /></a>
-        </div>
+        <picture1
+          v-for="(partner, index) of partners"
+          :key="`partner-index-${index}`"
+          :img="partner.src"
+        />
       </div>
       <div style="height: 2px; color: black; background: black"></div>
       <div class="row">
         <h2>Supporting and Financing Partners</h2>
-        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-          <a href=""> <img src="partners/Assolombarda.png" alt="" /></a>
-        </div>
-        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-          <a href=""> <img src="partners/Assolombarda.png" alt="" /></a>
-        </div>
-        <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-          <a href=""> <img src="partners/Assolombarda.png" alt="" /></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="social_media">
-      <div class="container">
-        <div class="row">
-          <div class="col-xlg-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-            <h2>follow us in social media</h2>
-            <a href=""
-              ><img
-                src="socialmedia/icons8-facebook-90.png"
-                style="width: 60px"
-                alt=""
-            /></a>
-            <a href=""
-              ><img
-                src="socialmedia/icons8-instagram-90.png"
-                style="width: 60px"
-                alt=""
-            /></a>
-            <a href=""
-              ><img
-                src="socialmedia/icons8-twitter-90.png"
-                style="width: 60px"
-                alt=""
-            /></a>
-            <a href=""
-              ><img
-                src="socialmedia/icons8-youtube-logo-90.png"
-                style="width: 60px"
-                alt=""
-            /></a>
-          </div>
-
-          <div class="col-xlg-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-          </div>
-        </div>
+        <picture1
+          v-for="(partner, index) of partners"
+          :key="`partner-index-${index}`"
+          :img="partner.src"
+        />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-// import NewsCard from '~/components/NewsCard.vue'
-// export default {
-//   name: 'AboutPage',
-//   components: {
-//     NewsCard,
-//   },
-//   data() {
-//     return {}
-//   },
-//   async asyncData({ $axios }) {
-//     const { data } = await $axios.get('/api/page-info/about')
-//     const title = data.title
-//     const image = data.image
-//     const description = data.description
-//     return {
-//       title,
-//       description,
-//       image,
-//     }
-//   },
-// }
+import Picture1 from '~/components/Picture.vue'
+export default {
+  name: 'Contactus',
+  components: {
+    Picture1,
+  },
+  data() {
+    return {
+      partners: [
+        {
+          src: 'partners/Assolombarda.png',
+        },
+        {
+          src: 'partners/Assolombarda.png',
+        },
+        {
+          src: 'partners/Assolombarda.png',
+        },
+        {
+          src: 'partners/Assolombarda.png',
+        },
+        {
+          src: 'partners/Assolombarda.png',
+        },
+        {
+          src: 'partners/Assolombarda.png',
+        },
+        {
+          src: 'partners/Assolombarda.png',
+        },
+      ],
+    }
+  },
+  //   async asyncData({ $axios }) {
+  //     const { data } = await $axios.get('/api/page-info/about')
+  //     const title = data.title
+  //     const image = data.image
+  //     const description = data.description
+  //     return {
+  //       title,
+  //       description,
+  //       image,
+  //     }
+  //   },
+}
 </script>
 
 
@@ -268,9 +227,7 @@
   border-left: 1px solid rgb(189, 189, 189);
   padding-top: 40px;
 }
-.partners img {
-  width: 160px;
-}
+
 form {
   text-align: left;
   padding: 10px 0 0 0;
@@ -330,9 +287,10 @@ form button {
 .card img {
   border-radius: 0;
 }
-.card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /* background: rgb(243, 243, 243); */
+.card {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.2), 0 6px 20px 0 rgba(0, 0, 0,0.19); */
+  /* background: rgb(243, 243, 243);  */
+  border: 1px solid #e2e2e2;
 }
 .row {
   margin: 0;
@@ -354,9 +312,9 @@ a:active {
 .card-body {
   text-align: center;
 }
-.card-text {
-  /* padding: 5% 0 0 0; */
-}
+/* .card-text{
+    padding: 5% 0 0 0; 
+ } */
 .phone {
   font-size: 20px;
 }
