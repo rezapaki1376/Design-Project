@@ -1,3 +1,5 @@
+import { EventInterface } from './models/events'
+
 export default async function databaseSeeding() {
   const Event = require('../database/models/events')
   const Itinerary = require('../database/models/itineraries')
