@@ -1,4 +1,5 @@
 <template>
+<<<<<<< Updated upstream
   <div>
     <div class="container">
       <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -21,6 +22,11 @@
             data-bs-slide-to="2"
           ></button>
         </div>
+=======
+ <div>
+<div>
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+>>>>>>> Stashed changes
 
         <!-- The slideshow/carousel -->
         <div class="carousel-inner">
@@ -67,6 +73,30 @@
       </div>
     </div>
   </div>
+<<<<<<< Updated upstream
+=======
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+ </div>
+>>>>>>> Stashed changes
 </template>
 
 <script>

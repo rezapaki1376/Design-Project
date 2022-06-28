@@ -1,6 +1,12 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light px-3 header">
+<<<<<<< Updated upstream
     <nuxt-link to="/" class="nav-link link"> Art Town </nuxt-link>
+=======
+    <nuxt-link to="/" class="nav-link link">
+            Art Town
+    </nuxt-link>
+>>>>>>> Stashed changes
     <button
       class="navbar-toggler"
       type="button"
@@ -24,14 +30,26 @@
             {{ navItem.name }}
           </nuxt-link>
         </li>
+        
       </ul>
+      
     </div>
+    <login/>
   </nav>
 </template>
 
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
 <script>
+import Login from '~/components/Login.vue'
 export default {
   name: 'TheHeader',
+  components: {
+    Login
+  },
   data() {
     return {
       headerList: [
@@ -69,6 +87,7 @@ export default {
 }
 </script>
 
+<<<<<<< Updated upstream
 <style scoped>
 .header {
   background: rgb(67, 162, 206);
@@ -79,6 +98,13 @@ export default {
 }
 </style>
 <style scoped>
+=======
+
+<style scoped>
+.login{
+
+}
+>>>>>>> Stashed changes
 .header {
   background: rgb(67, 162, 206);
 }
@@ -86,7 +112,11 @@ export default {
   color: white;
   font-size: 32px;
 }
+<<<<<<< Updated upstream
 .link {
+=======
+.link{
+>>>>>>> Stashed changes
   color: black;
 }
 </style>
