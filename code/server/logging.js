@@ -1,6 +1,8 @@
 export default function (req, res, next) {
   // req is the Node.js http request object
+  // eslint-disable-next-line no-console
   console.log('req.url')
+  // eslint-disable-next-line no-console
   console.log(req.url)
   // res is the Node.js http response object
 

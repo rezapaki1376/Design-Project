@@ -1,5 +1,5 @@
-const controller = require('../controllers/itineraries')
 import { Router } from 'express'
+const controller = require('../controllers/itineraries')
 
 const router = Router()
 

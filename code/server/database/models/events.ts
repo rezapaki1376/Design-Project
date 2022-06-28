@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 import {
   Model,
   DataTypes,
@@ -9,6 +10,12 @@ import {
 
 const { sequelize } = require('../database')
 
+export enum SeasonType {
+  spring = 'SPRING',
+  summer = 'SUMMER',
+  autumn = 'AUTUMN',
+  winter = 'WINTER',
+}
 export interface EventInterface {
   id: number
   poiId: number
@@ -27,12 +34,7 @@ export interface EventInterface {
   createdAt: Date
   updatedAt: Date
 }
-export enum SeasonType {
-  spring = 'SPRING',
-  summer = 'SUMMER',
-  autumn = 'AUTUMN',
-  winter = 'WINTER',
-}
+
 class Event extends Model<
   InferAttributes<Event>,
   InferCreationAttributes<Event>
