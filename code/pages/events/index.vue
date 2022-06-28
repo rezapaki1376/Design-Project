@@ -3,43 +3,47 @@
     <h1 class="display-4">Events</h1>
     <div class="row mt-3">
       <EventDetail
-        v-for="(cat, catIndex) of catList"
-        :id="cat.id"
-        :key="`cat-index-${catIndex}`"
+        v-for="(event, eventIndex) of events"
+        :id="event.id"
+        :key="`event-index-${eventIndex}`"
+        :title="event.title"
+        :description="event.description"
+        :image-url="event.imageUrl"
+        :price="event.price"
+        :preregister-neccessary="event.preregisterNeccessary"
+        :date="event.date"
         class="col-sm-2 m-2"
-        :name="cat.name"
-        :img="cat.img"
-        :breed="cat.breed"
       />
     </div>
   </div>
 </template>
 
-<script>
-import EventDetail from '~/components/EventDetail.vue'
+<script >
+import EventDetail from './components/EventDetail.vue'
+
 export default {
-  name: 'ListPage',
+  name: 'EventPage',
   components: {
     EventDetail,
+  },
+  async asyncData({ $axios }) {
+    const { data } = await $axios.get('/events')
+    return {
+      events: data,
+    }
   },
   data() {
     return {
       // catList: []
     }
   },
-  // Note: This happens on backend (server) side
-  // async asyncData({ $axios }) {
-  //   // const { data } = await $axios.get('http://localhost:3000/api/cats')
-  //   const { data } = await $axios.get('/api/cats')
-  //   return {
-  //     catList: data,
-  //   }
-  // },
-
-  // Note: This would happen on frontend (client) side
-  // async mounted() {
-  //   const { data } = await this.$axios.get('/api/cats')
-  //   this.catList = data
-  // },
+  mounted: () => {
+    this.socket = 'something'
+    console.log('mounted')
+  },
+  created() {
+    // Note: This would happen on frontend (client) side
+    console.log('§HI')
+  },
 }
 </script>

@@ -1,13 +1,13 @@
 <template>
   <div class="card" style="width: 18rem">
-    <div
+    <!-- <div
       class="card-img-top card-image"
       :style="{ 'background-image': 'url(' + img + ')' }"
-    ></div>
+    ></div> -->
     <div class="card-body">
-      <h5 class="card-title">{{ name }}</h5>
+      <h5 class="card-title">{{ title }}</h5>
       <p class="card-text">
-        {{ breed }}
+        {{ description }}
       </p>
       <nuxt-link :to="`/eventdetail/${id}`">
         <div class="btn btn-primary btn-orange">See Details</div>
@@ -18,24 +18,39 @@
 
 <script>
 export default {
-  name: 'CardComponent',
+  name: 'EventDetail',
   props: {
-    name: {
-      type: String,
-      required: true,
-    },
-    img: {
-      type: String,
-      required: true,
-    },
     id: {
       type: Number,
       required: true,
     },
-    breed: {
+    title: {
       type: String,
       required: true,
     },
+    description: {
+      type: String,
+      required: true,
+    },
+    imageUrl: {
+      type: String,
+      required: true,
+    },
+    price: {
+      type: Number,
+      required: true,
+    },
+    preregisterNeccessary: {
+      type: Boolean,
+      required: true,
+    },
+    date: {
+      type: String,
+      required: true,
+    },
+  },
+  mounted() {
+    console.log(this.context)
   },
   methods: {
     goToDetails() {
