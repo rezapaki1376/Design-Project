@@ -120,7 +120,7 @@ export default {
       events: [],
     }
   },
-  async mounted() {},
+  // async mounted() {},
 }
 </script>
 <style scoped>
