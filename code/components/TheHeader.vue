@@ -76,8 +76,7 @@ export default {
   color: white;
   font-size: 32px;
 }
-.login {
-}
+
 .header {
   background: rgb(67, 162, 206);
 }
