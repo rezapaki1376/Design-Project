@@ -7,69 +7,43 @@
 </div>
 
   <div id="myModal" class="modal fade" >
-  <div class="col-lg-7 col-md-12 modal-dialog">
+  <div class="modal-dialog">
     <div class="modal-content">
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
+        <h4 class="modal-title">Login</h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
 
       <!-- Modal body -->
       <div class="modal-body">
-        <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
-					<div class="text-center my-5">
-						<img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="logo" width="100">
-					</div>
-					<div class="card shadow-lg">
-						<div class="card-body p-5">
-							<h1 class="fs-4 card-title fw-bold mb-4">Login</h1>
-							<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
-								<div class="mb-3">
-									<label class="mb-2 text-muted" for="email">E-Mail Address</label>
-									<input id="email" type="email" class="form-control" name="email" value="" required="" autofocus="">
-									<div class="invalid-feedback">
-										Email is invalid
-									</div>
-								</div>
+		  <div class="row">
+		  <div class="col-lg-6 col-md-6 col-sm-6"><form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-success">Login</button>
+</form>
+	
 
-								<div class="mb-3">
-									<div class="mb-2 w-100">
-										<label class="text-muted" for="password">Password</label>
-										<a href="forgot.html" class="float-end">
-											Forgot Password?
-										</a>
-									</div>
-									<input id="password" type="password" class="form-control" name="password" required="">
-								    <div class="invalid-feedback">
-								    	Password is required
-							    	</div>
-								</div>
-
-								<div class="d-flex align-items-center">
-									<div class="form-check">
-										<input type="checkbox" name="remember" id="remember" class="form-check-input">
-										<label for="remember" class="form-check-label">Remember Me</label>
-									</div>
-									<button type="submit" class="btn btn-primary ms-auto">
-										Login
-									</button>
-								</div>
-							</form>
-						</div>
-						<div class="card-footer py-3 border-0">
-							<div class="text-center">
-								Don't have an account? <a href="register.html" class="text-dark">Create One</a>
-							</div>
-						</div>
-					</div>
-					<div class="text-center mt-5 text-muted">
-						Copyright © 2017-2021 — Your Company 
-					</div>
-				</div>
+</div>
+		  <div class="col-lg-6 col-md-6 col-sm-6">
+			  <img src="login.jpg" alt="">
+		  </div>
+		  
       </div>
-
+	</div>
       <!-- Modal footer -->
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
@@ -83,30 +57,62 @@
 </template>
 
 <style scoped>
+img{
+	height: 450px;
+	width: 100%;
+}
 .login{
   color: white;
-  /* text-align: right; */
+ 
 }
 .login:hover{
   cursor: pointer;
   color: rgb(237, 237, 237);
 }
-.modal-dialog{
+input{
+	border-radius: 25px;
+	
+}
+.form-group{
+	margin: 10px 0 0 0;
+}
+.modal-header{
+	background: #0ead69;
+}
+button{
+	margin: 20px 0;
+}
+
+@media (min-width: 1200px) {
+  .modal-dialog {
+   max-width: 80%;
+  }
+  
+}
+@media (max-width: 992px) {
+  .modal-dialog {
+   max-width: 90%;
+  }
   
 }
 
-
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .modal-dialog {
-   max-width: 70%;
+   max-width: 65%;
   }
+  
 }
-
 @media (max-width: 768px) {
   .modal-dialog {
-   max-width: 100%;
+   max-width: 97%;
   }
 }
+@media (max-width: 576px) {
+  img{
+	  display: none;
+  }
+}
+
 
 
 /* div{
