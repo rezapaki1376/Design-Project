@@ -1,11 +1,11 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   ssr: true,
-  target: 'server',
+
   serverMiddleware: [
     {
       path: '/api',
-      handler: '~/server/',
+      handler: '~/server/index.js',
     },
   ],
   head: {

@@ -20,9 +20,13 @@
           :key="`navItem${navItemIndex}`"
           class="nav-item"
         >
-          <nuxt-link :to="navItem.path" class="nav-link">
+          <NuxtLink class="nav-link" :to="navItem.path" prefetch>{{
+            navItem.name
+          }}</NuxtLink>
+
+          <!-- <nuxt-link :to="navItem.path" class="nav-link">
             {{ navItem.name }}
-          </nuxt-link>
+          </nuxt-link> -->
         </li>
       </ul>
     </div>
