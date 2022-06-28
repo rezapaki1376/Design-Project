@@ -20,31 +20,14 @@
           :key="`navItem${navItemIndex}`"
           class="nav-item"
         >
-          <NuxtLink class="nav-link" :to="navItem.path" prefetch>{{
-            navItem.name
-          }}</NuxtLink>
-
-          <!-- <nuxt-link :to="navItem.path" class="nav-link">
+          <nuxt-link :to="navItem.path" class="nav-link">
             {{ navItem.name }}
-          </nuxt-link> -->
+          </nuxt-link>
         </li>
       </ul>
     </div>
   </nav>
 </template>
-
-<style scoped>
-.header {
-  background: rgb(67, 162, 206);
-}
-.logo {
-  color: white;
-  font-size: 32px;
-}
-.link {
-  color: black;
-}
-</style>
 
 <script>
 export default {
@@ -93,5 +76,17 @@ export default {
 .logo {
   color: white;
   font-size: 32px;
+}
+</style>
+<style scoped>
+.header {
+  background: rgb(67, 162, 206);
+}
+.logo {
+  color: white;
+  font-size: 32px;
+}
+.link {
+  color: black;
 }
 </style>
