@@ -1,24 +1,23 @@
 <template>
-  <div>
-
-<img src="bank.jpg" style="width:500px; border-radius:5%" alt="">
-
-
+  <div class="page container mt-5">
+    <h1 class="display-4">List page</h1>
+    <div class="row mt-3"></div>
+    <img src="bank.jpg" style="width: 500px; border-radius: 5%" alt="" />
   </div>
 </template>
 
 <script>
-// import ServiceList from '~/components/ServiceDetail.vue'
-// export default {
-//   name: 'ListPage',
-//   components: {
-//     ServiceList,
-//   },
-//   data() {
-//     return {
-//       // catList: []
-//     }
-//   },
+// import DetailsPage from '~/components/_id.vue'
+export default {
+  name: 'ListPage',
+  components: {
+    // DetailsPage,
+  },
+  data() {
+    return {
+      // catList: []
+    }
+  },
   // Note: This happens on backend (server) side
   // async asyncData({ $axios }) {
   //   // const { data } = await $axios.get('http://localhost:3000/api/cats')
@@ -33,5 +32,5 @@
   //   const { data } = await this.$axios.get('/api/cats')
   //   this.catList = data
   // },
-// }
+}
 </script>

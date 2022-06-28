@@ -2,7 +2,7 @@
   <div class="page container mt-5">
     <h1 class="display-4">List page</h1>
     <div class="row mt-3">
-      <PoiDetail
+      <ItinerariesDetail
         v-for="(cat, catIndex) of catList"
         :id="cat.id"
         :key="`cat-index-${catIndex}`"
@@ -16,11 +16,11 @@
 </template>
 
 <script>
-import PoiDetail from '~/components/PoiDetail.vue'
+import ItinerariesDetail from '~/components/ItinerariesDetail.vue'
 export default {
   name: 'ListPage',
   components: {
-    PoiDetail,
+    ItinerariesDetail,
   },
   data() {
     return {
@@ -28,13 +28,13 @@ export default {
     }
   },
   // Note: This happens on backend (server) side
-  async asyncData({ $axios }) {
-    // const { data } = await $axios.get('http://localhost:3000/api/cats')
-    const { data } = await $axios.get('/api/cats')
-    return {
-      catList: data,
-    }
-  },
+  // async asyncData({ $axios }) {
+  //   // const { data } = await $axios.get('http://localhost:3000/api/cats')
+  //   const { data } = await $axios.get('/api/cats')
+  //   return {
+  //     catList: data,
+  //   }
+  // },
 
   // Note: This would happen on frontend (client) side
   // async mounted() {

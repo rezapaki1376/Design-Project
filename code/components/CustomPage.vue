@@ -214,33 +214,35 @@
   color: black;
   height: 400px;
 }
-.card img{
+.card img {
   border-radius: 0;
 }
 .card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.2), 0 6px 20px 0 rgba(0, 0, 0,0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   /* background: rgb(243, 243, 243); */
-  
 }
 .row {
   padding: 5px;
 }
-.line{
+.line {
   visibility: hidden;
 }
-.card:hover .line{
+.card:hover .line {
   visibility: visible;
   height: 1px;
-    width: 12%;
-    border: 1px solid rgb(255, 0, 0);
-    background: rgb(255, 0, 0);
+  width: 12%;
+  border: 1px solid rgb(255, 0, 0);
+  background: rgb(255, 0, 0);
 }
-a, a:hover, a:focus, a:active {
-     text-decoration: none;
-     color: inherit;
- }
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
 
-.join-us{
-background: #f6f6f6;
+.join-us {
+  background: #f6f6f6;
 }
 </style>

@@ -1,8 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light px-3 header">
-    <nuxt-link to="/" class="nav-link link">
-            Art Town
-          </nuxt-link>
+    <nuxt-link to="/" class="nav-link link"> Art Town </nuxt-link>
     <button
       class="navbar-toggler"
       type="button"
@@ -15,14 +13,14 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div id="navbarToggler" class="collapse navbar-collapse" >
+    <div id="navbarToggler" class="collapse navbar-collapse">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li
           v-for="(navItem, navItemIndex) of headerList"
           :key="`navItem${navItemIndex}`"
           class="nav-item"
         >
-          <nuxt-link :to="navItem.path" class="nav-link">
+          <nuxt-link :to="navItem.path" class="nav-link" prefetch>
             {{ navItem.name }}
           </nuxt-link>
         </li>
@@ -30,19 +28,6 @@
     </div>
   </nav>
 </template>
-
-<style scoped>
-.header {
-  background: rgb(67, 162, 206);
-}
-.logo {
-  color: white;
-  font-size: 32px;
-}
-.link{
-  color: black;
-}
-</style>
 
 <script>
 export default {
@@ -55,31 +40,53 @@ export default {
           path: '/',
         },
         {
-          name: 'Evens',
-          path: '/list',
+          name: 'Events',
+          path: '/events',
         },
         {
-          name: 'Point Of Interesteds',
-          path: '/POI_list',
+          name: 'Point of Interests',
+          path: '/pointOfInterests',
         },
         {
           name: 'Itineraries',
-          path: '/Itineraries_list',
+          path: '/itineraries',
         },
         {
           name: 'Services',
-          path: '/Service_list',
+          path: '/services',
         },
         {
           name: 'About',
           path: '/about',
         },
         {
-          name: 'ConcatctUs',
-          path: '/contactus',
+          name: 'Contact',
+          path: '/contact',
         },
       ],
     }
   },
 }
 </script>
+
+<style scoped>
+.header {
+  background: rgb(67, 162, 206);
+}
+.logo {
+  color: white;
+  font-size: 32px;
+}
+</style>
+<style scoped>
+.header {
+  background: rgb(67, 162, 206);
+}
+.logo {
+  color: white;
+  font-size: 32px;
+}
+.link {
+  color: black;
+}
+</style>
