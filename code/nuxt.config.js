@@ -30,6 +30,10 @@ export default {
       {
         src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js',
       },
+      {
+        src: 'https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver',
+        body: true,
+      },
     ],
   },
 
@@ -58,7 +62,7 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    // baseURL: 'http://localhost:3000',
+    baseURL: 'http://localhost:3000',
     // baseURL: 'https://find-your-rome.herokuapp.com'
   },
 

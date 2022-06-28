@@ -20,7 +20,7 @@
           :key="`navItem${navItemIndex}`"
           class="nav-item"
         >
-          <nuxt-link :to="navItem.path" class="nav-link">
+          <nuxt-link :to="navItem.path" class="nav-link" prefetch>
             {{ navItem.name }}
           </nuxt-link>
         </li>
@@ -40,28 +40,28 @@ export default {
           path: '/',
         },
         {
-          name: 'Evens',
-          path: '/list',
+          name: 'Events',
+          path: '/events',
         },
         {
-          name: 'Point Of Interesteds',
-          path: '/POI_list',
+          name: 'Point of Interests',
+          path: '/pointOfInterests',
         },
         {
           name: 'Itineraries',
-          path: '/Itineraries_list',
+          path: '/itineraries',
         },
         {
           name: 'Services',
-          path: '/Service_list',
+          path: '/services',
         },
         {
           name: 'About',
           path: '/about',
         },
         {
-          name: 'ConcatctUs',
-          path: '/contactus',
+          name: 'Contact',
+          path: '/contact',
         },
       ],
     }
