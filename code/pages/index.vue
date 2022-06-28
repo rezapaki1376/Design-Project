@@ -1,5 +1,4 @@
 <template>
-<<<<<<< Updated upstream
   <div>
     <div class="container">
       <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -22,33 +21,56 @@
             data-bs-slide-to="2"
           ></button>
         </div>
-=======
- <div>
-<div>
-  <div id="demo" class="carousel slide" data-bs-ride="carousel">
->>>>>>> Stashed changes
 
-        <!-- The slideshow/carousel -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="index1.jpg" alt="Los Angeles" class="d-block w-60" />
-            <div class="carousel-caption">
-              <h3>New York</h3>
-              <p>We love the Big Apple!</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="index2.jpg" alt="Chicago" class="d-block w-60" />
-            <div class="carousel-caption">
-              <h3>New York</h3>
-              <p>We love the Big Apple!</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="index3.jpg" alt="New York" class="d-block w-60" />
-            <div class="carousel-caption">
-              <h3>New York</h3>
-              <p>We love the Big Apple!</p>
+        <div>
+          <div>
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+              <!-- The slideshow/carousel -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="index1.jpg"
+                    alt="Los Angeles"
+                    class="d-block w-60"
+                  />
+                  <div class="carousel-caption">
+                    <h3>New York</h3>
+                    <p>We love the Big Apple!</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="index2.jpg" alt="Chicago" class="d-block w-60" />
+                  <div class="carousel-caption">
+                    <h3>New York</h3>
+                    <p>We love the Big Apple!</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="index3.jpg" alt="New York" class="d-block w-60" />
+                  <div class="carousel-caption">
+                    <h3>New York</h3>
+                    <p>We love the Big Apple!</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Left and right controls/icons -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
             </div>
           </div>
         </div>
@@ -73,30 +95,6 @@
       </div>
     </div>
   </div>
-<<<<<<< Updated upstream
-=======
-
-  <!-- Left and right controls/icons -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-</div>
-
-</div>
-
-
-
-
-
-
-
-
-
- </div>
->>>>>>> Stashed changes
 </template>
 
 <script>
