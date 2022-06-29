@@ -1,6 +1,13 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light px-3 header">
-    <nuxt-link to="/" class="nav-link link"> Art Town </nuxt-link>
+    <nuxt-link to="/" class="nav-link link px-3 py-0">
+      <img
+        src="../assets/img/logo/colosseum.png"
+        width="70"
+        height="70"
+        alt=""
+      />
+    </nuxt-link>
     <button
       class="navbar-toggler"
       type="button"
@@ -15,30 +22,54 @@
 
     <div id="navbarToggler" class="collapse navbar-collapse">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li key="`0`" class="nav-item">
+          <nuxt-link
+            to="/"
+            class="nav-link-custom nav-link"
+            prefetch
+            style="color: black"
+          >
+            Home
+          </nuxt-link>
+        </li>
         <li
           v-for="(navItem, navItemIndex) of headerList"
-          :key="`navItem${navItemIndex}`"
+          :key="`navItem${navItemIndex + 1}`"
           class="nav-item"
         >
-          <nuxt-link :to="navItem.path" class="nav-link" prefetch>
+          <nuxt-link
+            :to="navItem.path"
+            class="nav-link-custom nav-link"
+            prefetch
+            style="color: black"
+          >
             {{ navItem.name }}
           </nuxt-link>
         </li>
       </ul>
     </div>
-    <login />
+    <nuxt-link
+      to="/login"
+      class="nav-link-custom nav-link"
+      prefetch
+      style="color: black"
+    >
+      <i
+        class="bi bi-box-arrow-in-right"
+        style="font-size: 1.3rem; color: black"
+      />
+      Login
+    </nuxt-link>
   </nav>
 </template>
 
 <script>
-import Login from '~/components/Login.vue'
 export default {
   name: 'TheHeader',
-  components: {
-    Login,
-  },
+
   data() {
     return {
+      currentTab: 0,
       headerList: [
         {
           name: 'Events',
@@ -68,11 +99,22 @@ export default {
   color: white;
   font-size: 32px;
 }
-
+.nuxt-link-exact-active {
+  color: #00c58e !important;
+}
 .header {
-  background: rgb(67, 162, 206);
+  background: white;
 }
 .link {
   color: black;
+}
+
+.nav-link-custom {
+  color: rgb(53, 53, 53);
+  font-size: 19px !important;
+  font-weight: normal;
+}
+.nav-link:hover {
+  color: #00c58e !important;
 }
 </style>
