@@ -57,6 +57,10 @@
 </template>
 
 <style scoped>
+.container{
+  margin: 0;
+  padding: 0;
+}
 img{
 	height: 450px;
 	width: 100%;

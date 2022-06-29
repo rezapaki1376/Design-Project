@@ -46,20 +46,20 @@
             {{ navItem.name }}
           </nuxt-link>
         </li>
+        <nuxt-link
+          to="/login"
+          class="nav-link-custom nav-link"
+          prefetch
+          style="color: black"
+        >
+          <i
+            class="bi bi-box-arrow-in-right"
+            style="font-size: 1.3rem; color: black"
+          />
+          Login
+        </nuxt-link>
       </ul>
     </div>
-    <nuxt-link
-      to="/login"
-      class="nav-link-custom nav-link"
-      prefetch
-      style="color: black"
-    >
-      <i
-        class="bi bi-box-arrow-in-right"
-        style="font-size: 1.3rem; color: black"
-      />
-      Login
-    </nuxt-link>
   </nav>
 </template>
 
@@ -95,6 +95,22 @@ export default {
 
 
 <style scoped>
+@media (min-width: 992px) {
+  .login {
+    color: black;
+    text-align: right;
+    margin: auto 0;
+    position: absolute;
+    right: 10px;
+  }
+}
+@media (max-width: 992px) {
+  .login {
+    color: black;
+    text-align: left;
+    margin: auto 0;
+  }
+}
 .logo {
   color: white;
   font-size: 32px;
