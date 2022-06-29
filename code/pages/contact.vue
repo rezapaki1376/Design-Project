@@ -144,7 +144,7 @@
       <div style="height: 2px; color: black; background: black"></div>
       <div class="row">
         <h2>Supporting and Financing Partners</h2>
-        <picture1
+        <Picture1
           v-for="(partner, index) of partners"
           :key="`partner-index-${index}`"
           :img="partner.src"
@@ -156,10 +156,12 @@
 
 <script>
 import Picture1 from '~/components/Picture.vue'
+
 export default {
   name: 'Contactus',
   components: {
     Picture1,
+   
   },
   data() {
     return {

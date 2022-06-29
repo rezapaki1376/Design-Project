@@ -1,36 +1,60 @@
 <template>
-  <div class="page container mt-5">
-    <h1 class="display-4">List page</h1>
-    <div class="row mt-3"></div>
-    <img src="bank.jpg" style="width: 500px; border-radius: 5%" alt="" />
+  <div class="container">
+    <div class="row">
+      <Service
+          v-for="(service, index) of services"
+          :key="`service-index-${index}`"
+          :img="service.src"
+          :title="service.title"
+        />
+    </div>
   </div>
 </template>
 
 <script>
-// import DetailsPage from '~/components/_id.vue'
+import Service from '~/components/Service.vue'
 export default {
-  name: 'ListPage',
+  name: 'Contactus',
   components: {
-    // DetailsPage,
+    Service,
   },
   data() {
     return {
-      // catList: []
-    }
-  },
-  // Note: This happens on backend (server) side
-  // async asyncData({ $axios }) {
-  //   // const { data } = await $axios.get('http://localhost:3000/api/cats')
-  //   const { data } = await $axios.get('/api/cats')
-  //   return {
-  //     catList: data,
-  //   }
-  // },
-
-  // Note: This would happen on frontend (client) side
-  // async mounted() {
-  //   const { data } = await this.$axios.get('/api/cats')
-  //   this.catList = data
-  // },
+       services: [
+        {
+          src: '../services/pharmachy.jpg',
+          title: "Pharmachy"
+        },
+        {
+          src: '../services/bank.jpg',
+          title: "Bank"
+        },
+        {
+          src: '../services/post.jpg',
+          title: "Post"
+        },
+        {
+          src: '../services/hospital.jpg',
+          title: "Hospital"
+        },
+        {
+          src: '../services/garage.jpg',
+          title: "garage"
+        },
+       ],
+      
+  //   async asyncData({ $axios }) {
+  //     const { data } = await $axios.get('/api/page-info/about')
+  //     const title = data.title
+  //     const image = data.image
+  //     const description = data.description
+  //     return {
+  //       title,
+  //       description,
+  //       image,
+  //     }
+  //   },
+}
+  }
 }
 </script>

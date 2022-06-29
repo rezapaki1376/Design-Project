@@ -72,7 +72,7 @@ img{
 }
 img:hover{
   cursor: pointer;
-  filter: blur(0.4px);
+  filter: blur(0.6px);
   
 }
 h1{
