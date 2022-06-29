@@ -1,45 +1,44 @@
+
 <template>
-  <div class="page container mt-5">
-    <h1 class="display-4">Points of Interest</h1>
-    <div class="row mt-3">
-      <PoiDetail
-        v-for="(cat, catIndex) of catList"
-        :id="cat.id"
-        :key="`cat-index-${catIndex}`"
-        class="col-sm-2 m-2"
-        :name="cat.name"
-        :img="cat.img"
-        :breed="cat.breed"
-      />
+<div class="container">
+    <div class="row">
+      <PointOfInterested
+          v-for="(POI, index) of POIs"
+          :key="`service-index-${index}`"
+          :img="POI.src"
+          :title="POI.title"
+          :description="POI.description"
+        />
     </div>
   </div>
-</template>
 
+</template>
 <script>
-import PoiDetail from '~/components/PoiDetail.vue'
+
+import PointOfInterested from '~/components/PointOfInterested.vue'
 export default {
-  name: 'PointsOfinterst',
+  name: 'ListPage',
   components: {
-    PoiDetail,
+    PointOfInterested,
   },
   data() {
     return {
-      // catList: []
+      
+      POIs: [
+        {
+          src: '../services/bank.jpg',
+          title: "Doumo",
+          description: " favourite family travel quotes: from bravery inducing adventure travel quotes to wonderful wanderlust"
+        },
+        {
+          src: '../services/bank.jpg',
+          title: "Doumo",
+          description: " favourite family travel quotes: from bravery inducing adventure travel quotes to wonderful wanderlust"
+        },
+      ],
     }
   },
-  // Note: This happens on backend (server) side
-  // async asyncData({ $axios }) {
-  //   // const { data } = await $axios.get('http://localhost:3000/api/cats')
-  //   const { data } = await $axios.get('/api/cats')
-  //   return {
-  //     catList: data,
-  //   }
-  // },
-
-  // Note: This would happen on frontend (client) side
-  // async mounted() {
-  //   const { data } = await this.$axios.get('/api/cats')
-  //   this.catList = data
-  // },
 }
 </script>
+
+
