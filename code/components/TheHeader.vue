@@ -24,9 +24,12 @@
             {{ navItem.name }}
           </nuxt-link>
         </li>
+        <li class="login">
+           <login />
+        </li>
       </ul>
     </div>
-    <login />
+   
   </nav>
 </template>
 
@@ -64,6 +67,24 @@ export default {
 
 
 <style scoped>
+
+@media (min-width: 992px) {
+  .login{
+  text-align:right;
+  margin:auto 0;
+  position: absolute;
+  right: 10px;
+}
+  
+}
+@media (max-width: 992px) {
+  .login{
+  text-align:left;
+  margin:auto 0;
+}
+
+  
+}
 .logo {
   color: white;
   font-size: 32px;
