@@ -108,15 +108,15 @@
           <div class="card first_news">
           <h1> Our Top News</h1>
           <div class="card-body">
-            <h4 class="card-title">Our top news</h4>
+            <!-- <h4 class="card-title">Our top news</h4> -->
             <p class="card-text">
-              Some example text some example text. John Doe is an architect and
-              engineer
+             Look at our top news in Rome.
             </p>
-            <p class="date co-lg-12">
-              18 jun 2022
-              <div class="line"></div>
-              </p>
+            <h4 class="blog">
+            <nuxt-link to="#">
+              Join to our blog.
+            </nuxt-link>
+            </h4>
           </div>
         </div>
         
@@ -211,22 +211,22 @@ export default {
     return {
       newslist:[
         {
-          src : "aboutus1.jpg",
-          title: "John Doe",
-          description: "Some example text some example text. John Doe is an architect and engineer",
-          date :" 18 jun 2022 "
+          src : "news1.png",
+          title: "Rome PRIDE 2022",
+          description: "Pride Rome 2022 gets underway across the city with lots of events and initiatives, leading up to the street parade on July 2nd with the grand finale.",
+          date :" 30 Jul 2022 "
         },
         {
-          src : "aboutus1.jpg",
-          title: "John Doe",
-          description: "Some example text some example text. John Doe is an architect and engineer",
-          date :" 18 jun 2022 "
+          src : "news2.jpg",
+          title: "Summer festivals",
+          description: "Rome will continue with its celebrations, which take place as usual in the Circus Maximus, but minus the crowds.",
+          date :" 18 Sep 2022 "
         },
         {
-          src : "aboutus1.jpg",
-          title: "John Doe",
-          description: "Some example text some example text. John Doe is an architect and engineer",
-          date :" 18 jun 2022 "
+          src : "news3.jpg",
+          title: "jogging  time",
+          description: "We love a half marathon. Whether you're an old hand or new to racing, it's a challenging, yet completely attainable goal for most, and can bring great structure to your training year.",
+          date :" 21 Aug 2022 "
         },
         {
           src : "aboutus1.jpg",
@@ -278,14 +278,15 @@ export default {
 
 
 <style scoped>
+.blog{
+  color: #0081a7;
+}
 .community{
   background: #33475b;
   color: white;
   text-align: center;
 }
-.community>.container:first-child{
-  
-}
+
 .first_news{
 /* display: inline-block; */
 background: #eaf0f6 !important;

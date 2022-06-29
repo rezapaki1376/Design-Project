@@ -10,13 +10,15 @@
           />
           <div class="card-body">
             <h4 class="card-title">{{ title }}</h4>
-            <p class="card-text">
+            <p class="card-text cut-text">
               {{ description }}
             </p>
+            <hr>
             <p class="date co-lg-12">
-              {{ date }}
-              <div class="line"></div>
+              Publish date: {{ date }}
+             
               </p>
+               <div class="line"></div>
           </div>
         </div>
         </a>
@@ -52,6 +54,22 @@ export default {
 }
 </script>
 <style scoped>
+.cut-text { 
+  /* width: 160px;  */
+  height: 78px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* .card-text{
+  max-height: 78px;
+   display: block; 
+     max-width: 98%; 
+     white-space: nowrap; 
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+} */
 .newscard{
   display: inline-block;
 }
@@ -65,6 +83,7 @@ export default {
 }
 .card img{
   border-radius: 0;
+  height: 180px;
 }
 .card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.2), 0 6px 20px 0 rgba(0, 0, 0,0.19);
