@@ -2,7 +2,7 @@ import { NuxtConfig } from '@nuxt/types'
 
 const config: NuxtConfig = {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  ssr: true,
+  ssr: false,
   serverMiddleware: [
     {
       path: '/api',
@@ -74,6 +74,24 @@ const config: NuxtConfig = {
       eslint: {
         files: './**/*.{ts,js,vue}',
       },
+    },
+  },
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push(
+        {
+          path: '/points_of_interest',
+          component: resolve(__dirname, 'pages/pointsOfInterest/index.vue'),
+        },
+        {
+          path: '/about_us',
+          component: resolve(__dirname, 'pages/about.vue'),
+        },
+        {
+          path: '/contact_us',
+          component: resolve(__dirname, 'pages/contact.vue'),
+        }
+      )
     },
   },
 }

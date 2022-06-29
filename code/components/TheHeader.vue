@@ -45,8 +45,8 @@ export default {
           path: '/events',
         },
         {
-          name: 'Point of Interests',
-          path: '/pointOfInterests',
+          name: 'Points of Interest',
+          path: '/points_of_interest',
         },
         {
           name: 'Itineraries',
@@ -55,14 +55,6 @@ export default {
         {
           name: 'Services',
           path: '/services',
-        },
-        {
-          name: 'About',
-          path: '/about',
-        },
-        {
-          name: 'Contact',
-          path: '/contact',
         },
       ],
     }

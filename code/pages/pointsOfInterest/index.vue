@@ -1,6 +1,6 @@
 <template>
   <div class="page container mt-5">
-    <h1 class="display-4">Point of Interests</h1>
+    <h1 class="display-4">Points of Interest</h1>
     <div class="row mt-3">
       <PoiDetail
         v-for="(cat, catIndex) of catList"
@@ -18,7 +18,7 @@
 <script>
 import PoiDetail from '~/components/PoiDetail.vue'
 export default {
-  name: 'ListPage',
+  name: 'PointsOfinterst',
   components: {
     PoiDetail,
   },

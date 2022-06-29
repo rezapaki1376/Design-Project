@@ -1,40 +1,67 @@
 <template>
-  <footer class="container-fluid footer text-center">
-    <div class="row">
+  <footer class="container-fluid footer">
+    <div class="row justify-content-around flex-wrap text-center">
       <div class="col-xlg-3 col-lg-3 col-md-6 col-sm-12">
-        <h3>main features</h3>
+        <h3>Navigation</h3>
         <ul>
-          <li><nuxt-link to="/" class="nav-link"> Home </nuxt-link></li>
-          <li><nuxt-link to="/list" class="nav-link"> Evens </nuxt-link></li>
+          <li><nuxt-link to="/events" class="nav-link"> Events</nuxt-link></li>
           <li>
-            <nuxt-link to="/POI_list" class="nav-link">
-              Point of interesteds
+            <nuxt-link to="/points_of_interest" class="nav-link">
+              Point of interests
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/Itineraries_list" class="nav-link">
+            <nuxt-link to="/itineraries" class="nav-link">
               Itineraries
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/Service_list" class="nav-link">
-              Services
-            </nuxt-link>
+            <nuxt-link to="/services" class="nav-link"> Services </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/about_us" class="nav-link"> About us </nuxt-link>
           </li>
         </ul>
       </div>
       <div class="col-xlg-3 col-lg-3 col-md-6 col-sm-12">
-        <h3>download our application</h3>
-        <button type="button" class="btn">
-          Android <img src="/Android.png" alt="" />
-        </button>
-        <button type="button" class="btn">
-          IOS <img src="/IOS.png" alt="" />
-        </button>
+        <h3>Legal Notice</h3>
+        <ul>
+          <li>
+            <nuxt-link to="/" class="nav-link"> Private Policy </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/list" class="nav-link"> Disclosure </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/list" class="nav-link"> Terms of use</nuxt-link>
+          </li>
+        </ul>
       </div>
       <div class="col-xlg-3 col-lg-3 col-md-6 col-sm-12">
-        <h3>Recieve our news</h3>
-        <p>Wanna be aware about our new updates. Just enter your Email.</p>
+        <h3>Connect</h3>
+        <ul>
+          <li>
+            <button type="button" class="btn">
+              <img src="../assets/img/socialmedia/instagram.png" alt="" />
+            </button>
+          </li>
+          <li>
+            <button type="button" class="btn">
+              <img src="../assets/img/socialmedia/facebook.png" alt="" />
+            </button>
+          </li>
+          <li>
+            <button type="button" class="btn">
+              <img src="../assets/img/socialmedia/pinterest.png" alt="" />
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xlg-3 col-lg-3 col-md-6 col-sm-12">
+        <h3>Newsletter</h3>
+        <p>
+          Subscribe to our monthly newsletter to never miss news on Rome again.
+        </p>
         <div class="form-group">
           <input
             id="pwd"
@@ -48,7 +75,15 @@
           <button type="button" class="btn btn-dark">Submit</button>
         </div>
       </div>
-      <div class="col-lg-3"></div>
+    </div>
+    <div class="d-flex justify-content-center py-2">
+      <div class="px-2 vl">Copyright © 2022 Find-your-Rome</div>
+      <nuxt-link to="/sitemap" class="px-2 nav-link py-0 vl">
+        Sitemap</nuxt-link
+      >
+      <nuxt-link to="/contact_us" class="px-2 nav-link py-0">
+        Contact us</nuxt-link
+      >
     </div>
   </footer>
 </template>
@@ -95,12 +130,11 @@
 </script>
 <style scoped>
 .footer {
-  background-color: #2f2f2f;
-  color: #ffffff;
-  text-align: left;
+  background-color: rgb(245, 245, 245);
+  color: #000000;
 }
 .row {
-  text-align: left;
+  text-align: center;
 }
 .row > div {
   padding: 10px 10px;
@@ -109,18 +143,22 @@ ul {
   padding: 0;
   margin: 0;
   list-style: none;
-  text-align: left;
+  text-align: center;
+}
+.vl {
+  border-right: 1px solid black;
 }
 .nav-link {
-  color: white;
+  color: #000000;
 }
 .btn {
-  background: white;
-  width: 150px;
-  border-radius: 0;
-  color: black;
-  display: block;
-  margin: 10px 0;
+  /* background: white; */
+  /* width: 150px; */
+  /* border-radius: 0; */
+
+  /* display: block; */
+  margin: 5px;
+  padding: 3px;
 }
 .btn:hover {
   background: rgb(225, 225, 225);

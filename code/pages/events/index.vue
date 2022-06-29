@@ -38,12 +38,7 @@ export default {
     }
   },
   mounted: () => {
-    this.socket = 'something'
-    console.log('mounted')
-  },
-  created() {
-    // Note: This would happen on frontend (client) side
-    console.log('§HI')
+    console.log('HI')
   },
 }
 </script>
