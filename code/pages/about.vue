@@ -14,6 +14,7 @@
           five centuries, but also the leap into electronic typesetting,
           remaining essentially unchanged. 
         </p>
+        
       </div>
     </div>
 
@@ -22,15 +23,11 @@
         <div class="jumbotron col-lg-6">
         <h1>Our Mission</h1>
         <p class="lead">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          The Internet’s far-reaching access has moved more people to travel than ever before. Beautiful pictures of unknown places incite a desire to travel. The internet also makes traveling much easier and less stressful.
+           People can discover where to go and what to do there.
+            They can book flights, hotels, rental cars, and more.The internet provides access to every tidbit
+             of information about a foreign destination. We are here to provide all of these facilities for you. Just select your favorit
+             itineraries and point of interesteds and leave every thing to us.
         </p>
       </div>
       
@@ -41,9 +38,9 @@
       
       </div>
       
-    </div>
+    <!-- </div> -->
 
-    <div class="container description">
+    <!-- <div class="container description"> -->
       <div class="row">
         <div class="jumbotron col-lg-6">
         <img class="IMG_styles" src="aboutus1.jpg" alt="" />
@@ -52,36 +49,29 @@
         <div class="jumbotron col-lg-6">
         <h1>What we do?</h1>
         <p class="lead">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          From the beginning, travel businesses have used imagery in flyers, brochures, and postcards.
+          Images are an effective way to stimulate the desire to travel. People can explore destinations virtually,
+          through high-definition pictures, 360° views, and videos.A tourism website also needs to attract attention
+          and foment trust. If a user trusts your website they will be more likely to apply the recommendations and
+          make a purchase. A clean design will help you accomplish this.Tourism websites employ different design trends
+           to display content in an organized way.
         </p>
       </div>
       </div>
       
-    </div>
+    <!-- </div> -->
 
 
-    <div class="container description">
+    <!-- <div class="container description"> -->
       <div class="row">
         <div class="jumbotron col-lg-6">
         <h1>Our history</h1>
         <p class="lead">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          This travel site is the official tourism guide to the city Rome in Italy.
+          This website uses stunning images to grab attention. It maintains a good balance between
+          images and text. The prime focus is on the views and activities available. We suggest you all events that held in 
+          Rome and interested. As well as this you can finde many interested places to visit.
+          Visitors can book reservations on the home page which allows them to act as soon as possible.
         </p>
       </div>
       
@@ -91,6 +81,43 @@
 
       
       </div>
+
+      <div class="row">
+        <div class="jumbotron col-lg-6">
+        <img class="IMG_styles" src="history.jpg" alt="" />
+      </div>
+        <div class="jumbotron col-lg-6">
+        <h1>Rome history</h1>
+        <p class="lead">
+          Rome was once the centre of a powerful Roman state. You can travel back in time thanks to numerous
+          monuments of these olden days. There’s a single package that includes tickets for the Roman Colosseum,
+          the Forum and the Palatine Hill. The package is an excellent choice for travellers because you don’t have to queue.
+          The Roman Forum was once the centre of everyday life, and when the Romans wanted some fun, they went to the Colosseum,
+          which is one of the major Roman attractions. The Palatine Hill is the main Roman hill and is the origin of the Roman State.
+          
+        </p>
+        <nuxt-link to="#">
+        <div class="btn">Read more</div>
+      </nuxt-link>
+      </div>
+      </div>
+
+      <div class="row">
+        <div class="jumbotron col-lg-6">
+        <h1>Rome nature</h1>
+        <p class="lead">
+          Rome is with its famous seven hills and numerous villa parks, Rome is one of the greenest cities in all of Europe. During any passeggiata in the Eternal City, you’re bound to see stunning umbrella pines, find shady under palm trees and admire cascading ivy on terracotta buildings. Rome is a wonderful mix of nature, culture, history and beauty: be sure to check out the most beautiful parks and gardens in the city.
+          
+        </p>
+        <nuxt-link to="#">
+        <div class="btn">Read more</div>
+      </nuxt-link>
+      </div>
+      <div class="jumbotron col-lg-6">
+        <img class="IMG_styles" src="nature.jpg" alt="" />
+      </div>
+      </div>
+
       
     </div>
 
@@ -229,34 +256,16 @@ export default {
           date :" 21 Aug 2022 "
         },
         {
-          src : "aboutus1.jpg",
-          title: "John Doe",
-          description: "Some example text some example text. John Doe is an architect and engineer",
+          src : "news4.jpg",
+          title: "Summer offers",
+          description: "Are you interested to travel Rome in summer? Just follow us. We planned more than 30 events and itineraries for summer.",
           date :" 18 jun 2022 "
         },
         {
-          src : "aboutus1.jpg",
-          title: "John Doe",
-          description: "Some example text some example text. John Doe is an architect and engineer",
-          date :" 18 jun 2022 "
-        },
-        {
-          src : "aboutus1.jpg",
-          title: "John Doe",
-          description: "Some example text some example text. John Doe is an architect and engineer",
-          date :" 18 jun 2022 "
-        },
-        {
-          src : "aboutus1.jpg",
-          title: "John Doe",
-          description: "Some example text some example text. John Doe is an architect and engineer",
-          date :" 18 jun 2022 "
-        },
-        {
-          src : "aboutus1.jpg",
-          title: "John Doe",
-          description: "Some example text some example text. John Doe is an architect and engineer",
-          date :" 18 jun 2022 "
+          src : "news5.jpg",
+          title: "Top 5 star hotels",
+          description: "Our company has agreement with top 5 star hotels for your accomodation and enjoy from your holidays and summer",
+          date :" 8 Oct 2022 "
         },
         
       ],
@@ -278,6 +287,20 @@ export default {
 
 
 <style scoped>
+.btn{
+  background: #293241;
+  color: white;
+  height: 45px;
+  
+}
+.btn:hover{
+  cursor: pointer;
+  background: #c5c3c6;
+  color: black;
+}
+p{
+  text-align: justify;
+}
 .blog{
   color: #0081a7;
 }

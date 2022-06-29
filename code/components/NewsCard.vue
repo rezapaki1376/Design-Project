@@ -15,7 +15,7 @@
             </p>
             <hr>
             <p class="date co-lg-12">
-              Publish date: {{ date }}
+               {{ date }}
              
               </p>
                <div class="line"></div>
@@ -62,14 +62,9 @@ export default {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-/* .card-text{
-  max-height: 78px;
-   display: block; 
-     max-width: 98%; 
-     white-space: nowrap; 
-    overflow: hidden !important;
-    text-overflow: ellipsis;
-} */
+p{
+  text-align: justify;
+}
 .newscard{
   display: inline-block;
 }
