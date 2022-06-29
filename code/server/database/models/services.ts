@@ -8,33 +8,27 @@ import {
 
 const { sequelize } = require('../database')
 
-export interface PointOfInterestInterface {
+export interface ServiceInterface {
   id: number
   title: string
   description: string
   imageUrl: string
-  address: string
-  openingHours: string
+  locations: Array<unknown>
   tags: Array<string>
-  createdAt: Date
-  updatednumberAt: Date
 }
-class PointOfInterest extends Model<
-  InferAttributes<PointOfInterest>,
-  InferCreationAttributes<PointOfInterest>
+class Service extends Model<
+  InferAttributes<Service>,
+  InferCreationAttributes<Service>
 > {
   declare id: number
   declare title: string
   declare description: string
   declare imageUrl: string
-  declare address: string
-  declare openingHours: string
+  declare locations: Array<unknown>
   declare tags: Array<string>
-  declare createdAt: CreationOptional<Date>
-  declare updatedAt: CreationOptional<Date>
 }
 
-PointOfInterest.init(
+Service.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -53,25 +47,19 @@ PointOfInterest.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    address: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    openingHours: {
-      type: DataTypes.STRING,
-      allowNull: false,
+    locations: {
+      type: DataTypes.JSONB,
+      defaultValue: null,
+      allowNull: true,
     },
     tags: {
       type: DataTypes.JSONB,
       defaultValue: null,
       allowNull: true,
     },
-    createdAt: DataTypes.DATE,
-    updatedAt: DataTypes.DATE,
   },
   {
-    timestamps: true,
-    tableName: 'pointOfInterests',
+    tableName: 'services',
     sequelize,
   }
 )
@@ -88,4 +76,4 @@ PointOfInterest.init(
 //     name: 'customerId',
 //   },
 // })
-module.exports = PointOfInterest
+module.exports = Service

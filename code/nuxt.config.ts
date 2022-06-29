@@ -2,7 +2,7 @@ import { NuxtConfig } from '@nuxt/types'
 
 const config: NuxtConfig = {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  ssr: false,
+  ssr: true,
   serverMiddleware: [
     {
       path: '/api',
@@ -10,7 +10,7 @@ const config: NuxtConfig = {
     },
   ],
   head: {
-    title: 'ArtTown',
+    title: 'Find-Your-Rome',
     htmlAttrs: {
       lang: 'en',
     },

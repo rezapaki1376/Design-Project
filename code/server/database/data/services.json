@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Pharmacy",
+    "description": "This is a decription of A Event",
+    "imageUrl": "pharmacy.jpg",
+    "locations": [],
+    "tags": "URL/event.png"
+  },
+  {
+    "title": "Bank",
+    "description": "This is a decription of A Event",
+    "imageUrl": "bank.jpg",
+    "locations": [],
+    "tags": "URL/event.png"
+  },
+  {
+    "title": "Post Office",
+    "description": "This is a decription of A Event",
+    "imageUrl": "post.jpg",
+    "locations": [],
+    "tags": "URL/event.png"
+  },
+  {
+    "title": "Hospital",
+    "description": "This is a decription of A Event",
+    "imageUrl": "hospital.jpg",
+    "locations": [],
+    "tags": "URL/event.png"
+  },
+  {
+    "title": "Car Garage",
+    "description": "This is a decription of A Event",
+    "imageUrl": "post.jpg",
+    "locations": [],
+    "tags": "URL/event.png"
+  },
+  {
+    "title": "Barber",
+    "description": "This is a decription of A Event",
+    "imageUrl": "post.jpg",
+    "locations": [],
+    "tags": "URL/event.png"
+  },
+  {
+    "title": "Dentist",
+    "description": "This is a decription of A Event",
+    "imageUrl": "post.jpg",
+    "locations": [],
+    "tags": "URL/event.png"
+  }
+]

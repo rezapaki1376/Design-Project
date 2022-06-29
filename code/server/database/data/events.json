@@ -1,0 +1,67 @@
+[
+  {
+    "title": "Gladiator battle in the colosseum",
+    "description": "This is a decription of A Event",
+    "poiId": 0,
+    "imageUrl": "URL/event.png",
+    "date": "12.12.2015",
+    "timeDuration": "20:00-21:00",
+    "eventUrl": "eventURL/pointOfInterest.png",
+    "price": 50,
+    "address": "Carl-von-Ossietzykt.33, Potsdam, Australia",
+    "organisation": "ByteAffa5irs",
+    "season": "WINTER"
+  },
+  {
+    "title": "This is a title of the point of interest",
+    "description": "This is a decription of A Event",
+    "poiId": 1,
+    "imageUrl": "URL/event.png",
+    "date": "12.12.2015",
+    "timeDuration": "20:00-21:00",
+    "eventUrl": "eventURL/pointOfInterest.png",
+    "price": 50,
+    "address": "Carl-von-Ossietzykt.33, Potsdam, Australia",
+    "organisation": "ByteAffairs",
+    "season": "WINTER"
+  },
+  {
+    "poiId": 2,
+    "description": "This is a decription of A Event",
+    "imageUrl": "URL/event.png",
+    "date": "12.12.2015",
+    "timeDuration": "20:00-21:00",
+    "eventUrl": "eventURL/pointOfInterest.png",
+    "price": 50,
+    "address": "Carl-von-Ossietzykt.33, Potsdam, Australia",
+    "title": "This is a title of the point of interest",
+    "organisation": "ByteAffairs",
+    "season": "WINTER"
+  },
+  {
+    "poiId": 3,
+    "description": "This is a decription of A Event",
+    "imageUrl": "URL/event.png",
+    "date": "12.12.2015",
+    "timeDuration": "20:00-21:00",
+    "eventUrl": "eventURL/pointOfInterest.png",
+    "price": 50,
+    "address": "Carl-von-Ossietzykt.33, Potsdam, Australia",
+    "title": "This is a title of the point of interest",
+    "organisation": "ByteAff2airs",
+    "season": "WINTER"
+  },
+  {
+    "poiId": 4,
+    "description": "This is a decription of A Event",
+    "imageUrl": "URL/event.png",
+    "date": "12.12.2015",
+    "timeDuration": "20:00-21:00",
+    "eventUrl": "eventURL/pointOfInterest.png",
+    "price": 50,
+    "address": "Carl-von-Ossietzykt.33, Potsdam, Australia",
+    "title": "This is a title of the point of interest",
+    "organisation": "ByteAffa5irs",
+    "season": "WINTER"
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Grand tour through Rome",
+    "description": "This is a decription of A Event",
+    "imageUrl": "URL/event.png",
+    "totalDuration": "20:00-21:00",
+    "journey": [],
+    "tags": [],
+    "suggestedAudience": "Families"
+  },
+  {
+    "title": "Ancient romen Tour",
+    "description": "This is a decription of A Event",
+    "imageUrl": "URL/event.png",
+    "totalDuration": "20:00-21:00",
+    "journey": [],
+    "tags": [],
+    "suggestedAudience": "Families"
+  },
+  {
+    "title": "Food and Wine Tasting",
+    "description": "This is a decription of A Event",
+    "imageUrl": "URL/event.png",
+    "totalDuration": "20:00-21:00",
+    "journey": [],
+    "tags": [],
+    "suggestedAudience": "Families"
+  }
+]
