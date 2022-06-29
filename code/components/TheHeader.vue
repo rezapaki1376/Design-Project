@@ -46,20 +46,20 @@
             {{ navItem.name }}
           </nuxt-link>
         </li>
-        <nuxt-link
-          to="/login"
-          class="nav-link-custom nav-link"
-          prefetch
-          style="color: black"
-        >
-          <i
-            class="bi bi-box-arrow-in-right"
-            style="font-size: 1.3rem; color: black"
-          />
-          Login
-        </nuxt-link>
       </ul>
     </div>
+    <nuxt-link
+      to="/login"
+      class="nav-link-custom nav-link"
+      prefetch
+      style="color: black"
+    >
+      <i
+        class="bi bi-box-arrow-in-right"
+        style="font-size: 1.3rem; color: black"
+      />
+      Login
+    </nuxt-link>
   </nav>
 </template>
 
@@ -127,7 +127,7 @@ export default {
 
 .nav-link-custom {
   color: rgb(53, 53, 53);
-  font-size: 19px !important;
+  font-size: 1.1rem !important;
   font-weight: normal;
 }
 .nav-link:hover {
