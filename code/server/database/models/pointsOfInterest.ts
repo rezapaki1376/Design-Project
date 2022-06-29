@@ -8,35 +8,33 @@ import {
 
 const { sequelize } = require('../database')
 
-export interface ItineraryInterface {
+export interface PointOfInterestInterface {
   id: number
   title: string
   description: string
   imageUrl: string
-  totalDuration: string
-  journey: Array<unknown>
+  address: string
+  openingHours: string
   tags: Array<string>
-  suggestedAudience: Array<string>
   createdAt: Date
   updatedAt: Date
 }
-class Itinerary extends Model<
-  InferAttributes<Itinerary>,
-  InferCreationAttributes<Itinerary>
+class PointOfInterest extends Model<
+  InferAttributes<PointOfInterest>,
+  InferCreationAttributes<PointOfInterest>
 > {
   declare id: number
   declare title: string
   declare description: string
   declare imageUrl: string
-  declare totalDuration: string
-  declare journey: Array<unknown>
+  declare address: string
+  declare openingHours: string
   declare tags: Array<string>
-  declare suggestedAudience: Array<string>
   declare createdAt: CreationOptional<Date>
   declare updatedAt: CreationOptional<Date>
 }
 
-Itinerary.init(
+PointOfInterest.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -55,21 +53,15 @@ Itinerary.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    totalDuration: {
+    address: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    journey: {
-      type: DataTypes.JSONB,
-      defaultValue: null,
-      allowNull: true,
+    openingHours: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     tags: {
-      type: DataTypes.JSONB,
-      defaultValue: null,
-      allowNull: true,
-    },
-    suggestedAudience: {
       type: DataTypes.JSONB,
       defaultValue: null,
       allowNull: true,
@@ -79,7 +71,7 @@ Itinerary.init(
   },
   {
     timestamps: true,
-    tableName: 'itineraries',
+    tableName: 'pointsOfInterest',
     sequelize,
   }
 )
@@ -96,4 +88,4 @@ Itinerary.init(
 //     name: 'customerId',
 //   },
 // })
-module.exports = Itinerary
+module.exports = PointOfInterest

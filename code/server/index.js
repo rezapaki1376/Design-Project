@@ -10,8 +10,8 @@ app.use(express.json())
 
 app.use('/events', require('./routes/events'))
 app.use('/itineraries', require('./routes/itineraries'))
-app.use('/point-of-interests', require('./routes/pointOfInterests'))
-
+app.use('/point-of-interests', require('./routes/pointsOfInterest'))
+app.use('/services', require('./routes/services'))
 try {
   // const host = process.env.HOST || '127.0.0.1'
   // const port = process.env.PORT || 3001

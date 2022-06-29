@@ -1,5 +1,5 @@
 import { Router } from 'express'
-const controller = require('../controllers/pointOfInterests')
+const controller = require('../controllers/pointsOfInterest')
 
 const router = Router()
 

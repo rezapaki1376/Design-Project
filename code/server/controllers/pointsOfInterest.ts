@@ -1,6 +1,4 @@
-import { PointOfInterestInterface } from '../database/models/pointOfInterests'
-
-const PointOfInterest = require('../database/models/pointOfInterests')
+const PointOfInterest = require('../database/models/pointsOfInterest')
 
 exports.getAll = async (req, res, next) => {
   try {

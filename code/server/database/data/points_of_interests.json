@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Colosseum",
+    "description": "This is a decription of A Event",
+    "imageUrl": "URL/event.png",
+    "address": "Carl-von-Ossietzykt.33, Potsdam, Australia",
+    "openingHours": "10-10",
+    "tags": []
+  },
+  {
+    "title": "Forum Romanum",
+    "description": "This is a decription of A Event",
+    "imageUrl": "URL/event.png",
+    "address": "Carl-von-Ossietzykt.33, Potsdam, Australia",
+    "openingHours": "10-10",
+    "tags": []
+  }
+]
