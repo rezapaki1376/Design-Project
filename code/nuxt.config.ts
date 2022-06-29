@@ -26,6 +26,10 @@ const config: NuxtConfig = {
         rel: 'stylesheet',
         href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css',
       },
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css',
+      },
     ],
     script: [
       {
