@@ -89,7 +89,7 @@ const config: NuxtConfig = {
         },
         {
           path: '/about_us',
-          component: resolve(__dirname, 'pages/about.vue'),
+          component: resolve(__dirname, 'pages/aboutUs/index.vue'),
         },
         {
           path: '/contact_us',
