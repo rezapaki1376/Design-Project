@@ -3,7 +3,7 @@
     "title": "Gladiator battle in the colosseum",
     "description": "This is a decription of A Event",
     "poiId": 0,
-    "imageUrl": "URL/event.png",
+    "imageUrl": "ancient_rome.png",
     "date": "12.12.2015",
     "timeDuration": "20:00-21:00",
     "eventUrl": "eventURL/pointOfInterest.png",
@@ -13,10 +13,10 @@
     "season": "WINTER"
   },
   {
-    "title": "This is a title of the point of interest",
+    "title": "Movies that were shot in Rome!",
     "description": "This is a decription of A Event",
     "poiId": 1,
-    "imageUrl": "URL/event.png",
+    "imageUrl": "movies.png",
     "date": "12.12.2015",
     "timeDuration": "20:00-21:00",
     "eventUrl": "eventURL/pointOfInterest.png",
@@ -26,42 +26,29 @@
     "season": "WINTER"
   },
   {
+    "title": "Pride Parade in Rome!",
+    "description": "This is a decription of A Event",
+    "imageUrl": "pride.png",
     "poiId": 2,
-    "description": "This is a decription of A Event",
-    "imageUrl": "URL/event.png",
     "date": "12.12.2015",
     "timeDuration": "20:00-21:00",
     "eventUrl": "eventURL/pointOfInterest.png",
     "price": 50,
     "address": "Carl-von-Ossietzykt.33, Potsdam, Australia",
-    "title": "This is a title of the point of interest",
     "organisation": "ByteAffairs",
     "season": "WINTER"
   },
   {
+    "title": "Come and visit the Pope in his holy Chambers!",
+    "description": "This is a decription of A Event",
+    "imageUrl": "vatican.png",
     "poiId": 3,
-    "description": "This is a decription of A Event",
-    "imageUrl": "URL/event.png",
     "date": "12.12.2015",
     "timeDuration": "20:00-21:00",
     "eventUrl": "eventURL/pointOfInterest.png",
     "price": 50,
     "address": "Carl-von-Ossietzykt.33, Potsdam, Australia",
-    "title": "This is a title of the point of interest",
     "organisation": "ByteAff2airs",
-    "season": "WINTER"
-  },
-  {
-    "poiId": 4,
-    "description": "This is a decription of A Event",
-    "imageUrl": "URL/event.png",
-    "date": "12.12.2015",
-    "timeDuration": "20:00-21:00",
-    "eventUrl": "eventURL/pointOfInterest.png",
-    "price": 50,
-    "address": "Carl-von-Ossietzykt.33, Potsdam, Australia",
-    "title": "This is a title of the point of interest",
-    "organisation": "ByteAffa5irs",
     "season": "WINTER"
   }
 ]

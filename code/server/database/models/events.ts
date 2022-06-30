@@ -27,7 +27,7 @@ export interface EventInterface {
   eventUrl: string
   price: number
   preregisterNeccessary: boolean
-  address: string
+  address: string 
   organisation: string
   season: SeasonType
   title: string

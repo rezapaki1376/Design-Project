@@ -1,7 +1,13 @@
 <template>
   <div class="page container mt-5">
-    <h1 class="display-4">Events</h1>
-    <div class="row mt-3">
+    <div class="mb-5">
+      <h1 class="display-4">Events</h1>
+      <p class="lead">
+        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+        Duis mollis, est non commodo luctus.
+      </p>
+    </div>
+    <div class="row mb-5 justify-content-center">
       <EventDetail
         v-for="(event, eventIndex) of events"
         :id="event.id"
@@ -12,14 +18,13 @@
         :price="event.price"
         :preregister-neccessary="event.preregisterNeccessary"
         :date="event.date"
-        class="col-sm-2 m-2"
       />
     </div>
   </div>
 </template>
 
 <script >
-import EventDetail from './components/EventDetail.vue'
+import EventDetail from './components/EventPreviewCard.vue'
 
 export default {
   name: 'EventPage',

@@ -18,15 +18,15 @@
       <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
         <h1 class="display-4 fw-bold lh-1">{{ name }}</h1>
         <b>Breed:</b>
-        <p class="lead">
+        <!-- <p class="lead">
           {{ breed }}
-        </p>
+        </p> -->
         <b>Description:</b>
-        <p class="lead">
+        <!-- <p class="lead">
           {{ description }}
-        </p>
+        </p> -->
         <b>Location:</b>
-        <p class="lead">{{ location.name }} - {{ location.city }}</p>
+        <!-- <p class="lead">{{ location.name }} - {{ location.city }}</p> -->
         <div
           class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
         >
@@ -39,9 +39,9 @@
           </button>
         </div>
       </div>
-      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+      <!-- <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
         <img class="rounded-lg-3" :src="img" alt="" width="" />
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -51,17 +51,17 @@ import CommonMixin from '~/mixins/common'
 export default {
   name: 'DetailsPage',
   mixins: [CommonMixin],
-  async asyncData({ route, $axios }) {
-    const { id } = route.params
-    const { data } = await $axios.get('/api/cats/' + id)
-    return {
-      name: data.name,
-      breed: data.breed,
-      img: data.img,
-      description: data.description,
-      location: data.location,
-    }
-  },
+  // async asyncData({ route, $axios }) {
+  //   const { id } = route.params
+  //   const { data } = await $axios.get('/api/cats/' + id)
+  //   return {
+  //     name: data.name,
+  //     breed: data.breed,
+  //     img: data.img,
+  //     description: data.description,
+  //     location: data.location,
+  //   }
+  // },
   // head as a function lets u access the context of the page
   head() {
     return {
@@ -74,15 +74,15 @@ export default {
       ],
     }
   },
-  mounted() {
-    const date = new Date()
-    // Example on hwo to use mixinx
-    console.log(this.formatMyDate(date.toLocaleDateString()))
-  },
-  methods: {
-    backToList() {
-      this.$router.push('/list')
-    },
-  },
+  // mounted() {
+  //   const date = new Date()
+  //   // Example on hwo to use mixinx
+  //   console.log(this.formatMyDate(date.toLocaleDateString()))
+  // },
+  // methods: {
+  //   backToList() {
+  //     this.$router.push('/list')
+  //   },
+  // },
 }
 </script>

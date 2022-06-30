@@ -1,12 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light px-3 header">
     <nuxt-link to="/" class="nav-link link px-3 py-0">
-      <img
-        src="../assets/img/logo/colosseum.png"
-        width="70"
-        height="70"
-        alt=""
-      />
+      <img src="../assets/img/logo/logo2_r.jpg" width="70" height="70" alt="" />
     </nuxt-link>
     <button
       class="navbar-toggler"
