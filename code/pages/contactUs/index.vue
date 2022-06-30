@@ -138,45 +138,57 @@
         </p>
       </div>
     </div>
-    <div class="row" style="height: 40px; background: black"></div>
-    <div class="container partners">
-      <div class="row">
-        <h2>Partners</h2>
-        <!-- <Support :key="`partner-index-1`" :img="require(partner.src)" /> -->
-        <Support
-          :key="99"
-          :img="require('@/assets/img/partners_images/FV_2.png')"
-        />
-      </div>
-      <div style="height: 2px; color: black; background: black"></div>
-      <div class="row">
-        <h2>Supporting and Financing Partners</h2>
-        <!-- <Support
-          v-for="(partner, index) of partners"
-          :key="`partner-index-${index}`"
-          :img="partner.src"
-        /> -->
-      </div>
-    </div>
+    
+    
   </div>
 </template>
 
 <script>
-import Support from '~/components/Support.vue'
+// import Support from '~/components/Support.vue'
 
 export default {
   name: 'Contactus',
   components: {
-    Support,
+    // Support,
   },
   data() {
     return {
       partners: [
         {
-          src: 'FV_2.png',
+          src: 'Assolombarda.png',
         },
         {
-          src: './partners_images/FV_2.png',
+          src: 'Logo_A2A.png',
+        },
+        {
+          src: 'Logo_Accenture.png',
+        },
+        {
+          src: 'Logo_ATM.png',
+        },
+        {
+          src: 'Logo_Borsa_Italiana.png',
+        },
+        {
+          src: 'Logo_Confcommercio.png',
+        },
+        {
+          src: 'Logo_Fabrick.png',
+        },
+      ],
+       founders: [
+        {
+          src: 'Logo_Fiera_Milano Congressi.png',
+        },
+        {
+          src: 'Logo_Login_Lendlease.png',
+        },
+        {
+          src: 'Logo_Nexi.png',
+        },
+        
+        {
+          src: 'Logo_TIM.png',
         },
       ],
     }
