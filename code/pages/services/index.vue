@@ -4,7 +4,7 @@
       <Service
         v-for="(service, index) of services"
         :key="`service-index-${index}`"
-        :img="require(`@/assets/img/services/${service.imageUrl}`)"
+        :img="service.imageUrl"
         :title="service.title"
       />
     </div>
@@ -14,7 +14,7 @@
 <script>
 import Service from './components/Service.vue'
 export default {
-  name: 'Contactus',
+  name: 'Service',
   components: {
     Service,
   },
