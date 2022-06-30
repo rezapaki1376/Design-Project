@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Service from '~/components/Service.vue'
+import Service from './components/Service.vue'
 export default {
   name: 'Contactus',
   components: {
