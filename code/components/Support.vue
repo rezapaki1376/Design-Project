@@ -2,7 +2,7 @@
  <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
          <a href=""> 
           <img :src='img' alt="">
-          {{img}}
+          
          </a>
         </div>
 </template>
@@ -27,6 +27,7 @@ export default {
 <style scoped>
 img{
   width: 160px;
+  margin: 5px 0;
 }
 </style>
 

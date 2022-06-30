@@ -132,31 +132,23 @@
     </div>
 
     <div class="row" style="height: 40px; background: black"></div>
-    <div class="news">
-      <div class="container" style="padding-top: 25px">
-        <div class="row">
-          <div class="col-xlg-3 col-lg-3 col-md-7 col-sm-12">
-            <div class="card first_news">
-              <h1>Our Top News</h1>
-              <div class="card-body">
-                <!-- <h4 class="card-title">Our top news</h4> -->
-                <p class="card-text">Look at our top news in Rome.</p>
-                <h4 class="blog">
-                  <nuxt-link to="#"> Join to our blog. </nuxt-link>
-                </h4>
-              </div>
-            </div>
-          </div>
-
-          <NewsCard
-            v-for="(news, index) of newslist"
-            :key="`news-index-${index}`"
-            :img="news.src"
-            :title="news.title"
-            :description="news.description"
-            :date="news.date"
-          />
-        </div>
+    <div class="container partners">
+      <div class="row">
+        <h2>Partners</h2>
+        <Support
+          v-for="(partner, index) of partners"
+          :key="`partner-index-${index}`"
+          :img="require(`@/assets/img/partners_images/${partner.src}`)"
+        />
+      </div>
+      <div style="height: 2px; color: black; background: black"></div>
+      <div class="row">
+        <h2>Supporting and Financing Partners</h2>
+        <Support
+          v-for="(founder, index) of founders"
+          :key="`partner-index-${index}`"
+          :img="require(`@/assets/img/partners_images/${founder.src}`)"
+        />
       </div>
     </div>
 
@@ -190,7 +182,6 @@
         </div>
       </div>
     </div>
-
     <div class="row join-us">
       <div class="col-lg-6"></div>
 
@@ -200,49 +191,50 @@
 </template>
 
 <script>
-import NewsCard from './NewsCard.vue'
+import Support from '~/components/Support.vue'
 export default {
   name: 'AboutPage',
   components: {
-    NewsCard,
+    Support,
   },
   data() {
     return {
-      newslist: [
+      partners: [
         {
-          src: 'news1.png',
-          title: 'Rome PRIDE 2022',
-          description:
-            'Pride Rome 2022 gets underway across the city with lots of events and initiatives, leading up to the street parade on July 2nd with the grand finale.',
-          date: ' 30 Jul 2022 ',
+          src: 'Assolombarda.png',
         },
         {
-          src: 'news2.jpg',
-          title: 'Summer festivals',
-          description:
-            'Rome will continue with its celebrations, which take place as usual in the Circus Maximus, but minus the crowds.',
-          date: ' 18 Sep 2022 ',
+          src: 'Logo_A2A.png',
         },
         {
-          src: 'news3.jpg',
-          title: 'jogging  time',
-          description:
-            "We love a half marathon. Whether you're an old hand or new to racing, it's a challenging, yet completely attainable goal for most, and can bring great structure to your training year.",
-          date: ' 21 Aug 2022 ',
+          src: 'Logo_Accenture.png',
         },
         {
-          src: 'news4.jpg',
-          title: 'Summer offers',
-          description:
-            'Are you interested to travel Rome in summer? Just follow us. We planned more than 30 events and itineraries for summer.',
-          date: ' 18 jun 2022 ',
+          src: 'Logo_ATM.png',
         },
         {
-          src: 'news5.jpg',
-          title: 'Top 5 star hotels',
-          description:
-            'Our company has agreement with top 5 star hotels for your accomodation and enjoy from your holidays and summer',
-          date: ' 8 Oct 2022 ',
+          src: 'Logo_Borsa_Italiana.png',
+        },
+        {
+          src: 'Logo_Confcommercio.png',
+        },
+        {
+          src: 'Logo_Fabrick.png',
+        },
+      ],
+      founders: [
+        {
+          src: 'Logo_Fiera_Milano Congressi.png',
+        },
+        {
+          src: 'Logo_Login_Lendlease.png',
+        },
+        {
+          src: 'Logo_Nexi.png',
+        },
+
+        {
+          src: 'Logo_TIM.png',
         },
       ],
     }
@@ -278,9 +270,6 @@ export default {
 p {
   text-align: justify;
 }
-.blog {
-  color: #0081a7;
-}
 .community {
   background: #33475b;
   color: white;
@@ -293,20 +282,6 @@ p {
 i {
   font-size: 30px;
 }
-
-.first_news {
-  /* display: inline-block; */
-  background: #eaf0f6 !important;
-}
-.card {
-  border-radius: 0%;
-  border: 0;
-  padding: 10px;
-  /* margin: 3px; */
-  color: black;
-  height: auto;
-}
-
 a,
 a:hover,
 a:focus,
@@ -350,10 +325,6 @@ a:active {
   text-align: ltr;
 }
 
-.news {
-  background: #eaf0f6;
-  padding: 10px 0;
-}
 .join-us {
   background: #f6f6f6;
 }
