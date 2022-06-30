@@ -27,11 +27,11 @@ export default {
     },
     
   },
-  // methods: {
-  //   goToDetails() {
-  //     this.$router.push(`/eventdetail/${this.id}`)
-  //   },
-  // },
+  methods: {
+    goToDetails() {
+      this.$router.push(`/eventdetail/${this.id}`)
+    },
+  },
 }
 </script>
 <style scoped>
