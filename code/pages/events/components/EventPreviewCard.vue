@@ -99,7 +99,7 @@ p {
   border-radius: 1;
   border: 1;
   padding: 0;
-
+  height: 10;
   color: black;
   /* height: 70vh;
   min-height: 150px; */

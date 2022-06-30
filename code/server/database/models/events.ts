@@ -23,11 +23,12 @@ export interface EventInterface {
   imageUrl: string
   eventType: string
   date: Date
-  timeDuration: string
+  time: string
+  timeDuration: number
   eventUrl: string
   price: number
   preregisterNeccessary: boolean
-  address: string 
+  address: string
   organisation: string
   season: SeasonType
   title: string
@@ -44,7 +45,8 @@ class Event extends Model<
   declare description: string
   declare imageUrl: string
   declare date: Date
-  declare timeDuration: string
+  declare time: string
+  declare timeDuration: number
   declare eventUrl: string
   declare price: number
   declare preregisterNeccessary: CreationOptional<boolean>
@@ -79,8 +81,12 @@ Event.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    timeDuration: {
+    time: {
       type: DataTypes.STRING,
+      allowNull: false,
+    },
+    timeDuration: {
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     eventUrl: {
