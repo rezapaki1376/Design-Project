@@ -7,12 +7,10 @@
       </div>
       <div class="jumbotron col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <p class="lead col-lg-8 col-md-10 col-sm-12 col-xs-12">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. 
+          While it is considered one of the world's fashion and design capitals, as well as a financial hub,
+           Rome is also a city of culture and thought. While always looking towards the future,
+            this Lazio capital lovingly preserves its prominent history, boasting spectacular museums and some
+             of the most monumental churches in Italy. 
         </p>
         
       </div>
@@ -172,7 +170,8 @@ v-for="(news, index) of newslist"
 
       
       <div class="col-xlg-4 col-lg-4 col-md-4 col-sm-12 border-sm-right">
-        <img src="HUG-icon.svg" alt="">
+        
+        <i class="bi bi-people"></i>
           <h1>400+</h1>
           <p>
             employees in
@@ -183,18 +182,18 @@ v-for="(news, index) of newslist"
           </p>
       </div>
       <div class="col-xlg-4 col-lg-4 col-md-4 col-sm-12 border-sm-right">
-          <img src="Smilyface-icon.svg" alt="">
+          <i class="bi bi-person-plus"></i>
           <h1>43,000+</h1>
           <p>
             customers from
           </p>
-            <h1>40+</h1>
+            <h1>20+</h1>
           <p>
             countries
           </p>
       </div>
       <div class="col-xlg-4 col-lg-4 col-md-4 col-sm-12">
-          <img src="Globe-icon.svg" alt="">
+          <i class="bi bi-calendar4-event"></i>
           <h1>300+</h1>
           <p>
             Events in
@@ -292,11 +291,14 @@ export default {
   color: white;
   height: 45px;
   
+  
 }
 .btn:hover{
   cursor: pointer;
-  background: #c5c3c6;
-  color: black;
+  background: #364958;
+  box-shadow: 0px 10px 15px rgba(120, 120, 120, 0.7);
+  
+  transform: translateY(-7px);
 }
 p{
   text-align: justify;
@@ -308,6 +310,13 @@ p{
   background: #33475b;
   color: white;
   text-align: center;
+  padding: 0 0 25px 0;
+}
+.community p{
+  text-align: center;
+}
+i{
+  font-size: 30px;
 }
 
 .first_news{

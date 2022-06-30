@@ -1,7 +1,8 @@
 <template>
  <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
          <a href=""> 
-          <img :src="img" alt="">
+          <img :src='img' alt="">
+          {{img}}
          </a>
         </div>
 </template>
@@ -16,11 +17,11 @@ export default {
     },
     
   },
-  methods: {
-    goToDetails() {
-      this.$router.push(`/eventdetail/${this.id}`)
-    },
-  },
+  // methods: {
+  //   goToDetails() {
+  //     this.$router.push(`/eventdetail/${this.id}`)
+  //   },
+  // },
 }
 </script>
 <style scoped>

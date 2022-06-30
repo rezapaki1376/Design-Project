@@ -15,37 +15,28 @@
       </div>
     </div>
 
-    <div class="row" style="">
-      <div class="col-xlg-1 col-lg-1 col-md-0 col-sm-0"></div>
-      <div class="col-xlg-5 col-lg-5 col-md-12 col-sm-12">
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="phone.svg"
-            alt="Card image"
-            height="60px"
-          />
+    <div class="container" style="">
+      <div class="row">
+      <div class="col-xlg-6 col-lg-6 col-md-12 col-sm-12">
+        <div class="card contact_info">
+          <i class="bi bi-chat-dots-fill"></i>
           <div class="card-body">
-            <h4 class="card-title">Call us</h4>
+            <h4 class="card-title">Contact us directly</h4>
             <p class="card-text">
               Are you faced problem? Just pick up the phone to chat with a
               member of our support team.
             </p>
-            <p class="phone col-lg-12">+2143321444</p>
-            <p class="phone col-lg-12">+2143321444</p>
-            <p class="phone col-lg-12">Email: Find.your.rome@mail.com</p>
+            <p class="phone col-lg-12"><i class="bi bi-telephone-plus-fill"></i><a href="tel:+21-325-4658">+21-325-4658</a></p>
+            <p class="phone col-lg-12"><i class="bi bi-telephone-plus-fill"></i><a href="tel:+21-325-4659">+21-325-4658</a></p>
+            <p class="phone col-lg-12"><i class="bi bi-envelope-open-fill"></i><a href = "mailto:Find.your.rome@mail.com">Find.your.rome@mail.com</a></p>
           </div>
         </div>
       </div>
 
-      <div class="col-xlg-5 col-lg-5 col-md-12 col-sm-12">
+      <div class="col-xlg-6 col-lg-6 col-md-12 col-sm-12">
         <div class="card">
-          <img
-            class="card-img-top"
-            src="chat.svg"
-            alt="Card image"
-            height="60px"
-          />
+          
+          <i class="bi bi-headset"></i>
           <div class="card-body">
             <h4 class="card-title">Contact Customer Support</h4>
             <p class="card-text">
@@ -98,20 +89,20 @@
           </div>
         </div>
       </div>
-      <div class="col-xlg-1 col-lg-1 col-md-0 col-sm-0"></div>
+      </div>
     </div>
 
     <div class="row address">
       <div class="col-xlg-6 col-lg-6 col-md-12 col-sm-12">
-        <h2>Portsmouth, NH (U.S. Office)</h2>
+        <h2>Downtown Atlanta, GA</h2>
         <h4>Address</h4>
         <p>
-          1 Harbour Pl, Suite 175 <br />
-          Portsmouth, <br />
-          NH 03801 United States
+          Viale dell'Arte 25, <br />
+          Rome, <br />
+          Lazio, 00144
         </p>
         <h4>Phone</h4>
-        <p>1231244</p>
+        <p class="phone col-lg-12"><i class="bi bi-telephone-plus-fill"></i><a href="tel:+21-325-4658">+21-325-4555</a></p>
       </div>
       <div class="col-xlg-6 col-lg-6 col-md-12 col-sm-12">
         <img class="IMG_styles" src="CU3.jpg" alt="" />
@@ -120,22 +111,22 @@
         <img class="IMG_styles" src="CU4.jpg" alt="" />
       </div>
       <div class="col-xlg-6 col-lg-6 col-md-12 col-sm-12">
-        <h2>Portsmouth, NH (U.S. Office)</h2>
+        <h2>City Life office</h2>
         <h4>Address</h4>
         <p>
-          1 Harbour Pl, Suite 175 <br />
-          Portsmouth, <br />
-          NH 03801 United States
+          Piazza di San Silvestro 8 <br />
+          2nd floor, <br />
+          Rome, Lazio, 00187
         </p>
         <h4>Phone</h4>
-        <p>1231244</p>
+        <p class="phone col-lg-12"><i class="bi bi-telephone-plus-fill"></i><a href="tel:+21-325-4658">+21-328-4877</a></p>
       </div>
     </div>
     <div class="row" style="height: 40px; background: black"></div>
     <div class="container partners">
       <div class="row">
         <h2>Partners</h2>
-        <picture1
+        <Support
           v-for="(partner, index) of partners"
           :key="`partner-index-${index}`"
           :img="partner.src"
@@ -144,49 +135,54 @@
       <div style="height: 2px; color: black; background: black"></div>
       <div class="row">
         <h2>Supporting and Financing Partners</h2>
-        <Picture1
+        <!-- <Support
           v-for="(partner, index) of partners"
           :key="`partner-index-${index}`"
           :img="partner.src"
-        />
+        /> -->
       </div>
     </div>
+    
   </div>
 </template>
 
 <script>
-import Picture1 from '~/components/Picture.vue'
+import Support from '~/components/Support.vue'
 
 export default {
   name: 'Contactus',
   components: {
-    Picture1,
+    Support,
    
   },
   data() {
     return {
       partners: [
         {
-          src: 'partners/Assolombarda.png',
+          src: "_nuxt/assets/img/logo/colosseum.png",
         },
         {
-          src: 'partners/Assolombarda.png',
+          src: '_nuxt/assets/img/partners/FV 2.png',
         },
         {
-          src: 'partners/Assolombarda.png',
+          src: '_nuxt/assets/img/partners/Logo_A2A.png',
         },
         {
-          src: 'partners/Assolombarda.png',
+          src: '_nuxt/assets/img/partners/Logo_Accenture.png',
         },
         {
-          src: 'partners/Assolombarda.png',
+          src: '_nuxt/assets/img/partners/Logo_ATM.png',
         },
         {
-          src: 'partners/Assolombarda.png',
+          src: '_nuxt/assets/img/partners/Logo_Borsa Italiana.png',
         },
         {
-          src: 'partners/Assolombarda.png',
+          src: '_nuxt/assets/img/partners/Logo_Confcommercio.png',
         },
+        {
+          src: '_nuxt/assets/img/partners/Logo_Fabrick.png',
+        },
+        
       ],
     }
   },
@@ -206,7 +202,36 @@ export default {
 
 
 <style scoped>
-.social_media {
+.btn{
+  background: #293241;
+  color: white;
+  height: 45px;
+  
+}
+.btn:hover{
+  cursor: pointer;
+  background: #364958;
+  box-shadow: 0px 10px 15px rgba(120, 120, 120, 0.7);
+  
+  transform: translateY(-7px);
+}
+i{
+  font-size: 50px;
+  text-align: center;
+}
+.contact_info .card-body *:not(h4){
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.card-body i, .address i{
+  font-size: 20px;
+  margin: 0 10px 0 0;
+}
+
+.contact_info{
+margin: 20px 0;
+}
+/* .social_media {
   background: #2d3e50;
   color: white;
 }
@@ -228,7 +253,7 @@ export default {
 .social_media > .container > .row > div:last-child {
   border-left: 1px solid rgb(189, 189, 189);
   padding-top: 40px;
-}
+} */
 
 form {
   text-align: left;
@@ -303,9 +328,10 @@ form button {
   border: 1px solid rgb(255, 0, 0);
   background: rgb(255, 0, 0);
 }
-
+a:hover{
+  color: #0582ca;
+}
 a,
-a:hover,
 a:focus,
 a:active {
   text-decoration: none;
