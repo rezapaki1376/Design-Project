@@ -8,12 +8,21 @@ import {
 
 const { sequelize } = require('../database')
 
+export interface LocationsInterface {
+  name: string
+  imageUrl: string
+  address: string
+  openinHours: string
+  url: string
+  contactInformation: string
+}
+
 export interface ServiceInterface {
   id: number
   title: string
   description: string
   imageUrl: string
-  locations: Array<unknown>
+  locations: Array<LocationsInterface>
   tags: Array<string>
 }
 class Service extends Model<
@@ -24,7 +33,7 @@ class Service extends Model<
   declare title: string
   declare description: string
   declare imageUrl: string
-  declare locations: Array<unknown>
+  declare locations: Array<LocationsInterface>
   declare tags: Array<string>
 }
 

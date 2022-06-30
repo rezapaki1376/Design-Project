@@ -3,7 +3,16 @@
     "title": "Pharmacy",
     "description": "This is a decription of A Event",
     "imageUrl": "pharmacy.jpg",
-    "locations": [],
+    "locations": [
+      {
+        "name": "Pharmacy 1",
+        "imageUrl": "string",
+        "address": "string",
+        "openinHours": "string",
+        "url": "thisdasd.de",
+        "contactInformation": "3123"
+      }
+    ],
     "tags": "URL/event.png"
   },
   {

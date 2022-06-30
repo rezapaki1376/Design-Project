@@ -17,78 +17,88 @@
 
     <div class="container" style="">
       <div class="row">
-      <div class="col-xlg-6 col-lg-6 col-md-12 col-sm-12">
-        <div class="card contact_info">
-          <i class="bi bi-chat-dots-fill"></i>
-          <div class="card-body">
-            <h4 class="card-title">Contact us directly</h4>
-            <p class="card-text">
-              Are you faced problem? Just pick up the phone to chat with a
-              member of our support team.
-            </p>
-            <p class="phone col-lg-12"><i class="bi bi-telephone-plus-fill"></i><a href="tel:+21-325-4658">+21-325-4658</a></p>
-            <p class="phone col-lg-12"><i class="bi bi-telephone-plus-fill"></i><a href="tel:+21-325-4659">+21-325-4658</a></p>
-            <p class="phone col-lg-12"><i class="bi bi-envelope-open-fill"></i><a href = "mailto:Find.your.rome@mail.com">Find.your.rome@mail.com</a></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xlg-6 col-lg-6 col-md-12 col-sm-12">
-        <div class="card">
-          
-          <i class="bi bi-headset"></i>
-          <div class="card-body">
-            <h4 class="card-title">Contact Customer Support</h4>
-            <p class="card-text">
-              Sometimes you need a little help from your friends. Or our support
-              team. Don’t worry… we’re here for you.
-            </p>
-            <div class="row">
-              <form class="form-inline" action="/action_page.php">
-                <div class="row">
-                  <div class="col-xlg-6 col-lg-6">
-                    <div class="form-group">
-                      <label for="email">Name:</label>
-                      <input
-                        id="email"
-                        type="email"
-                        class="form-control"
-                        placeholder="Enter name"
-                        name="email"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-xlg-6 col-lg-6">
-                    <div class="form-group">
-                      <label for="pwd">Email:</label>
-                      <input
-                        id="pwd"
-                        type="email"
-                        class="form-control"
-                        placeholder="Enter email"
-                        name="pwd"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-group">
-                    <label for="comment">Comment:</label>
-                    <textarea
-                      id="comment"
-                      class="form-control"
-                      rows="5"
-                      placeholder="Comment"
-                    ></textarea>
-                  </div>
-                </div>
-
-                <button type="button" class="btn btn-dark">Submit</button>
-              </form>
+        <div class="col-xlg-6 col-lg-6 col-md-12 col-sm-12">
+          <div class="card contact_info">
+            <i class="bi bi-chat-dots-fill"></i>
+            <div class="card-body">
+              <h4 class="card-title">Contact us directly</h4>
+              <p class="card-text">
+                Are you faced problem? Just pick up the phone to chat with a
+                member of our support team.
+              </p>
+              <p class="phone col-lg-12">
+                <i class="bi bi-telephone-plus-fill"></i
+                ><a href="tel:+21-325-4658">+21-325-4658</a>
+              </p>
+              <p class="phone col-lg-12">
+                <i class="bi bi-telephone-plus-fill"></i
+                ><a href="tel:+21-325-4659">+21-325-4658</a>
+              </p>
+              <p class="phone col-lg-12">
+                <i class="bi bi-envelope-open-fill"></i
+                ><a href="mailto:Find.your.rome@mail.com"
+                  >Find.your.rome@mail.com</a
+                >
+              </p>
             </div>
           </div>
         </div>
-      </div>
+
+        <div class="col-xlg-6 col-lg-6 col-md-12 col-sm-12">
+          <div class="card">
+            <i class="bi bi-headset"></i>
+            <div class="card-body">
+              <h4 class="card-title">Contact Customer Support</h4>
+              <p class="card-text">
+                Sometimes you need a little help from your friends. Or our
+                support team. Don’t worry… we’re here for you.
+              </p>
+              <div class="row">
+                <form class="form-inline" action="/action_page.php">
+                  <div class="row">
+                    <div class="col-xlg-6 col-lg-6">
+                      <div class="form-group">
+                        <label for="email">Name:</label>
+                        <input
+                          id="email"
+                          type="email"
+                          class="form-control"
+                          placeholder="Enter name"
+                          name="email"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-xlg-6 col-lg-6">
+                      <div class="form-group">
+                        <label for="pwd">Email:</label>
+                        <input
+                          id="pwd"
+                          type="email"
+                          class="form-control"
+                          placeholder="Enter email"
+                          name="pwd"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group">
+                      <label for="comment">Comment:</label>
+                      <textarea
+                        id="comment"
+                        class="form-control"
+                        rows="5"
+                        placeholder="Comment"
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <button type="button" class="btn btn-dark">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -102,7 +112,10 @@
           Lazio, 00144
         </p>
         <h4>Phone</h4>
-        <p class="phone col-lg-12"><i class="bi bi-telephone-plus-fill"></i><a href="tel:+21-325-4658">+21-325-4555</a></p>
+        <p class="phone col-lg-12">
+          <i class="bi bi-telephone-plus-fill"></i
+          ><a href="tel:+21-325-4658">+21-325-4555</a>
+        </p>
       </div>
       <div class="col-xlg-6 col-lg-6 col-md-12 col-sm-12">
         <img class="IMG_styles" src="CU3.jpg" alt="" />
@@ -119,17 +132,20 @@
           Rome, Lazio, 00187
         </p>
         <h4>Phone</h4>
-        <p class="phone col-lg-12"><i class="bi bi-telephone-plus-fill"></i><a href="tel:+21-325-4658">+21-328-4877</a></p>
+        <p class="phone col-lg-12">
+          <i class="bi bi-telephone-plus-fill"></i
+          ><a href="tel:+21-325-4658">+21-328-4877</a>
+        </p>
       </div>
     </div>
     <div class="row" style="height: 40px; background: black"></div>
     <div class="container partners">
       <div class="row">
         <h2>Partners</h2>
+        <!-- <Support :key="`partner-index-1`" :img="require(partner.src)" /> -->
         <Support
-          v-for="(partner, index) of partners"
-          :key="`partner-index-${index}`"
-          :img="partner.src"
+          :key="99"
+          :img="require('@/assets/img/partners_images/FV_2.png')"
         />
       </div>
       <div style="height: 2px; color: black; background: black"></div>
@@ -142,7 +158,6 @@
         /> -->
       </div>
     </div>
-    
   </div>
 </template>
 
@@ -153,36 +168,16 @@ export default {
   name: 'Contactus',
   components: {
     Support,
-   
   },
   data() {
     return {
       partners: [
         {
-          src: "_nuxt/assets/img/logo/colosseum.png",
+          src: 'FV_2.png',
         },
         {
-          src: '_nuxt/assets/img/partners/FV 2.png',
+          src: './partners_images/FV_2.png',
         },
-        {
-          src: '_nuxt/assets/img/partners/Logo_A2A.png',
-        },
-        {
-          src: '_nuxt/assets/img/partners/Logo_Accenture.png',
-        },
-        {
-          src: '_nuxt/assets/img/partners/Logo_ATM.png',
-        },
-        {
-          src: '_nuxt/assets/img/partners/Logo_Borsa Italiana.png',
-        },
-        {
-          src: '_nuxt/assets/img/partners/Logo_Confcommercio.png',
-        },
-        {
-          src: '_nuxt/assets/img/partners/Logo_Fabrick.png',
-        },
-        
       ],
     }
   },
@@ -202,34 +197,34 @@ export default {
 
 
 <style scoped>
-.btn{
+.btn {
   background: #293241;
   color: white;
   height: 45px;
-  
 }
-.btn:hover{
+.btn:hover {
   cursor: pointer;
   background: #364958;
   box-shadow: 0px 10px 15px rgba(120, 120, 120, 0.7);
-  
+
   transform: translateY(-7px);
 }
-i{
+i {
   font-size: 50px;
   text-align: center;
 }
-.contact_info .card-body *:not(h4){
+.contact_info .card-body *:not(h4) {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.card-body i, .address i{
+.card-body i,
+.address i {
   font-size: 20px;
   margin: 0 10px 0 0;
 }
 
-.contact_info{
-margin: 20px 0;
+.contact_info {
+  margin: 20px 0;
 }
 /* .social_media {
   background: #2d3e50;
@@ -328,7 +323,7 @@ form button {
   border: 1px solid rgb(255, 0, 0);
   background: rgb(255, 0, 0);
 }
-a:hover{
+a:hover {
   color: #0582ca;
 }
 a,
