@@ -1,5 +1,5 @@
 <template>
-  <div class="col-lg-3 col-md-5 col-8">
+  <div class="col-lg-3 col-md-5 col-10 my-3">
     <div class="card h-100">
       <nuxt-link :to="`/events/${id}`">
         <img
@@ -99,7 +99,7 @@ p {
   border-radius: 1;
   border: 1;
   padding: 0;
-  margin: 5px 0;
+
   color: black;
   /* height: 70vh;
   min-height: 150px; */

@@ -1,36 +1,37 @@
 <template>
-<div>
-
-  <div class="main_index">
-    <div class="container top_section">
-      <div class="row">
-      <div class="col-lg-6">
-        <h1>Let's see Rome with us</h1>
-      </div>
-      <div class="col-lg-6">
-        <p>As we planned our first international trip with baby J we sought inspiration and motivation from our favourite family travel quotes: from bravery inducing adventure travel quotes to wonderful wanderlust quotes, we hope that our collection of the best family travel quotes will inspire you on your travels and encourage your wandering soul!</p>
+  <div>
+    <div class="main_index">
+      <div class="container top_section">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1>Let's see Rome with us</h1>
+          </div>
+          <div class="col-lg-6">
+            <p>
+              As we planned our first international trip with baby J we sought
+              inspiration and motivation from our favourite family travel
+              quotes: from bravery inducing adventure travel quotes to wonderful
+              wanderlust quotes, we hope that our collection of the best family
+              travel quotes will inspire you on your travels and encourage your
+              wandering soul!
+            </p>
+          </div>
+        </div>
+        <div class="row image-box">
+          <div class="col-lg-4">
+            <img src="index1.jpg" alt="" />
+          </div>
+          <div class="col-lg-4">
+            <img src="index2.jpg" alt="" />
+          </div>
+          <div class="col-lg-4">
+            <img src="index3.jpg" alt="" />
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row image-box">
-      <div class="col-lg-4">
-        <img src="index1.jpg" alt="">
-      </div>
-      <div class="col-lg-4">
-        <img src="index2.jpg" alt="">
-      </div>
-      <div class="col-lg-4">
-        <img src="index3.jpg" alt="">
-      </div>
-    </div>
 
-
-
-      </div>
-      
-    
-  </div>
-
-  <div class="news">
+    <div class="news">
       <div class="container" style="padding-top: 25px">
         <div class="row">
           <div class="col-xlg-3 col-lg-3 col-md-7 col-sm-12">
@@ -57,7 +58,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -84,9 +84,9 @@ export default {
       newslist: [
         {
           src: 'news1.png',
-          title: 'Rome PRIDE 2022',
+          title: 'Rome PRIDE  2022',
           description:
-            'Pride Rome 2022 gets underway across the city with lots of events and initiatives, leading up to the street parade on July 2nd with the grand finale.',
+            'Pride Rome 2022 gets underway across the city with lots of events and initiatives across the city with lots of events and initiatives across the city with lots of events and initiatives, leading up to the street parade on July 2nd with the grand finale.',
           date: ' 30 Jul 2022 ',
         },
         {
@@ -124,26 +124,24 @@ export default {
 }
 </script>
 <style scoped>
-
-.main_index{
+.main_index {
   background: #292d33;
   color: white;
   padding: 5% 0;
 }
-img{
+img {
   width: 100%;
   height: 100%;
-  padding:0 2.5px;
+  padding: 0 2.5px;
 }
-img:hover{
+img:hover {
   cursor: pointer;
   filter: blur(0.6px);
-  
 }
-h1{
+h1 {
   font-size: 70px;
 }
-p{
+p {
   font-size: 20px;
 }
 .blog {
@@ -187,10 +185,9 @@ p{
   text-align: ltr;
 }
 @media (min-width: 1200px) {
-  .top_section{
-  max-width: 70%;
-}
-  
+  .top_section {
+    max-width: 70%;
+  }
 }
 a,
 a:hover,
@@ -199,5 +196,4 @@ a:active {
   text-decoration: none;
   color: inherit;
 }
-
 </style>
