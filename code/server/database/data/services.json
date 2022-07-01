@@ -5,12 +5,44 @@
     "imageUrl": "pharmacy.jpg",
     "locations": [
       {
-        "name": "Pharmacy 1",
-        "imageUrl": "string",
-        "address": "string",
-        "openinHours": "string",
-        "url": "thisdasd.de",
-        "contactInformation": "3123"
+        "name": "Farmacia Piram",
+        "imageUrl": "ph1.jpg",
+        "address": "Via Nazionale, 228",
+        "openinHours": "7:30-23",
+        "url": "#",
+        "contactInformation": "06 488 4437"
+      },
+      {
+        "name": "Farmacia Trinità dei Monti S.A.S.",
+        "imageUrl": "ph2.jpg",
+        "address": "Piazza di Spagna, 30",
+        "openinHours": "8:30-20",
+        "url": "#",
+        "contactInformation": "06 679 0626"
+      },
+      {
+        "name": "Farmacia Senato Criserà Guglielmo",
+        "imageUrl": "ph3.jpg",
+        "address": "Corso del Rinascimento, 50",
+        "openinHours": "7:30-21",
+        "url": "#",
+        "contactInformation": "06 6880 3760"
+      },
+      {
+        "name": "Farmacia Internazionale Barberini",
+        "imageUrl": "ph4.jpg",
+        "address": "P.za Barberini, 49",
+        "openinHours": "8-22",
+        "url": "#",
+        "contactInformation": "06 487 1195"
+      },
+      {
+        "name": "Farmacia Repubblica",
+        "imageUrl": "ph5.jpg",
+        "address": " Piazza della Repubblica, 67",
+        "openinHours": "8:30-19:30",
+        "url": "#",
+        "contactInformation": "06 474 0358"
       }
     ],
     "tags": "URL/event.png"
@@ -19,42 +51,288 @@
     "title": "Bank",
     "description": "This is a decription of A Event",
     "imageUrl": "bank.jpg",
-    "locations": [],
+    "locations": [
+      {
+      "name": "Deutsche Bank",
+      "imageUrl": "bank1.jpg",
+      "address": " Largo del Tritone, 161",
+      "openinHours": "8:20-13:20",
+      "url": "#",
+      "contactInformation": "06 6718 4240"
+    },
+    {
+      "name": "Banca Euromobiliare - Rome",
+      "imageUrl": "bank2.jpg",
+      "address": "Piazza di Sant'Apollinare, 33",
+      "openinHours": "8:30-13:30",
+      "url": "#",
+      "contactInformation": "06 6976 5311"
+    },
+    {
+      "name": "Banca d'Italia - Filiale di Roma",
+      "imageUrl": "bank3.jpg",
+      "address": " Via Venti Settembre, 97/e",
+      "openinHours": "8-13:30",
+      "url": "#",
+      "contactInformation": "06 47921"
+    },
+    {
+      "name": "Depfa Bank Europe Plc",
+      "imageUrl": "bank4.jpg",
+      "address": " Via Venti Settembre, 98",
+      "openinHours": "8:20-13:20",
+      "url": "#",
+      "contactInformation": "06 462 0271"
+    },
+    {
+      "name": "Unicredit",
+      "imageUrl": "bank5.jpg",
+      "address": " Via Vittorio Emanuele Orlando, 70",
+      "openinHours": "8:30-13:30",
+      "url": "#",
+      "contactInformation": "06 8782 6400"
+    }
+  ],
     "tags": "URL/event.png"
   },
   {
     "title": "Post Office",
     "description": "This is a decription of A Event",
     "imageUrl": "post.jpg",
-    "locations": [],
+    "locations": [
+      {
+      "name": "Poste Italiane",
+      "imageUrl": "Post1.jpg",
+      "address": " Corso Vittorio Emanuele II, 334",
+      "openinHours": "8:20-13:35",
+      "url": "#",
+      "contactInformation": "06 6840 2920"
+    },
+    {
+      "name": "Post Office Rome 36",
+      "imageUrl": "Post2.jpg",
+      "address": " Viale di Trastevere, 158",
+      "openinHours": "8:20-13:15",
+      "url": "#",
+      "contactInformation": "06 6530 2710"
+    },
+    {
+      "name": "Italian Post Office Post",
+      "imageUrl": "Post3.jpg",
+      "address": " Via del Salvatore, 18",
+      "openinHours": "8-13:30",
+      "url": "#",
+      "contactInformation": "06 6380 2720"
+    },
+    {
+      "name": "Poste Italiane (Roma 47)",
+      "imageUrl": "Post4.jpg",
+      "address": " Via di Porta Angelica, 23",
+      "openinHours": "8:20-13:30",
+      "url": "#",
+      "contactInformation": "06 636 2990"
+    },
+    {
+      "name": "Ordine di Malta - Poste Magistrali",
+      "imageUrl": "Post5.jpg",
+      "address": " Via Bocca di Leone, 73",
+      "openinHours": "8:20-13:35",
+      "url": "#",
+      "contactInformation": "06 6758 1211"
+    }
+    ],
     "tags": "URL/event.png"
   },
   {
     "title": "Hospital",
     "description": "This is a decription of A Event",
     "imageUrl": "hospital.jpg",
-    "locations": [],
+    "locations": [
+      {
+      "name": "FirstMed",
+      "imageUrl": "hospital1.jpg",
+      "address": " Via Giovanni Battista Morgagni, 30",
+      "openinHours": "6:30-20",
+      "url": "#",
+      "contactInformation": "06 4006 1402"
+    },
+    {
+      "name": "Rome American Hospital",
+      "imageUrl": "hospital2.jpg",
+      "address": " Via Emilio Longoni, 81",
+      "openinHours": "6-22",
+      "url": "#",
+      "contactInformation": "06 4336 1572"
+    },
+    {
+      "name": "Fatebenefratelli Isola Tiberina",
+      "imageUrl": "hospital3.jpg",
+      "address": " Via di Ponte Quattro capi, 39",
+      "openinHours": "6:30-24",
+      "url": "#",
+      "contactInformation": "06 3306 5602"
+    },
+    {
+      "name": "Salvator Mundi International Hospital",
+      "imageUrl": "hospital4.jpg",
+      "address": " V.le delle Mura Gianicolensi, 67",
+      "openinHours": "6:30-21",
+      "url": "#",
+      "contactInformation": "06 5606 2302"
+    },
+    {
+      "name": "San Giovanni Addolorata Hospital",
+      "imageUrl": "hospital5.jpg",
+      "address": " Via dell'Amba Aradam, 8",
+      "openinHours": "7:30-20",
+      "url": "#",
+      "contactInformation": "06 4014 1135"
+    }
+    ],
     "tags": "URL/event.png"
   },
   {
-    "title": "Car Garage",
+    "title": "mechanic shop",
     "description": "This is a decription of A Event",
     "imageUrl": "garage.jpg",
-    "locations": [],
+    "locations": [
+      {
+        "name": "Auto Rimessa",
+        "imageUrl": "g1.jpg",
+        "address": "Via del Castro Pretorio,",
+        "openinHours": "9:30-20",
+        "url": "#",
+        "contactInformation": "06 4332 1435"
+      },
+      {
+        "name": "Custom Cars Srl",
+        "imageUrl": "g2.jpg",
+        "address": "Salita di S. Nicola da Tolentino, 22",
+        "openinHours": "8:30-18",
+        "url": "#",
+        "contactInformation": "06 4014 1338"
+      },
+      {
+        "name": "Auto Center Rome",
+        "imageUrl": "g3.jpg",
+        "address": "Via Raimondo Montecuccoli, 30- 32/A",
+        "openinHours": "7:30-20",
+        "url": "#",
+        "contactInformation": "06 4234 3358"
+      },
+      {
+        "name": "Tucci Snc Di Tucci Remo E C.",
+        "imageUrl": "g4.jpg",
+        "address": "Via del Castro Pretorio, 48",
+        "openinHours": "7:30-15",
+        "url": "#",
+        "contactInformation": "06 9987 6543"
+      },
+      {
+        "name": "Cattaro Car Srl",
+        "imageUrl": "g5.jpg",
+        "address": "Via Cattaro, 24",
+        "openinHours": "8-19",
+        "url": "#",
+        "contactInformation": "06 2345 0987"
+      }
+    ],
     "tags": "URL/event.png"
   },
   {
     "title": "Barber",
     "description": "This is a decription of A Event",
     "imageUrl": "barber.jpg",
-    "locations": [],
+    "locations": [
+      {
+        "name": "Barberino's",
+        "imageUrl": "b1.jpg",
+        "address": "Via Cola di Rienzo, 173",
+        "openinHours": "10:30-19",
+        "url": "#",
+        "contactInformation": "06 2125 7789"
+      },
+      {
+        "name": "Modafferi Barber Shop",
+        "imageUrl": "b2.jpg",
+        "address": "Via dei Cappuccini, 11",
+        "openinHours": "9:30-19",
+        "url": "#",
+        "contactInformation": "06 2377 0967"
+      },
+      {
+        "name": "Max&Jò Barber Shop",
+        "imageUrl": "b3.jpg",
+        "address": "Via dei Cartari, 10",
+        "openinHours": "9-16",
+        "url": "#",
+        "contactInformation": "06 9987 7654"
+      },
+      {
+        "name": "Barber Shop Lab Navona",
+        "imageUrl": "b4.jpg",
+        "address": "  Via della Scrofa, 42",
+        "openinHours": "10-17",
+        "url": "#",
+        "contactInformation": "06 7654 9908"
+      },
+      {
+        "name": "Machete Capelli & Barba Monti",
+        "imageUrl": "b5.jpg",
+        "address": "Via Cattaro, 24",
+        "openinHours": "10-19",
+        "url": "#",
+        "contactInformation": "06 2345 6657"
+      }
+    ],
     "tags": "URL/event.png"
   },
   {
     "title": "Dentist",
     "description": "This is a decription of A Event",
     "imageUrl": "dentist.jpg",
-    "locations": [],
+    "locations": [
+      {
+        "name": "Odontoiatria Estetica Srl",
+        "imageUrl": "d1.jpg",
+        "address": "Via Elio Lampridio Cerva, 4",
+        "openinHours": "11-19",
+        "url": "#",
+        "contactInformation": "06 2134 5567"
+      },
+      {
+        "name": "American Dental Arts Rome",
+        "imageUrl": "d2.jpg",
+        "address": "Via del Governo Vecchio, 73",
+        "openinHours": "8:30-18",
+        "url": "#",
+        "contactInformation": "06 3114 7767"
+      },
+      {
+        "name": "American Dental Studios",
+        "imageUrl": "d3.jpg",
+        "address": "Viale Aventino, 42",
+        "openinHours": "9-20",
+        "url": "#",
+        "contactInformation": "06 3467 9908"
+      },
+      {
+        "name": "Healthy Smile in Rome",
+        "imageUrl": "d4.jpg",
+        "address": "Piazza Salerno, 6",
+        "openinHours": "9:30-19",
+        "url": "#",
+        "contactInformation": "06 3245 6678"
+      },
+      {
+        "name": "Studio Dentistico Trastevere",
+        "imageUrl": "d5.jpg",
+        "address": "Via Luciano Manara, 25",
+        "openinHours": "10-17",
+        "url": "#",
+        "contactInformation": "06 2765 8891"
+      }
+    ],
     "tags": "URL/event.png"
   }
 ]
