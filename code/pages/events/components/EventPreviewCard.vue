@@ -18,12 +18,15 @@
         </div>
         <div class="mb-3 d-flex flex-column">
           <hr />
-          <div class="">
-            <i
-              class="bi bi-calendar"
-              style="font-size: 1.2rem; color: black"
-            ></i>
-            {{ date }} <i class="bi bi-clock"></i> {{ time }}
+          <div class="d-flex justify-content-around">
+            <div>
+              <i
+                class="bi bi-calendar"
+                style="font-size: 1.2rem; color: black"
+              ></i>
+              {{ date }}
+            </div>
+            <div><i class="bi bi-clock"></i> {{ time }}</div>
           </div>
           <div>
             Free:
@@ -48,7 +51,7 @@
             />
           </div>
           <nuxt-link :to="`/events/${id}`">
-            <div class="btn mt-auto btn-primary">See Details</div>
+            <div class="btn btn-primary mt-3">See Details</div>
           </nuxt-link>
         </div>
       </div>

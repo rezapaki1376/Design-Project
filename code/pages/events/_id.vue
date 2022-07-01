@@ -1,5 +1,16 @@
 <template>
   <div class="container my-5">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <nuxt-link :to="`/events`"> Events </nuxt-link>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+          {{ event.title }}
+        </li>
+      </ol>
+    </nav>
+
     <div
       class="
         row
@@ -9,39 +20,85 @@
         pt-lg-5
         pb-lg-5
         pe-lg-5
-        align-items-center
-        rounded-3
-        border
-        shadow-lg
+        justify-content-between
       "
     >
-      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-        <h1 class="display-4 fw-bold lh-1">{{ name }}</h1>
-        <b>Breed:</b>
-        <!-- <p class="lead">
-          {{ breed }}
-        </p> -->
-        <b>Description:</b>
-        <!-- <p class="lead">
-          {{ description }}
-        </p> -->
-        <b>Location:</b>
-        <!-- <p class="lead">{{ location.name }} - {{ location.city }}</p> -->
-        <div
-          class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
+      <div class="col-lg-4 text-center">
+        <img
+          class="rounded-lg-3"
+          :src="require(`@/assets/img/events/${event.imageUrl}`)"
+          alt=""
+        />
+      </div>
+      <div class="col-lg-7">
+        <h1 class="display-4 lh-1">{{ event.title }}</h1>
+        <p class="lead mt-2">
+          {{ event.description }}
+        </p>
+        <div class="my-3 d-flex flex-column">
+          <hr />
+          <b>Details:</b>
+          <div class="d-flex justify-content-between flex-wrap">
+            <p class="lead mx-1 my-0">
+              <i
+                class="bi bi-calendar"
+                style="font-size: 1.2rem; color: black"
+              ></i>
+              {{ event.date }}
+            </p>
+            <p class="lead mx-1 my-0">
+              <i class="bi bi-clock"></i>
+              {{ event.time }}
+            </p>
+            <p class="lead mx-1 my-0">Duration: {{ event.timeDuration }}min</p>
+            <p class="lead mx-1 my-0">
+              Free:
+              <i
+                class="bi bi-currency-euro"
+                style="font-size: 1.2rem; color: black"
+              ></i>
+              {{ event.price }}
+            </p>
+            <p class="lead m-0">
+              Prebooking:
+
+              <i
+                v-if="event.preregisterNeccessary"
+                class="bi bi-check-lg"
+                style="font-size: 1.2rem; color: red"
+              />
+              <i
+                v-else
+                class="bi bi-x-lg"
+                style="font-size: 1.2rem; color: green"
+              />
+            </p>
+          </div>
+        </div>
+
+        <b>Organisation:</b>
+        <p class="lead">{{ event.organisation }}</p>
+
+        <i class="bi bi-geo-alt"></i><b>Address:</b>
+        <p class="lead">{{ event.address }}</p>
+
+        <a :href="'//' + event.eventUrl" target="_blank">
+          <p class="lead btn btn-primary">Visit Website</p></a
         >
-          <button
-            type="button"
-            class="btn btn-outline-secondary btn-lg px-4"
-            @click="backToList"
-          >
-            Back to list
-          </button>
+        <hr />
+        <div class="d-flex justify-content-between flex-wrap">
+          <p class="lead mx-1 my-0">Created: {{ event.createdAt }}</p>
+          <p class="lead mx-1 my-0">EventType: {{ event.eventType }}</p>
+          <p class="lead mx-1 my-0">Season: {{ event.season }}</p>
         </div>
       </div>
-      <!-- <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-        <img class="rounded-lg-3" :src="img" alt="" width="" />
-      </div> -->
+
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+        <button type="button" class="btn btn-white px-4" @click="backToList">
+          <i class="bi bi-arrow-return-left"></i>
+          Return to all events
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -50,19 +107,15 @@
 import CommonMixin from '~/mixins/common'
 export default {
   name: 'DetailsPage',
-  mixins: [CommonMixin],
-  // async asyncData({ route, $axios }) {
-  //   const { id } = route.params
-  //   const { data } = await $axios.get('/api/cats/' + id)
-  //   return {
-  //     name: data.name,
-  //     breed: data.breed,
-  //     img: data.img,
-  //     description: data.description,
-  //     location: data.location,
-  //   }
-  // },
-  // head as a function lets u access the context of the page
+  // mixins: [CommonMixin],
+  async asyncData({ route, $axios }) {
+    const { id } = route.params
+    const { data } = await $axios.get('/events/' + id)
+    console.log(data)
+    return {
+      event: data,
+    }
+  },
   head() {
     return {
       title: this.name,
@@ -74,15 +127,31 @@ export default {
       ],
     }
   },
-  // mounted() {
-  //   const date = new Date()
-  //   // Example on hwo to use mixinx
-  //   console.log(this.formatMyDate(date.toLocaleDateString()))
-  // },
-  // methods: {
-  //   backToList() {
-  //     this.$router.push('/list')
-  //   },
-  // },
+
+  methods: {
+    backToList() {
+      this.$router.push('/events')
+    },
+  },
 }
 </script>
+<style scoped>
+img {
+  border-radius: 1;
+  width: 100%;
+}
+.btn {
+  background-color: #00c58e !important;
+  border: 0;
+}
+.btn-white {
+  background-color: white !important;
+  color: #00c58e !important;
+  border-color: black;
+  border: 1px solid;
+}
+.btn-white:hover {
+  background-color: #00c58e !important;
+  color: white !important;
+}
+</style>

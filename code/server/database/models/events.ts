@@ -48,6 +48,7 @@ class Event extends Model<
   declare time: string
   declare timeDuration: number
   declare eventUrl: string
+  declare eventType: string
   declare price: number
   declare preregisterNeccessary: CreationOptional<boolean>
   declare address: string
@@ -70,12 +71,16 @@ Event.init(
       allowNull: false,
     },
     description: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(1000),
       allowNull: false,
     },
     imageUrl: {
       type: DataTypes.STRING,
       allowNull: false,
+    },
+    eventType: {
+      type: DataTypes.STRING,
+      allowNull: true,
     },
     date: {
       type: DataTypes.STRING,
