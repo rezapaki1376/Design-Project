@@ -83,7 +83,7 @@ Event.init(
     },
     time: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     timeDuration: {
       type: DataTypes.INTEGER,

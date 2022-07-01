@@ -1,40 +1,58 @@
 <template>
   <div class="col-lg-3 col-md-5 col-10 my-3">
     <div class="card h-100">
-      <nuxt-link :to="`/events/${id}`">
-        <img
-          class="card-img-top"
-          :src="require(`@/assets/img/events/${imageUrl}`)"
-          alt="Card image"
-        />
-        <div class="card-body d-flex flex-column text-center">
+      <!-- <nuxt-link :to="`/events/${id}`"> -->
+      <img
+        class="card-img-top"
+        :src="require(`@/assets/img/events/${imageUrl}`)"
+        alt="Card image"
+      />
+      <div
+        class="card-body d-flex flex-column text-center justify-content-between"
+      >
+        <div>
           <h4 class="card-title">{{ title }}</h4>
           <p class="card-text cut-text">
             {{ description }}
           </p>
+        </div>
+        <div class="mb-3 d-flex flex-column">
           <hr />
-          <div class="d-flex justify-content-around mb-3">
-            <div>
-              <i
-                class="bi bi-calendar"
-                style="font-size: 1.2rem; color: black"
-              ></i>
-              {{ date }}
-            </div>
-            <div>
-              <i
-                class="bi bi-currency-euro"
-                style="font-size: 1.2rem; color: black"
-              ></i>
-              {{ price }}
-            </div>
+          <div class="">
+            <i
+              class="bi bi-calendar"
+              style="font-size: 1.2rem; color: black"
+            ></i>
+            {{ date }} <i class="bi bi-clock"></i> {{ time }}
           </div>
+          <div>
+            Free:
+            <i
+              class="bi bi-currency-euro"
+              style="font-size: 1.2rem; color: black"
+            ></i>
+            {{ price }}
+          </div>
+          <div>
+            Prebooking:
 
+            <i
+              v-if="preregisterNeccessary"
+              class="bi bi-check-lg"
+              style="font-size: 1.2rem; color: red"
+            />
+            <i
+              v-else
+              class="bi bi-x-lg"
+              style="font-size: 1.2rem; color: green"
+            />
+          </div>
           <nuxt-link :to="`/events/${id}`">
             <div class="btn mt-auto btn-primary">See Details</div>
           </nuxt-link>
         </div>
-      </nuxt-link>
+      </div>
+      <!-- </nuxt-link> -->
     </div>
   </div>
 </template>
@@ -70,6 +88,11 @@ export default {
     date: {
       type: String,
       required: true,
+    },
+    time: {
+      type: String,
+      required: false,
+      default: '',
     },
   },
   mounted() {

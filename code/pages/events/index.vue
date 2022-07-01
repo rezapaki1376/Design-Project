@@ -18,6 +18,7 @@
         :price="event.price"
         :preregister-neccessary="event.preregisterNeccessary"
         :date="event.date"
+        :time="event.time"
       />
     </div>
   </div>
