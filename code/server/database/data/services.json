@@ -39,21 +39,21 @@
   {
     "title": "Car Garage",
     "description": "This is a decription of A Event",
-    "imageUrl": "post.jpg",
+    "imageUrl": "garage.jpg",
     "locations": [],
     "tags": "URL/event.png"
   },
   {
     "title": "Barber",
     "description": "This is a decription of A Event",
-    "imageUrl": "post.jpg",
+    "imageUrl": "barber.jpg",
     "locations": [],
     "tags": "URL/event.png"
   },
   {
     "title": "Dentist",
     "description": "This is a decription of A Event",
-    "imageUrl": "post.jpg",
+    "imageUrl": "dentist.jpg",
     "locations": [],
     "tags": "URL/event.png"
   }

@@ -4,7 +4,7 @@
       <Service
         v-for="(service, index) of services"
         :key="`service-index-${index}`"
-        :img="service.src"
+        :img="service.imageUrl"
         :title="service.title"
       />
     </div>

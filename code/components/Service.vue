@@ -3,7 +3,7 @@
 <div class="col-lg-3">
   <nuxt-link to="/">
           <div class="card">
-    <img class="card-img-top" :src="img" alt="Card image cap">
+    <img class="card-img-top" :src="require(`@/assets/img/services/${img}`)" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">{{title}}</h5>
       </div>
