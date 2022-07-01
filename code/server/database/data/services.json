@@ -54,7 +54,7 @@
     "locations": [
       {
       "name": "Deutsche Bank",
-      "imageUrl": "bank1.jpeg",
+      "imageUrl": "bank1.jpg",
       "address": " Largo del Tritone, 161",
       "openinHours": "8:20-13:20",
       "url": "#",
@@ -270,7 +270,7 @@
       },
       {
         "name": "Barber Shop Lab Navona",
-        "imageUrl": "b4.jpeg",
+        "imageUrl": "b4.jpg",
         "address": "  Via della Scrofa, 42",
         "openinHours": "10-17",
         "url": "#",

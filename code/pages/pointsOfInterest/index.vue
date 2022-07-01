@@ -21,6 +21,12 @@ export default {
   components: {
     PointOfInterested,
   },
+  async asyncData({ $axios }) {
+    const { data } = await $axios.get('/pointsOfInterest')
+    return {
+      events: data,
+    }
+  },
   data() {
     return {
       
