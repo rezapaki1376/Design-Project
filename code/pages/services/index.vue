@@ -3,6 +3,7 @@
     <div class="row">
       <Service
         v-for="(service, index) of services"
+        :id="service.id"
         :key="`service-index-${index}`"
         :img="service.imageUrl"
         :title="service.title"

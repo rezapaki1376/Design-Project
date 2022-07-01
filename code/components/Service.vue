@@ -1,15 +1,18 @@
 <template>
 
 <div class="col-lg-3">
-  <nuxt-link to="/">
+  <!-- <nuxt-link to="/"> -->
           <div class="card">
     <img class="card-img-top" :src="require(`@/assets/img/services/${img}`)" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">{{title}}</h5>
+      <nuxt-link :to="`/services/${id}`">
+            <div class="btn btn-primary mt-3">See Details</div>
+          </nuxt-link>
       </div>
     
   </div>
-  </nuxt-link>
+  <!-- </nuxt-link> -->
   </div>
 
 </template>
@@ -17,6 +20,10 @@
 export default {
   name: 'ServiceComponent',
   props: {
+    id: {
+      type: Number,
+      required: true,
+    },
     img: {
       type: String,
       required: true,

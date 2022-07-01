@@ -38,7 +38,7 @@
       },
       {
         "name": "Farmacia Repubblica",
-        "imageUrl": "ph5.jpg",
+        "imageUrl": "ph5.png",
         "address": " Piazza della Repubblica, 67",
         "openinHours": "8:30-19:30",
         "url": "#",
@@ -54,7 +54,7 @@
     "locations": [
       {
       "name": "Deutsche Bank",
-      "imageUrl": "bank1.jpg",
+      "imageUrl": "bank1.jpeg",
       "address": " Largo del Tritone, 161",
       "openinHours": "8:20-13:20",
       "url": "#",
@@ -102,7 +102,7 @@
     "locations": [
       {
       "name": "Poste Italiane",
-      "imageUrl": "Post1.jpg",
+      "imageUrl": "post1.jpg",
       "address": " Corso Vittorio Emanuele II, 334",
       "openinHours": "8:20-13:35",
       "url": "#",
@@ -110,7 +110,7 @@
     },
     {
       "name": "Post Office Rome 36",
-      "imageUrl": "Post2.jpg",
+      "imageUrl": "post2.jpg",
       "address": " Viale di Trastevere, 158",
       "openinHours": "8:20-13:15",
       "url": "#",
@@ -118,7 +118,7 @@
     },
     {
       "name": "Italian Post Office Post",
-      "imageUrl": "Post3.jpg",
+      "imageUrl": "post3.jpg",
       "address": " Via del Salvatore, 18",
       "openinHours": "8-13:30",
       "url": "#",
@@ -126,7 +126,7 @@
     },
     {
       "name": "Poste Italiane (Roma 47)",
-      "imageUrl": "Post4.jpg",
+      "imageUrl": "post4.jpg",
       "address": " Via di Porta Angelica, 23",
       "openinHours": "8:20-13:30",
       "url": "#",
@@ -134,7 +134,7 @@
     },
     {
       "name": "Ordine di Malta - Poste Magistrali",
-      "imageUrl": "Post5.jpg",
+      "imageUrl": "post5.jpg",
       "address": " Via Bocca di Leone, 73",
       "openinHours": "8:20-13:35",
       "url": "#",
@@ -166,7 +166,7 @@
     },
     {
       "name": "Fatebenefratelli Isola Tiberina",
-      "imageUrl": "hospital3.jpg",
+      "imageUrl": "hospital3.jpeg",
       "address": " Via di Ponte Quattro capi, 39",
       "openinHours": "6:30-24",
       "url": "#",
@@ -192,13 +192,13 @@
     "tags": "URL/event.png"
   },
   {
-    "title": "mechanic shop",
+    "title": "Mechanic shop",
     "description": "This is a decription of A Event",
     "imageUrl": "garage.jpg",
     "locations": [
       {
         "name": "Auto Rimessa",
-        "imageUrl": "g1.jpg",
+        "imageUrl": "g1.png",
         "address": "Via del Castro Pretorio,",
         "openinHours": "9:30-20",
         "url": "#",
@@ -230,7 +230,7 @@
       },
       {
         "name": "Cattaro Car Srl",
-        "imageUrl": "g5.jpg",
+        "imageUrl": "g5.png",
         "address": "Via Cattaro, 24",
         "openinHours": "8-19",
         "url": "#",
@@ -270,7 +270,7 @@
       },
       {
         "name": "Barber Shop Lab Navona",
-        "imageUrl": "b4.jpg",
+        "imageUrl": "b4.jpeg",
         "address": "  Via della Scrofa, 42",
         "openinHours": "10-17",
         "url": "#",
@@ -302,7 +302,7 @@
       },
       {
         "name": "American Dental Arts Rome",
-        "imageUrl": "d2.jpg",
+        "imageUrl": "d2.jpeg",
         "address": "Via del Governo Vecchio, 73",
         "openinHours": "8:30-18",
         "url": "#",
@@ -326,7 +326,7 @@
       },
       {
         "name": "Studio Dentistico Trastevere",
-        "imageUrl": "d5.jpg",
+        "imageUrl": "d5.jpeg",
         "address": "Via Luciano Manara, 25",
         "openinHours": "10-17",
         "url": "#",

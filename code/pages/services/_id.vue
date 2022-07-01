@@ -1,48 +1,59 @@
 <template>
   <div class="container my-5">
-    <div
-      class="
-        row
-        p-4
-        pb-0
-        pe-lg-0
-        pt-lg-5
-        pb-lg-5
-        pe-lg-5
-        align-items-center
-        rounded-3
-        border
-        shadow-lg
-      "
-    >
-      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-        <h1 class="display-4 fw-bold lh-1">{{ name }}</h1>
-        <b>Breed:</b>
-        <p class="lead">
-          {{ breed }}
-        </p>
-        <b>Description:</b>
-        <p class="lead">
-          {{ description }}
-        </p>
-        <b>Location:</b>
-        <p class="lead">{{ location.name }} - {{ location.city }}</p>
-        <div
-          class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
-        >
-          <button
-            type="button"
-            class="btn btn-outline-secondary btn-lg px-4"
-            @click="backToList"
-          >
-            Back to list
-          </button>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <nuxt-link :to="`/services`"> Services </nuxt-link>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+          {{ service.title }}
+        </li>
+      </ol>
+    </nav>
+
+    <div class="row">
+      <div v-for="(item, index) in service.locations" :key="index" class="col-lg-3 col-md-5 col-10 my-3">
+    <div class="card h-100">
+      
+      <img
+        class="card-img-top"
+        :src="require(`@/assets/img/services/${service.title}/${item.imageUrl}`)"
+        alt="Card image"
+      />
+      <div
+        class="card-body d-flex flex-column text-center justify-content-between"
+      >
+        <div>
+          <h4 class="card-title">{{ item.name }}</h4>
         </div>
+        <div class="mb-3 d-flex flex-column">
+          <hr />
+          <div class="d-flex justify-content-around">
+            <div>
+              <i
+                class="bi bi-clock"
+                style="font-size: 1.2rem; color: black"
+              ></i>
+              Opening hours: {{ item.openinHours }}
+            </div>
+          </div>
+          <div class="d-flex justify-content-around">
+            <div>
+              <i class="bi bi-geo-alt"></i>Address:
+              {{ item.address }}
+          </div>
+          </div>
+          <nuxt-link :to="item.url">
+            <div class="btn btn-primary mt-3">See Details</div>
+          </nuxt-link>
+        
       </div>
-      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-        <img class="rounded-lg-3" :src="img" alt="" width="" />
-      </div>
+     
     </div>
+  </div>
+
+  </div> 
+  </div>
   </div>
 </template>
 
@@ -50,32 +61,88 @@
 import CommonMixin from '~/mixins/common'
 export default {
   name: 'DetailsPage',
-  mixins: [CommonMixin],
+  // mixins: [CommonMixin],
   async asyncData({ route, $axios }) {
     const { id } = route.params
-    const { data } = await $axios.get('/api/cats/' + id)
+    const { data } = await $axios.get('/services/' + id)
+    console.log(data.title)
+    
     return {
-      name: data.name,
-      breed: data.breed,
-      img: data.img,
-      description: data.description,
-      location: data.location,
+      service: data,
     }
   },
   head() {
     return {
       title: this.name,
+      meta: [
+        {
+          name: 'asdasd',
+          content: 'asdasd',
+        },
+      ],
     }
   },
-  mounted() {
-    const date = new Date()
-    // Example on hwo to use mixinx
-    console.log(this.formatMyDate(date.toLocaleDateString()))
-  },
+
   methods: {
     backToList() {
-      this.$router.push('/Service_list')
+      this.$router.push('/services')
     },
   },
 }
 </script>
+<style scoped>
+.cut-text {
+  /* width: 160px;  */
+  height: auto;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+p {
+  text-align: justify;
+}
+.card {
+  border-radius: 1;
+  border: 1;
+  padding: 0;
+  height: 10;
+  color: black;
+  /* height: 70vh;
+  min-height: 150px; */
+}
+.card img {
+  border-radius: 1;
+  height: 180px;
+}
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* background: rgb(243, 243, 243); */
+}
+.row {
+  padding: 5px;
+}
+.line {
+  height: 1px;
+  width: 12%;
+  visibility: hidden;
+}
+.btn {
+  background-color: #00c58e !important;
+  border: 0;
+}
+.card:hover .line {
+  visibility: visible;
+  height: 1px;
+  width: 12%;
+  border: 1px solid rgb(255, 0, 0);
+  background: rgb(255, 0, 0);
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+</style>
