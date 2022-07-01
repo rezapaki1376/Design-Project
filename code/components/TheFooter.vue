@@ -41,17 +41,17 @@
         <h3>Connect</h3>
         <ul>
           <li>
-            <button type="button" class="btn">
+            <button type="button" class="btn icon">
               <img src="../assets/img/socialmedia/instagram.png" alt="" />
             </button>
           </li>
           <li>
-            <button type="button" class="btn">
+            <button type="button" class="btn icon">
               <img src="../assets/img/socialmedia/facebook.png" alt="" />
             </button>
           </li>
           <li>
-            <button type="button" class="btn">
+            <button type="button" class="btn icon">
               <img src="../assets/img/socialmedia/pinterest.png" alt="" />
             </button>
           </li>
@@ -152,16 +152,20 @@ ul {
   color: #000000;
 }
 .btn {
-  /* background: white; */
-  /* width: 150px; */
-  /* border-radius: 0; */
-
-  /* display: block; */
+  /* background: #293241; */
+  color: white;
   margin: 5px;
   padding: 3px;
 }
 .btn:hover {
-  background: rgb(225, 225, 225);
+  cursor: pointer;
+  background: #364958;
+  /* box-shadow: 0px 10px 15px rgba(120, 120, 120, 0.7); */
+}
+.icon:hover {
+  cursor: pointer;
+  background: #dedede;
+  box-shadow: 0px;
 }
 #pwd {
   display: inline;

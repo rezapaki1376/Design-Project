@@ -103,7 +103,7 @@
             the major Roman attractions. The Palatine Hill is the main Roman
             hill and is the origin of the Roman State.
           </p>
-          <nuxt-link to="#">
+          <nuxt-link to="/history">
             <div class="btn">Read more</div>
           </nuxt-link>
         </div>
@@ -121,7 +121,7 @@
             history and beauty: be sure to check out the most beautiful parks
             and gardens in the city.
           </p>
-          <nuxt-link to="#">
+          <nuxt-link to="/nature">
             <div class="btn">Read more</div>
           </nuxt-link>
         </div>
