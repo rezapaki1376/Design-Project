@@ -1,8 +1,13 @@
 <template>
+<!-- History of Rome page -->
+<!-- History template starts from here -->
 <div>
 <div class="main_index">
       <div class="container top_section">
         <div class="row">
+          <!-- 1: defining 2 rows with image and text
+               2: then creating a row with the rest of the text
+          -->
           <div class="col-lg-6">
             <h1>Rome, The ancient city</h1>
             <p>
@@ -51,6 +56,7 @@
     </div>
 
 </div>
+<!-- History template finishes here -->
 </template>
 
 <style scoped>
@@ -66,10 +72,6 @@ img {
   padding: 0 2.5px;
   border-radius: 25px;
 }
-/* img:hover {
-  cursor: pointer;
-  filter: blur(0.6px);
-} */
 h1 {
   font-size: 70px;
 }
@@ -85,7 +87,7 @@ p {
 .image-box{
   margin: 20px 0;
 }
-
+/* extra style for responsive part */
 @media (min-width: 1200px) {
   .container{
   max-width: 75%;
@@ -97,32 +99,6 @@ p {
 }
   
 }
-/*
-@media (max-width: 992px) {
-  .modal-dialog {
-   max-width: 90%;
-  }
-  
-}
-
-@media (min-width: 992px) {
-  .modal-dialog {
-   max-width: 65%;
-  }
-  
-}
-@media (max-width: 768px) {
-  .modal-dialog {
-   max-width: 97%;
-  }
-}
-@media (max-width: 576px) {
-  img{
-	  display: none;
-  }
-} */
-
-
 </style>
 
 

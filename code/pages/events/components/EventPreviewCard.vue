@@ -21,7 +21,7 @@
           <div class="d-flex justify-content-around">
             <div>
               <i
-                class="bi bi-calendar"
+                class="bi bi-calendar-event"
                 style="font-size: 1.2rem; color: black"
               ></i>
               {{ date }}
@@ -29,12 +29,17 @@
             <div><i class="bi bi-clock"></i> {{ time }}</div>
           </div>
           <div>
-            Free:
-            <i
-              class="bi bi-currency-euro"
-              style="font-size: 1.2rem; color: black"
+            Cost:
+            <span v-if="price > 0" >
+            <i class="bi bi-currency-euro" style="font-size: 1.2rem; color: black"
             ></i>
             {{ price }}
+            </span>
+            <span v-if="price == 0" >
+            <!-- <i class="bi bi-currency-euro" style="font-size: 1.2rem; color: black"
+            ></i> -->
+            Free
+            </span>
           </div>
           <div>
             Prebooking:

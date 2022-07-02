@@ -1,5 +1,7 @@
 <template>
+<!-- About us page starts from here  -->
   <div>
+    <!-- start-----defining the first part describing the website  -->
     <div class="row about-us">
       <div class="jumbotron col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <h1>
@@ -17,7 +19,9 @@
         </p>
       </div>
     </div>
+  <!-- finish-----defining the first part describing the website  -->
 
+  <!-- start-----defining the parts related to history, mission, nature and so on  -->
     <div class="container description">
       <div class="row">
         <div class="jumbotron col-lg-6">
@@ -40,9 +44,7 @@
         </div>
       </div>
 
-      <!-- </div> -->
-
-      <!-- <div class="container description"> -->
+      
       <div class="row">
         <div class="jumbotron col-lg-6">
           <img class="IMG_styles" src="aboutus1.jpg" alt="" />
@@ -64,9 +66,7 @@
         </div>
       </div>
 
-      <!-- </div> -->
-
-      <!-- <div class="container description"> -->
+      
       <div class="row">
         <div class="jumbotron col-lg-6">
           <h1>Our history</h1>
@@ -130,7 +130,9 @@
         </div>
       </div>
     </div>
+<!-- finish-----defining the parts related to history, mission, nature and so on  -->
 
+<!-- start-----defining the parts related to partners  -->
     <div class="row" style="height: 40px; background: black"></div>
     <div class="container partners">
       <div class="row">
@@ -151,7 +153,9 @@
         />
       </div>
     </div>
+  <!-- finish-----defining the parts related to partners  -->
 
+  <!-- start-----defining the our Community section  -->
     <div class="community">
       <div class="container" style="padding-top: 25px">
         <h1>Our Community</h1>
@@ -182,15 +186,13 @@
         </div>
       </div>
     </div>
-    <div class="row join-us">
-      <div class="col-lg-6"></div>
-
-      <div class="col-lg-6"></div>
-    </div>
+    <!-- start-----defining the our Community section  -->
   </div>
+  <!-- About us page finishes here  -->
 </template>
 
 <script>
+// calling the support components fro creating the partner part
 import Support from '~/components/Support.vue'
 export default {
   name: 'AboutPage',
@@ -199,6 +201,7 @@ export default {
   },
   data() {
     return {
+// defining static data for partners and founders
       partners: [
         {
           src: 'Assolombarda.png',
@@ -239,22 +242,13 @@ export default {
       ],
     }
   },
-  //   async asyncData({ $axios }) {
-  //     const { data } = await $axios.get('/api/page-info/about')
-  //     const title = data.title
-  //     const image = data.image
-  //     const description = data.description
-  //     return {
-  //       title,
-  //       description,
-  //       image,
-  //     }
-  //   },
+ 
 }
 </script>
 
 
 <style scoped>
+/* styles related to elements */
 .btn {
   background: #293241;
   color: white;
@@ -292,28 +286,19 @@ a:active {
 .IMG_styles {
   height: 400px;
   width: 100%;
-  /* margin: 10px; */
 }
 .jumbotron {
   margin: 0;
   padding: 20px;
 }
-.about-us {
-  /* background: #ef4056; */
-  color: rgb(0, 0, 0);
-  /* margin: 10px 0; */
-}
+
 .about-us h1 {
   color: #333333;
   text-align: right;
   display: block;
   font-size: 90px;
 }
-.description {
-  /* background: #7677cc; */
-  color: rgb(0, 0, 0);
-  /* margin: 10px 0; */
-}
+
 .description h1 {
   text-align: center;
 }
@@ -331,16 +316,17 @@ a:active {
 .row {
   margin: 0;
 }
+/* styles related to responsive elements */
 @media (min-width: 768px) {
   .border-sm-right {
     border-right: 1px solid #e3e7eb !important;
-    /* border-bottom: 1px solid #e3e7eb !important; */
+    
   }
 }
 
 @media (max-width: 768px) {
   .border-sm-right {
-    /* border-right: 1px solid #e3e7eb !important; */
+    
     margin: 10px 0;
     border-bottom: 1px solid #e3e7eb !important;
   }

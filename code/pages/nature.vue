@@ -1,4 +1,6 @@
 <template>
+<!-- Nature template that linked inside the About us page  -->
+<!-- Nature template starts from here -->
   <div>
     
     <div class="main_index">
@@ -6,7 +8,7 @@
       <div class="container top_section">
         <h1>Rome Nature</h1>
         <div class="row image-box">
-          
+          <!-- defining the pictures in the begining of the page  -->
           <div class="col-lg-6">
             <img src="../assets/img/nature/nature1.jpg" alt="" />
           </div>
@@ -48,32 +50,22 @@
     </div>
 
   </div>
+  <!-- Nature template finishes here -->
 </template>
 
 <script>
 
 export default {
-  name: 'IndexPage',
+  name: 'NaturePage',
   components: {
     
   },
-  // async asyncData({ $axios }) {
-  //   const { data } = await $axios.get('/api/page-info/index')
-  //   const title = data.title
-  //   const image = data.image
-  //   const description = data.description
-  //   return {
-  //     title,
-  //     description,
-  //     image,
-  //   }
-  // },
   data() {
     return {
       
     }
   },
-  // async mounted() {},
+  
 }
 </script>
 <style scoped>

@@ -1,4 +1,7 @@
 <template>
+<!-- Login page for administrator -->
+<!-- this page is not mandatory part but we considered to show in this way admins could login -->
+<!-- Login template starts from here  -->
 <div class="login ">
   <div class="blur row justify-content-center">
 <div class="form col-lg-3 col-md-4 col-sm-7 col-xs-10">
@@ -8,12 +11,12 @@
   </div>
 <form>
   <div class="form-group">
-    <!-- <label for="exampleInputEmail1">Email address</label> -->
+    
     <input id="exampleInputEmail1" type="email" class="form-control transparent-input"  aria-describedby="emailHelp" placeholder="Enter email">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
-    <!-- <label for="exampleInputPassword1">Password</label> -->
+    
     <input id="exampleInputPassword1" type="password" class="form-control transparent-input"  placeholder="Password">
   </div>
   
@@ -31,6 +34,7 @@
 </div>
 </div>
 </div>
+<!-- Login template finishes here  -->
 </template>
 
 <style scoped>
@@ -47,20 +51,19 @@
   height: 50px;
 }
 input.transparent-input{
-       background-color:rgba(0, 0, 0, 0.15) !important;
-       /* border:none !important; */
-    }
+  background-color:rgba(0, 0, 0, 0.15) !important;
+       
+}
 input.transparent-input:hover{
-       background-color:rgba(0, 0, 0, 0.0) !important;
-       /* border:none !important; */
-    }
+  background-color:rgba(0, 0, 0, 0.0) !important;
+       
+  }
 .form-control{
   border-radius: 25px;
   border: 1px solid rgb(174, 174, 174);
   height: 50px;
   
 }
-
 .form-check-label{
   color:#fbceb5;
 }
@@ -93,6 +96,7 @@ input.transparent-input:hover{
   margin: 0;
   
 }
+/*  here we are defining the background image */
 .login{
   height:100vh;
   width: 100%;
@@ -106,66 +110,8 @@ input.transparent-input:hover{
   background: rgba(240, 240, 240, 0.295); 
   backdrop-filter: blur(1px); 
   height: 100vh;
-	/* width: 50%; */
-}
-/* label{
-  color: black;
-  font-size: 20px;
-} */
-@media (min-width: 1200px) {
-  .modal-dialog {
-   max-width: 80%;
-  }
-  
-}
-@media (max-width: 992px) {
-  .modal-dialog {
-   max-width: 90%;
-  }
-  
-}
 
-@media (min-width: 992px) {
-  .modal-dialog {
-   max-width: 65%;
-  }
-  
 }
-@media (max-width: 768px) {
-  .modal-dialog {
-   max-width: 97%;
-  }
-}
-@media (max-width: 576px) {
-  img{
-	  display: none;
-  }
-}
-
-
-
-/* div{
-  text-align: center;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  
-  background: rgb(244, 244, 244);
-  
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-}
-div:hover{
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.2), 0 6px 20px 0 rgba(0, 0, 0,0.19);
-   background: rgb(225, 225, 225);
-}
-div img{
-  display: block;
-  width: 30px;
-  margin: 25% auto;
-  
-} */
 </style>
 
 

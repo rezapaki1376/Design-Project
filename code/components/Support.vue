@@ -1,16 +1,20 @@
 <template>
+<!-- creating template for partners and fouders part in About us page -->
+<!-- template support starts from here -->
  <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
          <a href=""> 
           <img :src='img' alt="">
           
          </a>
         </div>
+<!-- template support finishes here -->
 </template>
 
 <script>
 export default {
   name: 'CardComponent',
   props: {
+  // defining the property 
     img: {
       type: String,
       required: true,

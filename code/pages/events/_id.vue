@@ -41,7 +41,7 @@
           <div class="d-flex justify-content-between flex-wrap">
             <p class="lead mx-1 my-0">
               <i
-                class="bi bi-calendar"
+                class="bi bi-calendar-event"
                 style="font-size: 1.2rem; color: black"
               ></i>
               {{ event.date }}
@@ -52,13 +52,16 @@
             </p>
             <p class="lead mx-1 my-0">Duration: {{ event.timeDuration }}min</p>
             <p class="lead mx-1 my-0">
-              Free:
-              <i
-                class="bi bi-currency-euro"
-                style="font-size: 1.2rem; color: black"
-              ></i>
-              {{ event.price }}
-            </p>
+               Cost:
+            <span v-if="event.price > 0" >
+            <i class="bi bi-currency-euro" style="font-size: 1.2rem; color: black"
+            ></i>
+            {{ event.price }}
+            </span>
+            <span v-if="event.price == 0" >
+            
+            Free
+            </span>
             <p class="lead m-0">
               Prebooking:
 
@@ -89,7 +92,12 @@
         <div class="d-flex justify-content-between flex-wrap">
           <p class="lead mx-1 my-0">Created: {{ event.createdAt }}</p>
           <p class="lead mx-1 my-0">EventType: {{ event.eventType }}</p>
-          <p class="lead mx-1 my-0">Season: {{ event.season }}</p>
+          <p class="lead mx-1 my-0">
+           
+            Season: {{ event.season }}
+             <i v-if="event.season == 'SUMMER'" class="bi bi-brightness-high"></i>
+            <i v-if="event.season == 'WINTER'" class="bi bi-snow2"></i>
+            </p>
         </div>
       </div>
 
