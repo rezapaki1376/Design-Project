@@ -1,8 +1,10 @@
 <template>
+<!-- Footer starts from here  -->
   <footer class="container-fluid footer">
     <div class="row justify-content-around flex-wrap text-center">
       <div class="col-xlg-3 col-lg-3 col-md-6 col-sm-12">
-        <h3>Navigation</h3>
+        <!-- 1: defining the navigation to access main website parts -->
+        <p class="big_p">Navigation</p>
         <ul>
           <li><nuxt-link to="/events" class="nav-link"> Events</nuxt-link></li>
           <li>
@@ -23,8 +25,9 @@
           </li>
         </ul>
       </div>
+      <!-- 2: defining Legal Notice -->
       <div class="col-xlg-3 col-lg-3 col-md-6 col-sm-12">
-        <h3>Legal Notice</h3>
+        <p class="big_p">Legal Notice</p>
         <ul>
           <li>
             <nuxt-link to="/" class="nav-link"> Private Policy </nuxt-link>
@@ -38,27 +41,36 @@
         </ul>
       </div>
       <div class="col-xlg-3 col-lg-3 col-md-6 col-sm-12">
-        <h3>Connect</h3>
+        <!-- 3: social media part for following us  -->
+        <p class="big_p">Connect</p>
         <ul>
           <li>
-            <button type="button" class="btn icon">
-              <img src="../assets/img/socialmedia/instagram.png" alt="" />
-            </button>
+            <div class="">
+              <a href="www.instagram.com" target="_blank" alt="instagram">
+              
+              <img src="../assets/img/socialmedia/instagram.png" alt="instagram" />
+              </a>
+            </div>
           </li>
           <li>
-            <button type="button" class="btn icon">
-              <img src="../assets/img/socialmedia/facebook.png" alt="" />
-            </button>
+            <div class="">
+              <a href="www.facebook.com" target="_blank" alt="facebook">
+              <img src="../assets/img/socialmedia/facebook.png" alt="facebook" />
+              </a>
+            </div>
           </li>
           <li>
-            <button type="button" class="btn icon">
-              <img src="../assets/img/socialmedia/pinterest.png" alt="" />
-            </button>
+            <div  class="">
+              <a href="www.pinterest.com" target="_blank" alt="pinterest">
+              <img src="../assets/img/socialmedia/pinterest.png" alt="pinterest" />
+              </a>
+            </div>
           </li>
         </ul>
       </div>
       <div class="col-xlg-3 col-lg-3 col-md-6 col-sm-12">
-        <h3>Newsletter</h3>
+        <!-- 4: user can write own email for us to being inform about our new updates and news -->
+        <p class="big_p">Newsletter</p>
         <p>
           Subscribe to our monthly newsletter to never miss news on Rome again.
         </p>
@@ -76,6 +88,7 @@
         </div>
       </div>
     </div>
+    <!-- 5: Copyright license and link to contact us -->
     <div class="d-flex justify-content-center py-2">
       <div class="px-2 vl">Copyright © 2022 Find-your-Rome</div>
       <nuxt-link to="/sitemap" class="px-2 nav-link py-0 vl">
@@ -86,49 +99,24 @@
       >
     </div>
   </footer>
+  <!-- Footer finishes here  -->
 </template>
 
-// <script>
-// export default {
-//   name: 'TheHeader',
-//   data() {
-//     return {
-//       headerList: [
-//         {
-//           name: 'Home',
-//           path: '/',
-//         },
-//         {
-//           name: 'Evens',
-//           path: '/list',
-//         },
-//         {
-//           name: 'Point Of Interesteds',
-//           path: '/POI_list',
-//         },
-//         {
-//           name: 'Itineraries',
-//           path: '/Itineraries_list',
-//         },
-//         {
-//           name: 'Services',
-//           path: '/Service_list',
-//         },
-//         {
-//           name: 'About',
-//           path: '/about',
-//         },
-//         {
-//           name: 'ConcatctUs',
-//           path: '/contactus',
-//         },
-//       ],
-//     }
-//   },
-// }
-//
+<script>
+export default {
+  name: 'TheHeader',
+  data() {
+    return {
+      
+    }
+  },
+}
+
 </script>
 <style scoped>
+.big_p{
+      font-size: 22px;
+}
 .footer {
   background-color: rgb(245, 245, 245);
   color: #000000;
@@ -156,6 +144,8 @@ ul {
   color: white;
   margin: 5px;
   padding: 3px;
+  width: 35px;
+  height: 35px;
 }
 .btn:hover {
   cursor: pointer;
@@ -177,13 +167,12 @@ ul {
   border-radius: 3px;
   display: inline;
 }
-.btn > img {
-  width: 35px;
+img {
+  width: 45px;
 }
-/* .logo {
-  color: white;
-  font-size: 32px;
-} */
+nuxt-link{
+
+}
 </style>
 
 

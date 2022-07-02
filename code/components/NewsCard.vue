@@ -1,4 +1,6 @@
 <template>
+<!-- here is component for defining the news part in the Home page -->
+<!-- news component starts from here  -->
   <div class="col-xlg-3 col-lg-3 col-md-7 col-sm-12 newscard">
           <a href="#">
           <div class="card">
@@ -23,11 +25,13 @@
         </div>
         </a>
       </div>
+      <!-- news component finishes here  -->
 </template>
 
 <script>
 export default {
   name: 'NewsComponent',
+  // here we are defining the props that needed for news part
   props: {
     img: {
       type: String,
@@ -47,29 +51,22 @@ export default {
     },
   },
   methods: {
-    goToDetails() {
-      this.$router.push(`/eventdetail/${this.id}`)
-    },
+    // goToDetails() {
+    //   this.$router.push(`/eventdetail/${this.id}`)
+    // },
   },
 }
 </script>
 <style scoped>
+/* styles that specially used for news component */
 .cut-text { 
-  /* width: 160px;  */
+  
   height: 78px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-/* .card-text{
-  max-height: 78px;
-   display: block; 
-     max-width: 98%; 
-     white-space: nowrap; 
-    overflow: hidden !important;
-    text-overflow: ellipsis;
-} */
 .newscard{
   display: inline-block;
 }
@@ -87,7 +84,6 @@ export default {
 }
 .card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.2), 0 6px 20px 0 rgba(0, 0, 0,0.19);
-  /* background: rgb(243, 243, 243); */
   
 }
 .row {

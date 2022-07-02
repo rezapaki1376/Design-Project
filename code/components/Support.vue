@@ -2,10 +2,10 @@
 <!-- creating template for partners and fouders part in About us page -->
 <!-- template support starts from here -->
  <div class="col-xlg-2 col-lg-2 col-md-3 col-sm-4 col-xs-4">
-         <a href=""> 
-          <img :src='img' alt="">
+         <nuxt-link :to="link" :alt="alt"> 
+          <img :src='img' :alt="alt">
           
-         </a>
+         </nuxt-link>
         </div>
 <!-- template support finishes here -->
 </template>
@@ -16,6 +16,14 @@ export default {
   props: {
   // defining the property 
     img: {
+      type: String,
+      required: true,
+    },
+    link: {
+      type: String,
+      required: true,
+    },
+    alt: {
       type: String,
       required: true,
     },

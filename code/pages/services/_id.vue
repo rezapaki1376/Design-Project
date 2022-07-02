@@ -1,5 +1,8 @@
 <template>
+<!-- after clicking on each services we are comming this section for seeing more services in that specific type with setails -->
+<!-- service details starts from here -->
   <div class="container my-5">
+    <!-- creating group links for going to previous page -->
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
@@ -10,7 +13,7 @@
         </li>
       </ol>
     </nav>
-
+    <!--  details related to each specific service -->
     <div class="row">
       <div v-for="(item, index) in service.locations" :key="index" class="col-lg-3 col-md-5 col-10 my-3">
     <div class="card h-100">
@@ -43,6 +46,7 @@
               {{ item.address }}
           </div>
           </div>
+          <!-- again a group link for going back to previous page -->
           <nuxt-link :to="item.url">
             <div class="btn btn-primary mt-3">See Details</div>
           </nuxt-link>
@@ -55,6 +59,7 @@
   </div> 
   </div>
   </div>
+  <!-- service details finishes here -->
 </template>
 
 <script>
@@ -74,25 +79,26 @@ export default {
   head() {
     return {
       title: this.name,
-      meta: [
-        {
-          name: 'asdasd',
-          content: 'asdasd',
-        },
-      ],
+      // meta: [
+      //   {
+      //     name: 'asdasd',
+      //     content: 'asdasd',
+      //   },
+      // ],
     }
   },
 
   methods: {
     backToList() {
+      // accessing information in services table
       this.$router.push('/services')
     },
   },
 }
 </script>
 <style scoped>
+/* styles related to service details */
 .cut-text {
-  /* width: 160px;  */
   height: auto;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -108,8 +114,7 @@ p {
   padding: 0;
   height: 10;
   color: black;
-  /* height: 70vh;
-  min-height: 150px; */
+  
 }
 .card img {
   border-radius: 1;
@@ -117,7 +122,7 @@ p {
 }
 .card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /* background: rgb(243, 243, 243); */
+  
 }
 .row {
   padding: 5px;
@@ -138,11 +143,5 @@ p {
   border: 1px solid rgb(255, 0, 0);
   background: rgb(255, 0, 0);
 }
-/* a,
-a:hover,
-a:focus,
-a:active {
-  text-decoration: none;
-  color: inherit;
-} */
+
 </style>

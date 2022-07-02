@@ -47,7 +47,7 @@
       
       <div class="row">
         <div class="jumbotron col-lg-6">
-          <img class="IMG_styles" src="aboutus1.jpg" alt="" />
+          <img class="IMG_styles" src="aboutus2.jpg" alt="" />
         </div>
 
         <div class="jumbotron col-lg-6">
@@ -103,9 +103,9 @@
             the major Roman attractions. The Palatine Hill is the main Roman
             hill and is the origin of the Roman State.
           </p>
-          <nuxt-link to="/history">
-            <div class="btn">Read more</div>
-          </nuxt-link>
+         
+            <div class="btn"> <nuxt-link to="/history" alt="Rome history">Read more</nuxt-link></div>
+          
         </div>
       </div>
 
@@ -121,9 +121,9 @@
             history and beauty: be sure to check out the most beautiful parks
             and gardens in the city.
           </p>
-          <nuxt-link to="/nature">
-            <div class="btn">Read more</div>
-          </nuxt-link>
+          
+            <div class="btn"><nuxt-link to="/nature" alt="Rome nature">Read more</nuxt-link></div>
+          
         </div>
         <div class="jumbotron col-lg-6">
           <img class="IMG_styles" src="nature.jpg" alt="" />
@@ -141,6 +141,8 @@
           v-for="(partner, index) of partners"
           :key="`partner-index-${index}`"
           :img="require(`@/assets/img/partners_images/${partner.src}`)"
+          :link="partner.link"
+          :alt="partner.alt"
         />
       </div>
       <div style="height: 2px; color: black; background: black"></div>
@@ -150,6 +152,8 @@
           v-for="(founder, index) of founders"
           :key="`partner-index-${index}`"
           :img="require(`@/assets/img/partners_images/${founder.src}`)"
+          :link="founder.link"
+          :alt="founder.alt"
         />
       </div>
     </div>
@@ -164,23 +168,23 @@
         <div class="row">
           <div class="col-xlg-4 col-lg-4 col-md-4 col-sm-12 border-sm-right">
             <i class="bi bi-people"></i>
-            <h1>400+</h1>
+            <p class="big_p">400+</p>
             <p>employees in</p>
-            <h1>3</h1>
+            <p class="big_p">3</p>
             <p>offices</p>
           </div>
           <div class="col-xlg-4 col-lg-4 col-md-4 col-sm-12 border-sm-right">
             <i class="bi bi-person-plus"></i>
-            <h1>43,000+</h1>
+            <p class="big_p">43,000+</p>
             <p>customers from</p>
-            <h1>20+</h1>
+            <p class="big_p">20+</p>
             <p>countries</p>
           </div>
           <div class="col-xlg-4 col-lg-4 col-md-4 col-sm-12">
             <i class="bi bi-calendar4-event"></i>
-            <h1>300+</h1>
+            <p class="big_p">300+</p>
             <p>Events in</p>
-            <h1>40+</h1>
+            <p class="big_p">40+</p>
             <p>Point of interests</p>
           </div>
         </div>
@@ -205,39 +209,57 @@ export default {
       partners: [
         {
           src: 'Assolombarda.png',
+          link:"https://www.assolombarda.it/english/",
+          alt:"assolombarda"
         },
         {
           src: 'Logo_A2A.png',
+          link:"https://www.a2a.eu/it/home",
+          alt:"a2a"
         },
         {
           src: 'Logo_Accenture.png',
+          link:"https://www.accenture.com/it-it",
+          alt:"accenture"
         },
         {
           src: 'Logo_ATM.png',
+          link:"https://www.assolombarda.it/english/",
+          alt:"ATM"
         },
         {
           src: 'Logo_Borsa_Italiana.png',
+          link:"https://www.borsaitaliana.it/homepage/homepage.htm",
+          alt:"borsaitaliana"
         },
         {
           src: 'Logo_Confcommercio.png',
+          link:"https://www.confcommerciomilano.it/it/index.html",
+          alt:"confcommerciomilano"
         },
-        {
-          src: 'Logo_Fabrick.png',
-        },
+        
       ],
       founders: [
         {
           src: 'Logo_Fiera_Milano Congressi.png',
+          link:"https://www.fieramilanocongressi.it/Home_it.html",
+          alt:"fieramilanocongressi"
         },
         {
           src: 'Logo_Login_Lendlease.png',
+          link:"https://www.lendlease.com/it/",
+          alt:"lendlease"
         },
         {
           src: 'Logo_Nexi.png',
+          link:"https://www.nexi.it/",
+          alt:"nexi"
         },
 
         {
           src: 'Logo_TIM.png',
+          link:"https://www.tim.it/",
+          alt:"tim"
         },
       ],
     }
@@ -263,6 +285,9 @@ export default {
 }
 p {
   text-align: justify;
+}
+.big_p{
+  font-size: 40px;
 }
 .community {
   background: #33475b;

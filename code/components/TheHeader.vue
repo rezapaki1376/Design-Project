@@ -1,7 +1,10 @@
 <template>
+<!-- website header starts from here  -->
   <nav class="navbar navbar-expand-lg navbar-light px-3 header">
-    <nuxt-link to="/" class="nav-link link px-3 py-0">
-      <img src="../assets/img/logo/logo2_r.jpg" width="70" height="70" alt="" />
+    <!--  our website main navigations included here -->
+    <nuxt-link to="/" class="nav-link link px-3 py-0" alt="link to main page">
+    <!-- defining the logo -->
+      <img src="../assets/img/logo/logo2_r.jpg" width="70" height="70" alt="website logo" />
     </nuxt-link>
     <button
       class="navbar-toggler"
@@ -43,6 +46,7 @@
         </li>
       </ul>
     </div>
+    <!--  link to login page for admins -->
     <nuxt-link
       to="/login"
       class="nav-link-custom nav-link"
@@ -56,12 +60,13 @@
       Login
     </nuxt-link>
   </nav>
+  <!-- website header finishes here  -->
 </template>
 
 <script>
 export default {
   name: 'TheHeader',
-
+  // here we are defining the navbar links statically 
   data() {
     return {
       currentTab: 0,
@@ -90,22 +95,7 @@ export default {
 
 
 <style scoped>
-@media (min-width: 992px) {
-  .login {
-    color: black;
-    text-align: right;
-    margin: auto 0;
-    position: absolute;
-    right: 10px;
-  }
-}
-@media (max-width: 992px) {
-  .login {
-    color: black;
-    text-align: left;
-    margin: auto 0;
-  }
-}
+/* styles for header part */
 .logo {
   color: white;
   font-size: 32px;

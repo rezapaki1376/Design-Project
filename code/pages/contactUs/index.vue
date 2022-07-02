@@ -1,5 +1,7 @@
 /* eslint-disable vue/no-unused-components */
 <template>
+<!-- contact us component for descriobing how users can contact for support -->
+<!-- contact us starts from here -->
   <div>
     <div class="row col-lg-12 about-us">
       <div class="jumbotron col-lg-6">
@@ -17,6 +19,7 @@
 
     <div class="container" style="">
       <div class="row">
+        <!-- here we are defining the main office phone and email address -->
         <div class="col-xlg-6 col-lg-6 col-md-12 col-sm-12">
           <div class="card contact_info">
             <i class="bi bi-chat-dots-fill"></i>
@@ -28,22 +31,21 @@
               </p>
               <p class="phone col-lg-12">
                 <i class="bi bi-telephone-plus-fill"></i
-                ><a href="tel:+21-325-4658">+21-325-4658</a>
+                ><a href="tel:+21-325-4658"> Phone: +21-325-4658</a>
               </p>
               <p class="phone col-lg-12">
                 <i class="bi bi-telephone-plus-fill"></i
-                ><a href="tel:+21-325-4659">+21-325-4658</a>
+                ><a href="tel:+21-325-4659"> Phone: +21-325-4658</a>
               </p>
               <p class="phone col-lg-12">
                 <i class="bi bi-envelope-open-fill"></i
-                ><a href="mailto:Find.your.rome@mail.com"
-                  >Find.your.rome@mail.com</a
+                ><a href="mailto:Find.your.rome@mail.com"> Email: Find.your.rome@mail.com</a
                 >
               </p>
             </div>
           </div>
         </div>
-
+        <!-- defining the form for users that can contact with support directly and send their qquestion and problems -->
         <div class="col-xlg-6 col-lg-6 col-md-12 col-sm-12">
           <div class="card">
             <i class="bi bi-headset"></i>
@@ -101,7 +103,7 @@
         </div>
       </div>
     </div>
-
+<!-- defining offices information with address and picture -->
     <div class="row address">
       <div class="col-xlg-6 col-lg-6 col-md-12 col-sm-12">
         <h2>Downtown Atlanta, GA</h2>
@@ -114,7 +116,7 @@
         <h4>Phone</h4>
         <p class="phone col-lg-12">
           <i class="bi bi-telephone-plus-fill"></i
-          ><a href="tel:+21-325-4658">+21-325-4555</a>
+          ><a href="tel:+21-325-4658"> Phone: +21-325-4555</a>
         </p>
       </div>
       <div class="col-xlg-6 col-lg-6 col-md-12 col-sm-12">
@@ -134,81 +136,36 @@
         <h4>Phone</h4>
         <p class="phone col-lg-12">
           <i class="bi bi-telephone-plus-fill"></i
-          ><a href="tel:+21-325-4658">+21-328-4877</a>
+          ><a href="tel:+21-325-4658"> Phone: +21-328-4877</a>
         </p>
       </div>
     </div>
     
     
   </div>
+  <!-- contact us finishes here -->
 </template>
 
 <script>
-// import Support from '~/components/Support.vue'
+
 
 export default {
   name: 'Contactus',
   components: {
-    // Support,
+    
   },
   data() {
     return {
-      partners: [
-        {
-          src: 'Assolombarda.png',
-        },
-        {
-          src: 'Logo_A2A.png',
-        },
-        {
-          src: 'Logo_Accenture.png',
-        },
-        {
-          src: 'Logo_ATM.png',
-        },
-        {
-          src: 'Logo_Borsa_Italiana.png',
-        },
-        {
-          src: 'Logo_Confcommercio.png',
-        },
-        {
-          src: 'Logo_Fabrick.png',
-        },
-      ],
-       founders: [
-        {
-          src: 'Logo_Fiera_Milano Congressi.png',
-        },
-        {
-          src: 'Logo_Login_Lendlease.png',
-        },
-        {
-          src: 'Logo_Nexi.png',
-        },
-        
-        {
-          src: 'Logo_TIM.png',
-        },
-      ],
+      
     }
   },
-  //   async asyncData({ $axios }) {
-  //     const { data } = await $axios.get('/api/page-info/about')
-  //     const title = data.title
-  //     const image = data.image
-  //     const description = data.description
-  //     return {
-  //       title,
-  //       description,
-  //       image,
-  //     }
-  //   },
+ 
 }
 </script>
 
 
 <style scoped>
+/* styles for contact us page starts from here */
 .btn {
   background: #293241;
   color: white;
@@ -238,37 +195,12 @@ i {
 .contact_info {
   margin: 20px 0;
 }
-/* .social_media {
-  background: #2d3e50;
-  color: white;
-}
-.social_media.a {
-  display: inline-block;
-}
-.social_media > .container {
-  padding: 10px 0;
-}
-.social_media > .container > div {
-  text-align: center;
-  height: 200px;
-}
-.social_media > .container h2 {
-  text-align: left;
-  margin: 0 0 50px 0;
-}
-
-.social_media > .container > .row > div:last-child {
-  border-left: 1px solid rgb(189, 189, 189);
-  padding-top: 40px;
-} */
 
 form {
   text-align: left;
   padding: 10px 0 0 0;
 }
-/* div{
-  margin: 0;
-} */
+
 form button {
   margin: 10px auto;
   display: block;
@@ -282,7 +214,7 @@ form button {
 .IMG_styles {
   height: 400px;
   width: 100%;
-  /* margin: 10px; */
+  
 }
 .jumbotron {
   margin: 0;
@@ -312,6 +244,7 @@ form button {
 
 .card {
   border-radius: 0%;
+  border: 1px solid #e2e2e2;
   border: 0;
   padding: 10px;
   margin: 3px;
@@ -321,11 +254,7 @@ form button {
 .card img {
   border-radius: 0;
 }
-.card {
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.2), 0 6px 20px 0 rgba(0, 0, 0,0.19); */
-  /* background: rgb(243, 243, 243);  */
-  border: 1px solid #e2e2e2;
-}
+
 .row {
   margin: 0;
 }
@@ -347,9 +276,6 @@ a:active {
 .card-body {
   text-align: center;
 }
-/* .card-text{
-    padding: 5% 0 0 0; 
- } */
 .phone {
   font-size: 20px;
 }

@@ -44,7 +44,7 @@ export default {
     }
   },
   mounted: () => {
-    console.log('HI')
+    // console.log('HI')
   },
 }
 </script>
