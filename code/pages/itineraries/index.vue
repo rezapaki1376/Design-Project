@@ -1,44 +1,50 @@
-
 <template>
-<div class="container">
-    <div class="row">
-      <Itinerary
-          v-for="(Itinerarie, index) of Itineraries"
-          :key="`service-index-${index}`"
-          :img="Itinerarie.src"
-          :title="Itinerarie.title"
-          :description="Itinerarie.description"
-        />
+  <div class="page container mt-5">
+    <div class="mb-5">
+      <h1 class="display-4">Itineraries</h1>
+      <p class="lead">
+        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+        Duis mollis, est non commodo luctus.
+      </p>
+    </div>
+    <div class="row mb-5 justify-content-center">
+      <ItineraryDetail
+        v-for="(itinerarie, itinerarieIndex) of itineraries"
+        :id="itinerarie.id"
+        :key="`itinerary-index-${itinerarieIndex}`"
+        :title="itinerarie.title"
+        :description="itinerarie.description"
+        :image-url="itinerarie.imageUrl"
+        :total-duration="itinerarie.totalDuration"
+        :journey="itinerarie.journey"
+        :tags="itinerarie.tags"
+        :suggested-audience="itinerarie.suggestedAudience"
+      />
     </div>
   </div>
-
 </template>
-<script>
 
-import Itinerary from '~/components/Itinerary.vue'
+<script >
+import ItineraryDetail from './components/ItineraryPreviewCard.vue'
+
 export default {
-  name: 'ListPage',
+  name: 'ItinerarytPage',
   components: {
-    Itinerary,
+    ItineraryDetail,
+  },
+  async asyncData({ $axios }) {
+    const { data } = await $axios.get('/itineraries')
+    return {
+      itineraries: data,
+    }
   },
   data() {
     return {
       
-      Itineraries: [
-        {
-          src: '../services/bank.jpg',
-          title: "Doumo",
-          description: " favourite family travel quotes: from bravery inducing adventure travel quotes to wonderful wanderlust"
-        },
-        {
-          src: '../services/bank.jpg',
-          title: "Doumo",
-          description: " favourite family travel quotes: from bravery inducing adventure travel quotes to wonderful wanderlust"
-        },
-      ],
     }
+  },
+  mounted: () => {
+    console.log('HI')
   },
 }
 </script>
-
-

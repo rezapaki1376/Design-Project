@@ -138,11 +138,11 @@ p {
   border: 1px solid rgb(255, 0, 0);
   background: rgb(255, 0, 0);
 }
-a,
+/* a,
 a:hover,
 a:focus,
 a:active {
   text-decoration: none;
   color: inherit;
-}
+} */
 </style>
