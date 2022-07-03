@@ -58,7 +58,28 @@
 </div>
 <!-- History template finishes here -->
 </template>
+<script>
 
+export default {
+  name: 'HistoryPage',
+  components: {
+    
+  },
+  
+  head() {
+    return {
+      title: this.name,
+      meta: [
+        {
+          hid:"description",
+          name: 'description',
+          content: 'Rome history',
+        },
+      ],
+    }
+  },
+}
+</script>
 <style scoped>
 
 .main_index {

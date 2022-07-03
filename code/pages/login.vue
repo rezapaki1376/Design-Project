@@ -37,6 +37,28 @@
 <!-- Login template finishes here  -->
 </template>
 
+<script>
+
+export default {
+  name: 'LoginPage',
+  components: {
+    
+  },
+  
+  head() {
+    return {
+      title: this.name,
+      meta: [
+        {
+          hid:"description",
+          name: 'description',
+          content: 'Login page',
+        },
+      ],
+    }
+  },
+}
+</script>
 <style scoped>
 .text-md-right{
   text-align: right;

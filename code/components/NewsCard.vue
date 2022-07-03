@@ -50,11 +50,7 @@ export default {
       required: true,
     },
   },
-  methods: {
-    // goToDetails() {
-    //   this.$router.push(`/eventdetail/${this.id}`)
-    // },
-  },
+  
 }
 </script>
 <style scoped>

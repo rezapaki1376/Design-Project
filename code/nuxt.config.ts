@@ -17,7 +17,7 @@ const config: NuxtConfig = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Find your rome website a tourist website for finding your interested events and point of interests and itineraries' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [

@@ -68,17 +68,7 @@ export default {
   components: {
     NewsCard,
   },
-  // async asyncData({ $axios }) {
-  //   const { data } = await $axios.get('/api/page-info/index')
-  //   const title = data.title
-  //   const image = data.image
-  //   const description = data.description
-  //   return {
-  //     title,
-  //     description,
-  //     image,
-  //   }
-  // },
+  
   data() {
     return {
       newslist: [
@@ -120,7 +110,19 @@ export default {
       ],
     }
   },
-  // async mounted() {},
+  head() {
+    return {
+      title: this.name,
+      meta: [
+        {
+          hid:"description",
+          name: 'description',
+          content: 'Home page, Find your Rome, Tourist, ',
+        },
+      ],
+    }
+  },
+  
 }
 </script>
 <style scoped>

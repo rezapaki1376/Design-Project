@@ -71,7 +71,7 @@
 <script>
 import CommonMixin from '~/mixins/common'
 export default {
-  name: 'DetailsPage',
+  name: 'ServiceDetailsPage',
   // mixins: [CommonMixin],
   async asyncData({ route, $axios }) {
     const { id } = route.params
@@ -84,13 +84,14 @@ export default {
   },
   head() {
     return {
-      title: this.name,
-      // meta: [
-      //   {
-      //     name: 'asdasd',
-      //     content: 'asdasd',
-      //   },
-      // ],
+      title: this.service.title,
+      meta: [
+        {
+          hid:"description",
+          name: 'description',
+          content: this.title,
+        },
+      ],
     }
   },
 

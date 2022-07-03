@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: 'CardComponent',
+  name: 'SuppotsComponent',
   props: {
   // defining the property 
     img: {
@@ -29,11 +29,7 @@ export default {
     },
     
   },
-  // methods: {
-  //   goToDetails() {
-  //     this.$router.push(`/eventdetail/${this.id}`)
-  //   },
-  // },
+   
 }
 </script>
 <style scoped>

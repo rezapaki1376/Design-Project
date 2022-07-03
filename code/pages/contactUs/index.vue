@@ -154,9 +154,16 @@ export default {
   components: {
     
   },
-  data() {
+  head() {
     return {
-      
+      title: this.name,
+      meta: [
+        {
+          hid:"description",
+          name: 'description',
+          content: "Contact us, Find your Rome offices",
+        },
+      ],
     }
   },
  

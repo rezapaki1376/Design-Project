@@ -263,6 +263,18 @@ export default {
         },
       ],
     }
+  }, 
+  head() {
+    return {
+      title: this.name,
+      meta: [
+        {
+          hid:"description",
+          name: 'description',
+          content: "About us, Find your Rome",
+        },
+      ],
+    }
   },
  
 }

@@ -21,7 +21,7 @@
 import Service from '~/components/Service.vue'
 export default {
   // calling the service component here
-  name: 'Contactus',
+  name: 'ServiceTypes',
   components: {
     Service,
   },
@@ -35,6 +35,18 @@ export default {
   },
   data() {
     return {}
+  },
+  head() {
+    return {
+      title: this.name,
+      meta: [
+        {
+          hid:"description",
+          name: 'description',
+          content: 'Rome possibilities, services',
+        },
+      ],
+    }
   },
 }
 </script>

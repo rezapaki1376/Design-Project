@@ -65,7 +65,18 @@ export default {
       
     }
   },
-  
+  head() {
+    return {
+      title: this.name,
+      meta: [
+        {
+          hid:"description",
+          name: 'description',
+          content: 'Rome nature',
+        },
+      ],
+    }
+  },
 }
 </script>
 <style scoped>
