@@ -22,7 +22,7 @@ export default {
     PointOfInterested,
   },
   async asyncData({ $axios }) {
-    const { data } = await $axios.get('/itineraries')
+    const { data } = await $axios.get('/points-of-interest')
     // console.log(data)
     return {
       events: data,
