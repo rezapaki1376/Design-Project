@@ -3,7 +3,7 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <nuxt-link :to="`/events`"> Events </nuxt-link>
+          <nuxt-link :to="`/events`" :alt="event.title"> Events </nuxt-link>
         </li>
         <li class="breadcrumb-item active" aria-current="page">
           {{ event.title }}
@@ -27,7 +27,7 @@
         <img
           class="rounded-lg-3"
           :src="require(`@/assets/img/events/${event.imageUrl}`)"
-          alt=""
+          :alt="event.title"
         />
       </div>
       <div class="col-lg-7">
@@ -149,12 +149,12 @@ img {
   width: 100%;
 }
 .btn {
-  background-color: #00c58e !important;
+  /* background-color: #00c58e !important; */
   border: 0;
 }
 .btn-white {
   background-color: white !important;
-  color: #00c58e !important;
+  /* color: #00c58e !important; */
   border-color: black;
   border: 1px solid;
 }

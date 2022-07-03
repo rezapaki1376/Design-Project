@@ -2,12 +2,12 @@
 <!-- here is component for defining the news part in the Home page -->
 <!-- news component starts from here  -->
   <div class="col-xlg-3 col-lg-3 col-md-7 col-sm-12 newscard">
-          <a href="#">
+          <a href="/">
           <div class="card">
           <img
             class="card-img-top"
             :src="img"
-            alt="Card image"
+            :alt="title"
             style="width: 100%"
           />
           <div class="card-body">

@@ -19,13 +19,13 @@
         </div>
         <div class="row image-box">
           <div class="col-lg-4">
-            <img src="index1.jpg" alt="" />
+            <img src="index1.jpg" alt=" rome image" />
           </div>
           <div class="col-lg-4">
-            <img src="index2.jpg" alt="" />
+            <img src="index2.jpg" alt=" rome image" />
           </div>
           <div class="col-lg-4">
-            <img src="index3.jpg" alt="" />
+            <img src="index3.jpg" alt=" rome image" />
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@
                 <!-- <h4 class="card-title">Our top news</h4> -->
                 <p class="card-text">Look at our top news in Rome.</p>
                 <h4 class="blog">
-                  <nuxt-link to="#"> Join to our blog. </nuxt-link>
+                  <nuxt-link to="/" alt="link to blog"> Join to our blog. </nuxt-link>
                 </h4>
               </div>
             </div>

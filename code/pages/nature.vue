@@ -10,10 +10,10 @@
         <div class="row image-box">
           <!-- defining the pictures in the begining of the page  -->
           <div class="col-lg-6">
-            <img src="../assets/img/nature/nature1.jpg" alt="" />
+            <img src="@/assets/img/nature/nature1.jpg" alt="Rome nature" />
           </div>
           <div class="col-lg-6">
-            <img src="../assets/img/nature/nature3.jpg" alt="" />
+            <img src="@/assets/img/nature/nature3.jpg" alt="Rome nature" />
           </div>
         </div>
         <div class="row">

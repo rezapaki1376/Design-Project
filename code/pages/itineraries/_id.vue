@@ -157,7 +157,7 @@ img {
 }
 .btn-white {
   background-color: white !important;
-  color: #00c58e !important;
+  /* color: #00c58e !important; */
   border-color: black;
   border: 1px solid;
 }

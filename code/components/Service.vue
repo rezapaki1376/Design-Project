@@ -3,10 +3,10 @@
 <div class="col-lg-3">
   <!-- <nuxt-link to="/"> -->
           <div class="card">
-    <img class="card-img-top" :src="require(`@/assets/img/services/${img}`)" alt="Card image cap">
+    <img class="card-img-top" :src="require(`@/assets/img/services/${img}`)" :alt="title">
     <div class="card-body">
       <h5 class="card-title">{{title}}</h5>
-      <nuxt-link :to="`/services/${id}`">
+      <nuxt-link :to="`/services/${id}`" :alt="title">
             <div class="btn btn-primary mt-3">See Details</div>
           </nuxt-link>
       </div>

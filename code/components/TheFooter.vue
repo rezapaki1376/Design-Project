@@ -170,9 +170,7 @@ ul {
 img {
   width: 45px;
 }
-nuxt-link{
 
-}
 </style>
 
 

@@ -152,7 +152,7 @@ p {
   visibility: hidden;
 }
 .btn {
-  background-color: #00c58e !important;
+  /* background-color: #00c58e !important; */
   border: 0;
 }
 .card:hover .line {
