@@ -53,9 +53,9 @@
           </div>
           </div>
           <!-- again a group link for going back to previous page -->
-          <nuxt-link :to="item.url" :alt="item.name">
+          <a :href="'//' + item.url" :alt="item.name">
             <div class="btn btn-primary mt-3">See Details</div>
-          </nuxt-link>
+          </a>
         
       </div>
      

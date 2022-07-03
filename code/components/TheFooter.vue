@@ -46,7 +46,7 @@
         <ul>
           <li>
             <div class="">
-              <a href="www.instagram.com" target="_blank" alt="instagram">
+              <a href="//www.instagram.com" alt="instagram">
               
               <img src="../assets/img/socialmedia/instagram.png" alt="instagram" />
               </a>
@@ -54,14 +54,14 @@
           </li>
           <li>
             <div class="">
-              <a href="www.facebook.com" target="_blank" alt="facebook">
+              <a href="//www.facebook.com" alt="facebook">
               <img src="../assets/img/socialmedia/facebook.png" alt="facebook" />
               </a>
             </div>
           </li>
           <li>
             <div  class="">
-              <a href="www.pinterest.com" target="_blank" alt="pinterest">
+              <a  href="//www.pinterest.com" alt="pinterest">
               <img src="../assets/img/socialmedia/pinterest.png" alt="pinterest" />
               </a>
             </div>

@@ -104,7 +104,7 @@ export default {
   font-size: 32px;
 }
 .nuxt-link-exact-active {
-  color: #0a58ca !important;
+  color: #0d6efd !important;
 }
 .header {
   background: white;
@@ -119,6 +119,6 @@ export default {
   font-weight: normal;
 }
 .nav-link:hover {
-  color: #0a58ca !important;
+  color: #0d6efd !important;
 }
 </style>

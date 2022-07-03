@@ -9,7 +9,7 @@
         "imageUrl": "ph1.jpg",
         "address": "Via Nazionale, 228",
         "openinHours": "7:30-23",
-        "url": "https://easyfarma.it/about-our-company/",
+        "url": "easyfarma.it/about-our-company/",
         "contactInformation": "06 488 4437"
       },
       {
@@ -17,7 +17,7 @@
         "imageUrl": "ph2.jpg",
         "address": "Piazza di Spagna, 30",
         "openinHours": "8:30-20",
-        "url": "https://glovoapp.com/it/en/rome/pharmacy_3/",
+        "url": "glovoapp.com/it/en/rome/pharmacy_3/",
         "contactInformation": "06 679 0626"
       },
       {
@@ -25,7 +25,7 @@
         "imageUrl": "ph3.jpg",
         "address": "Corso del Rinascimento, 50",
         "openinHours": "7:30-21",
-        "url": "https://www.parafarmaciapolo.it/en/",
+        "url": "www.parafarmaciapolo.it/en/",
         "contactInformation": "06 6880 3760"
       },
       {
@@ -33,7 +33,7 @@
         "imageUrl": "ph4.jpg",
         "address": "P.za Barberini, 49",
         "openinHours": "8-22",
-        "url": "https://www.yelp.com/search?cflt=pharmacy&find_loc=Rome%2C+Roma",
+        "url": "www.yelp.com/search?cflt=pharmacy&find_loc=Rome%2C+Roma",
         "contactInformation": "06 487 1195"
       },
       {
@@ -41,7 +41,7 @@
         "imageUrl": "ph5.png",
         "address": " Piazza della Repubblica, 67",
         "openinHours": "8:30-19:30",
-        "url": "https://www.parafarmaciapolo.it/en/",
+        "url": "www.parafarmaciapolo.it/en/",
         "contactInformation": "06 474 0358"
       }
     ],
@@ -57,7 +57,7 @@
       "imageUrl": "bank1.jpg",
       "address": " Largo del Tritone, 161",
       "openinHours": "8:20-13:20",
-      "url": "https://www.bancaditalia.it/chi-siamo/organizzazione/filiali/roma/index.html?com.dotmarketing.htmlpage.language=1",
+      "url": "www.bancaditalia.it/chi-siamo/organizzazione/filiali/roma/index.html?com.dotmarketing.htmlpage.language=1",
       "contactInformation": "06 6718 4240"
     },
     {
@@ -65,7 +65,7 @@
       "imageUrl": "bank2.jpg",
       "address": "Piazza di Sant'Apollinare, 33",
       "openinHours": "8:30-13:30",
-      "url": "https://www.bancaubae.it/en/internet-banking/",
+      "url": "www.bancaubae.it/en/internet-banking/",
       "contactInformation": "06 6976 5311"
     },
     {
@@ -73,7 +73,7 @@
       "imageUrl": "bank3.jpg",
       "address": " Via Venti Settembre, 97/e",
       "openinHours": "8-13:30",
-      "url": "https://www.hsbc.it/",
+      "url": "www.hsbc.it/",
       "contactInformation": "06 47921"
     },
     {
@@ -81,7 +81,7 @@
       "imageUrl": "bank4.jpg",
       "address": " Via Venti Settembre, 98",
       "openinHours": "8:20-13:20",
-      "url": "https://www.hsbc.it/",
+      "url": "www.hsbc.it/",
       "contactInformation": "06 462 0271"
     },
     {
@@ -89,7 +89,7 @@
       "imageUrl": "bank5.jpg",
       "address": " Via Vittorio Emanuele Orlando, 70",
       "openinHours": "8:30-13:30",
-      "url": "https://www.unicredit.it/it/privati.html",
+      "url": "www.unicredit.it/it/privati.html",
       "contactInformation": "06 8782 6400"
     }
   ],
@@ -105,7 +105,7 @@
       "imageUrl": "post1.jpg",
       "address": " Corso Vittorio Emanuele II, 334",
       "openinHours": "8:20-13:35",
-      "url": "https://www.posteitaliane.it/en/index.html",
+      "url": "www.posteitaliane.it/en/index.html",
       "contactInformation": "06 6840 2920"
     },
     {
@@ -113,7 +113,7 @@
       "imageUrl": "post2.jpg",
       "address": " Viale di Trastevere, 158",
       "openinHours": "8:20-13:15",
-      "url": "https://www.ilpost.it/",
+      "url": "www.ilpost.it/",
       "contactInformation": "06 6530 2710"
     },
     {
@@ -121,7 +121,7 @@
       "imageUrl": "post3.jpg",
       "address": " Via del Salvatore, 18",
       "openinHours": "8-13:30",
-      "url": "https://www.posteitaliane.it/en/mail-parcel-and-distribution.html",
+      "url": "www.posteitaliane.it/en/mail-parcel-and-distribution.html",
       "contactInformation": "06 6380 2720"
     },
     {
@@ -129,7 +129,7 @@
       "imageUrl": "post4.jpg",
       "address": " Via di Porta Angelica, 23",
       "openinHours": "8:20-13:30",
-      "url": "https://www.usps.com/",
+      "url": "www.usps.com/",
       "contactInformation": "06 636 2990"
     },
     {
@@ -137,7 +137,7 @@
       "imageUrl": "post5.jpg",
       "address": " Via Bocca di Leone, 73",
       "openinHours": "8:20-13:35",
-      "url": "https://www.post.ch/en",
+      "url": "www.post.ch/en",
       "contactInformation": "06 6758 1211"
     }
     ],
@@ -153,7 +153,7 @@
       "imageUrl": "hospital1.jpg",
       "address": " Via Giovanni Battista Morgagni, 30",
       "openinHours": "6:30-20",
-      "url": "https://www.washington.edu/rome/health-safety/hospitals/",
+      "url": "www.washington.edu/rome/health-safety/hospitals/",
       "contactInformation": "06 4006 1402"
     },
     {
@@ -161,7 +161,7 @@
       "imageUrl": "hospital2.jpg",
       "address": " Via Emilio Longoni, 81",
       "openinHours": "6-22",
-      "url": "http://www.romehospital.org/",
+      "url": "www.romehospital.org/",
       "contactInformation": "06 4336 1572"
     },
     {
@@ -169,7 +169,7 @@
       "imageUrl": "hospital3.jpeg",
       "address": " Via di Ponte Quattro capi, 39",
       "openinHours": "6:30-24",
-      "url": "https://salvatormundi.com/",
+      "url": "salvatormundi.com/",
       "contactInformation": "06 3306 5602"
     },
     {
@@ -177,7 +177,7 @@
       "imageUrl": "hospital4.jpg",
       "address": " V.le delle Mura Gianicolensi, 67",
       "openinHours": "6:30-21",
-      "url": "https://en.uniroma2.it/about/ptv-hospital/",
+      "url": "en.uniroma2.it/about/ptv-hospital/",
       "contactInformation": "06 5606 2302"
     },
     {
@@ -185,7 +185,7 @@
       "imageUrl": "hospital5.jpg",
       "address": " Via dell'Amba Aradam, 8",
       "openinHours": "7:30-20",
-      "url": "https://www.here-romehealth.org/",
+      "url": "www.here-romehealth.org/",
       "contactInformation": "06 4014 1135"
     }
     ],
@@ -201,7 +201,7 @@
         "imageUrl": "g1.png",
         "address": "Via del Castro Pretorio,",
         "openinHours": "9:30-20",
-        "url": "https://www.romaauto.co.nz/",
+        "url": "www.romaauto.co.nz/",
         "contactInformation": "06 4332 1435"
       },
       {
@@ -209,7 +209,7 @@
         "imageUrl": "g2.jpg",
         "address": "Salita di S. Nicola da Tolentino, 22",
         "openinHours": "8:30-18",
-        "url": "https://www.captainautorepairs.com/About.aspx",
+        "url": "www.captainautorepairs.com/About.aspx",
         "contactInformation": "06 4014 1338"
       },
       {
@@ -217,7 +217,7 @@
         "imageUrl": "g3.jpg",
         "address": "Via Raimondo Montecuccoli, 30- 32/A",
         "openinHours": "7:30-20",
-        "url": "https://tallmanstire.com/rome/",
+        "url": "tallmanstire.com/rome/",
         "contactInformation": "06 4234 3358"
       },
       {
@@ -225,7 +225,7 @@
         "imageUrl": "g4.jpg",
         "address": "Via del Castro Pretorio, 48",
         "openinHours": "7:30-15",
-        "url": "https://www.yelp.com/search?cflt=autorepair&find_loc=Rome%2C+Roma",
+        "url": "www.yelp.com/search?cflt=autorepair&find_loc=Rome%2C+Roma",
         "contactInformation": "06 9987 6543"
       },
       {
@@ -233,7 +233,7 @@
         "imageUrl": "g5.png",
         "address": "Via Cattaro, 24",
         "openinHours": "8-19",
-        "url": "https://www.captainautorepairs.com/About.aspx",
+        "url": "www.captainautorepairs.com/About.aspx",
         "contactInformation": "06 2345 0987"
       }
     ],
@@ -249,7 +249,7 @@
         "imageUrl": "b1.jpg",
         "address": "Via Cola di Rienzo, 173",
         "openinHours": "10:30-19",
-        "url": "https://www.romeing.it/english-speaking-hair-salons-rome/",
+        "url": "www.romeing.it/english-speaking-hair-salons-rome/",
         "contactInformation": "06 2125 7789"
       },
       {
@@ -257,7 +257,7 @@
         "imageUrl": "b2.jpg",
         "address": "Via dei Cappuccini, 11",
         "openinHours": "9:30-19",
-        "url": "https://www.lucacontibarbershop.it/en/home-2/",
+        "url": "www.lucacontibarbershop.it/en/home-2/",
         "contactInformation": "06 2377 0967"
       },
       {
@@ -265,7 +265,7 @@
         "imageUrl": "b3.jpg",
         "address": "Via dei Cartari, 10",
         "openinHours": "9-16",
-        "url": "https://www.tbspeakeasy.com/",
+        "url": "www.tbspeakeasy.com/",
         "contactInformation": "06 9987 7654"
       },
       {
@@ -273,7 +273,7 @@
         "imageUrl": "b4.jpg",
         "address": "  Via della Scrofa, 42",
         "openinHours": "10-17",
-        "url": "https://www.modafferibarbershop.it/",
+        "url": "www.modafferibarbershop.it/",
         "contactInformation": "06 7654 9908"
       },
       {
@@ -281,7 +281,7 @@
         "imageUrl": "b5.jpg",
         "address": "Via Cattaro, 24",
         "openinHours": "10-19",
-        "url": "https://www.maxjobarbershop.it/",
+        "url": "www.maxjobarbershop.it/",
         "contactInformation": "06 2345 6657"
       }
     ],
@@ -297,7 +297,7 @@
         "imageUrl": "d1.jpg",
         "address": "Via Elio Lampridio Cerva, 4",
         "openinHours": "11-19",
-        "url": "https://www.adadentistsrome.com/",
+        "url": "www.adadentistsrome.com/",
         "contactInformation": "06 2134 5567"
       },
       {
@@ -305,7 +305,7 @@
         "imageUrl": "d2.jpeg",
         "address": "Via del Governo Vecchio, 73",
         "openinHours": "8:30-18",
-        "url": "https://www.romeing.it/english-speaking-dentists-rome/",
+        "url": "www.romeing.it/english-speaking-dentists-rome/",
         "contactInformation": "06 3114 7767"
       },
       {
@@ -313,7 +313,7 @@
         "imageUrl": "d3.jpg",
         "address": "Viale Aventino, 42",
         "openinHours": "9-20",
-        "url": "https://www.dentistroma.com/",
+        "url": "www.dentistroma.com/",
         "contactInformation": "06 3467 9908"
       },
       {
@@ -321,7 +321,7 @@
         "imageUrl": "d4.jpg",
         "address": "Piazza Salerno, 6",
         "openinHours": "9:30-19",
-        "url": "https://www.studimazzei.com/mazzei-dental-clinic/",
+        "url": "www.studimazzei.com/mazzei-dental-clinic/",
         "contactInformation": "06 3245 6678"
       },
       {
@@ -329,7 +329,7 @@
         "imageUrl": "d5.jpeg",
         "address": "Via Luciano Manara, 25",
         "openinHours": "10-17",
-        "url": "https://studiodentisticoacilia.com/english-speaking-dentist-in-rome/",
+        "url": "studiodentisticoacilia.com/english-speaking-dentist-in-rome/",
         "contactInformation": "06 2765 8891"
       }
     ],

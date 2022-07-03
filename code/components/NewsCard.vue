@@ -6,7 +6,7 @@
           <div class="card">
           <img
             class="card-img-top"
-            :src="img"
+            :src="require(`@/assets/img/news/${img}`)"
             :alt="title"
             style="width: 100%"
           />

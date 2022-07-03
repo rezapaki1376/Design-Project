@@ -83,7 +83,7 @@ export default {
     return {
       newslist: [
         {
-          src: 'news1.png',
+          src: 'news1.jpg',
           title: 'Rome PRIDE  2022',
           description:
             'Pride Rome 2022 gets underway across the city with lots of events and initiatives across the city with lots of events and initiatives across the city with lots of events and initiatives, leading up to the street parade on July 2nd with the grand finale.',
