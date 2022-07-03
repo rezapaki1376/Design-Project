@@ -3,8 +3,7 @@
     <div class="mb-5">
       <h1 class="display-4">Itineraries</h1>
       <p class="lead">
-        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-        Duis mollis, est non commodo luctus.
+        Find your interested itineraries.
       </p>
     </div>
     <div class="row mb-5 justify-content-center">

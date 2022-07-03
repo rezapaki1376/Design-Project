@@ -40,14 +40,14 @@
         </div>
 
         <div class="jumbotron col-lg-6">
-          <img class="IMG_styles" src="AU1.png" alt="" />
+          <img class="IMG_styles" src="@/assets/img/about-us/AU1.png" alt="" />
         </div>
       </div>
 
       
       <div class="row">
         <div class="jumbotron col-lg-6">
-          <img class="IMG_styles" src="aboutus2.jpg" alt="" />
+          <img class="IMG_styles" src="@/assets/img/about-us/aboutus2.jpg" alt="" />
         </div>
 
         <div class="jumbotron col-lg-6">
@@ -82,13 +82,13 @@
         </div>
 
         <div class="jumbotron col-lg-6">
-          <img class="IMG_styles" src="aboutus3.jpg" alt="" />
+          <img class="IMG_styles" src="@/assets/img/about-us/aboutus3.jpg" alt="" />
         </div>
       </div>
 
       <div class="row">
         <div class="jumbotron col-lg-6">
-          <img class="IMG_styles" src="history.jpg" alt="" />
+          <img class="IMG_styles" src="@/assets/img/about-us/history.jpg" alt="" />
         </div>
         <div class="jumbotron col-lg-6">
           <h1>Rome history</h1>
@@ -126,7 +126,7 @@
           
         </div>
         <div class="jumbotron col-lg-6">
-          <img class="IMG_styles" src="nature.jpg" alt="" />
+          <img class="IMG_styles" src="@/assets/img/about-us/nature.jpg" alt="" />
         </div>
       </div>
     </div>
@@ -197,7 +197,7 @@
 
 <script>
 // calling the support components fro creating the partner part
-import Support from '~/components/Support.vue'
+import Support from './components/Support.vue'
 export default {
   name: 'AboutPage',
   components: {

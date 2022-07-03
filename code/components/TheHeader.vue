@@ -26,6 +26,7 @@
             class="nav-link-custom nav-link"
             prefetch
             style="color: black"
+            alt="Home"
           >
             Home
           </nuxt-link>
@@ -40,6 +41,7 @@
             class="nav-link-custom nav-link"
             prefetch
             style="color: black"
+            :alt="navItem.name"
           >
             {{ navItem.name }}
           </nuxt-link>
@@ -52,6 +54,7 @@
       class="nav-link-custom nav-link"
       prefetch
       style="color: black"
+      alt="Login page"
     >
       <i
         class="bi bi-box-arrow-in-right"
@@ -101,7 +104,7 @@ export default {
   font-size: 32px;
 }
 .nuxt-link-exact-active {
-  color: #00c58e !important;
+  color: #0a58ca !important;
 }
 .header {
   background: white;
@@ -116,6 +119,6 @@ export default {
   font-weight: normal;
 }
 .nav-link:hover {
-  color: #00c58e !important;
+  color: #0a58ca !important;
 }
 </style>

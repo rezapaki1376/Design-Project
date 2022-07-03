@@ -5,7 +5,7 @@
       <img
         class="card-img-top"
         :src="require(`@/assets/img/itinerary/${imageUrl}`)"
-        alt="Card image"
+        :alt="title"
       />
       <div
         class="card-body d-flex flex-column text-center justify-content-between"
@@ -57,7 +57,7 @@
           <div>
             Suggested audience: {{suggestedAudience}}
           </div>
-          <nuxt-link :to="`/itineraries/${id}`">
+          <nuxt-link :to="`/itineraries/${id}`" :alt="`details of itinerary-${id}`">
             <div class="btn btn-primary mt-3">See Details</div>
           </nuxt-link>
         </div>

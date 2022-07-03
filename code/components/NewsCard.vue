@@ -2,7 +2,7 @@
 <!-- here is component for defining the news part in the Home page -->
 <!-- news component starts from here  -->
   <div class="col-xlg-3 col-lg-3 col-md-7 col-sm-12 newscard">
-          <a href="/">
+          <nuxt-link to="/" :alt="title">
           <div class="card">
           <img
             class="card-img-top"
@@ -23,7 +23,7 @@
                <div class="line"></div>
           </div>
         </div>
-        </a>
+        </nuxt-link>
       </div>
       <!-- news component finishes here  -->
 </template>

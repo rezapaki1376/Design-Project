@@ -7,7 +7,7 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <nuxt-link :to="`/services`"> Services </nuxt-link>
+          <nuxt-link :to="`/services`" alt="Services" > Services </nuxt-link>
         </li>
         <li class="breadcrumb-item active" aria-current="page">
           {{ service.title }}
@@ -27,7 +27,7 @@
       <img
         class="card-img-top"
         :src="require(`@/assets/img/services/${service.title}/${item.imageUrl}`)"
-        alt="Card image"
+        :alt="item.name"
       />
       <div
         class="card-body d-flex flex-column text-center justify-content-between"
@@ -53,7 +53,7 @@
           </div>
           </div>
           <!-- again a group link for going back to previous page -->
-          <nuxt-link :to="item.url">
+          <nuxt-link :to="item.url" :alt="item.name">
             <div class="btn btn-primary mt-3">See Details</div>
           </nuxt-link>
         

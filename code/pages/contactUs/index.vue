@@ -13,7 +13,7 @@
         </p>
       </div>
       <div class="jumbotron col-lg-6">
-        <img class="CU_image" src="CU2.jpg" alt="" />
+        <img class="CU_image" src="@/assets/img/about-us/CU2.jpg" alt="" />
       </div>
     </div>
 
@@ -120,10 +120,10 @@
         </p>
       </div>
       <div class="col-xlg-6 col-lg-6 col-md-12 col-sm-12">
-        <img class="IMG_styles" src="CU3.jpg" alt="" />
+        <img class="IMG_styles" src="@/assets/img/about-us/CU3.jpg" alt="" />
       </div>
       <div class="col-xlg-6 col-lg-6 col-md-12 col-sm-12">
-        <img class="IMG_styles" src="CU4.jpg" alt="" />
+        <img class="IMG_styles" src="@/assets/img/about-us/CU4.jpg" alt="" />
       </div>
       <div class="col-xlg-6 col-lg-6 col-md-12 col-sm-12">
         <h2>City Life office</h2>
@@ -286,5 +286,11 @@ a:active {
 }
 .address div {
   margin-top: 5%;
+}
+/* styles for responsive part */
+@media (max-width: 768px) {
+  .card{
+    height: 600px;
+  }
 }
 </style>

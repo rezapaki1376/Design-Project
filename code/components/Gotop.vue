@@ -1,9 +1,9 @@
 <template>
-  <a href="#">
-    <div>
+  
+    <div onclick='window.scrollTo({top: 0, behavior: "smooth"});'>
       <span><i class="bi bi-arrow-up"></i></span>
     </div>
-  </a>
+  
 </template>
 
 <script>
@@ -49,6 +49,7 @@ div {
 div:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background: rgb(225, 225, 225);
+  cursor: pointer;
 }
 span{
   margin: 10% auto;
@@ -60,7 +61,5 @@ i{
   font-size: 30px;
   
 }
-a{
-  text-decoration: none;
-}
+
 </style>

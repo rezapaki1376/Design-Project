@@ -78,8 +78,11 @@ img {
   width: 100%;
   height: 100%;
   
+  
 }
-
+.image-box >div{
+  margin: 10px 0;
+}
 h1 {
   font-size: 70px;
   color: #cad2c5;

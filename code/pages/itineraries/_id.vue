@@ -3,7 +3,7 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <nuxt-link :to="`/itineraries`"> Itineraries </nuxt-link>
+          <nuxt-link :to="`/itineraries`" alt="Itineraries"> Itineraries </nuxt-link>
         </li>
         <li class="breadcrumb-item active" aria-current="page">
           {{ itinerary.title }}
@@ -27,7 +27,7 @@
         <img
           class="rounded-lg-3"
           :src="require(`@/assets/img/itinerary/${itinerary.imageUrl}`)"
-          alt=""
+          :alt="itinerary.title"
         />
       </div>
       <div class="col-lg-7">

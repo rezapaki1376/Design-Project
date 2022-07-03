@@ -100,7 +100,7 @@ input.transparent-input:hover{
 .login{
   height:100vh;
   width: 100%;
-  background-image: url("./static/login4.jpg");
+  background-image: url("@/assets/img/login4.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

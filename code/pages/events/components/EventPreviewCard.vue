@@ -5,7 +5,7 @@
       <img
         class="card-img-top"
         :src="require(`@/assets/img/events/${imageUrl}`)"
-        alt="Card image"
+        :alt="title"
       />
       <div
         class="card-body d-flex flex-column text-center justify-content-between"
@@ -55,7 +55,7 @@
               style="font-size: 1.2rem; color: green"
             />
           </div>
-          <nuxt-link :to="`/events/${id}`">
+          <nuxt-link :to="`/events/${id}`" :alt="`Details of event-${id}`">
             <div class="btn btn-primary mt-3">See Details</div>
           </nuxt-link>
         </div>

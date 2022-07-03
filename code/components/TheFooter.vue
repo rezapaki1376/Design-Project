@@ -6,38 +6,38 @@
         <!-- 1: defining the navigation to access main website parts -->
         <p class="big_p">Navigation</p>
         <ul>
-          <li><nuxt-link to="/events" class="nav-link"> Events</nuxt-link></li>
+          <li><nuxt-link to="/events" class="nav-link" alt="Events"> Events</nuxt-link></li>
           <li>
-            <nuxt-link to="/points_of_interest" class="nav-link">
+            <nuxt-link to="/points_of_interest" class="nav-link" alt="Point of interests">
               Point of interests
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/itineraries" class="nav-link">
+            <nuxt-link to="/itineraries" class="nav-link" alt="Itineraries">
               Itineraries
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/services" class="nav-link"> Services </nuxt-link>
+            <nuxt-link to="/services" class="nav-link" alt="Services" > Services </nuxt-link>
           </li>
-          <li>
-            <nuxt-link to="/about_us" class="nav-link"> About us </nuxt-link>
+          <li> 
+            <nuxt-link to="/about_us" class="nav-link" alt="About us"> About us </nuxt-link>
           </li>
         </ul>
       </div>
       <!-- 2: defining Legal Notice -->
       <div class="col-xlg-3 col-lg-3 col-md-6 col-sm-12">
-        <p class="big_p">Legal Notice</p>
+        <p class="big_p">About Rome</p>
         <ul>
           <li>
-            <nuxt-link to="/" class="nav-link"> Private Policy </nuxt-link>
+            <nuxt-link to="/history" class="nav-link" alt="Rome history"> Rome history </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/list" class="nav-link"> Disclosure </nuxt-link>
+            <nuxt-link to="/nature" class="nav-link" alt="Rome nature"> Rome nature </nuxt-link>
           </li>
-          <li>
+          <!-- <li>
             <nuxt-link to="/list" class="nav-link"> Terms of use</nuxt-link>
-          </li>
+          </li> -->
         </ul>
       </div>
       <div class="col-xlg-3 col-lg-3 col-md-6 col-sm-12">

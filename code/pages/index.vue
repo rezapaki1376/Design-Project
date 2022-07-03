@@ -19,13 +19,13 @@
         </div>
         <div class="row image-box">
           <div class="col-lg-4">
-            <img src="index1.jpg" alt=" rome image" />
+            <img src="@/assets/img/index1.jpg" alt=" rome image" />
           </div>
           <div class="col-lg-4">
-            <img src="index2.jpg" alt=" rome image" />
+            <img src="@/assets/img/index2.jpg" alt=" rome image" />
           </div>
           <div class="col-lg-4">
-            <img src="index3.jpg" alt=" rome image" />
+            <img src="@/assets/img/index3.jpg" alt=" rome image" />
           </div>
         </div>
       </div>
