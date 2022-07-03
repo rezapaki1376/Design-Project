@@ -3,11 +3,15 @@
 <div class="container">
     <div class="row">
       <PointOfInterested
-          v-for="(POI, index) of POIs"
+          v-for="(Poi, index) of POIs"
+          :id="Poi.id"
           :key="`service-index-${index}`"
-          :img="POI.src"
-          :title="POI.title"
-          :description="POI.description"
+          :img="Poi.imageUrl"
+          :title="Poi.title"
+          :description="Poi.description"
+          :address="Poi.address"
+          :openinghours="Poi.openingHours"
+          
         />
     </div>
   </div>
@@ -15,9 +19,9 @@
 </template>
 <script>
 
-import PointOfInterested from '~/components/PointOfInterested.vue'
+import PointOfInterested from './components/PointOfInterested.vue'
 export default {
-  name: 'ListPage',
+  name: 'PoiPage',
   components: {
     PointOfInterested,
   },
@@ -25,24 +29,11 @@ export default {
     const { data } = await $axios.get('/points-of-interest')
     // console.log(data)
     return {
-      events: data,
+      POIs: data,
     }
   },
   data() {
     return {
-      
-      POIs: [
-        {
-          src: '../services/bank.jpg',
-          title: "Doumo",
-          description: " favourite family travel quotes: from bravery inducing adventure travel quotes to wonderful wanderlust"
-        },
-        {
-          src: '../services/bank.jpg',
-          title: "Doumo",
-          description: " favourite family travel quotes: from bravery inducing adventure travel quotes to wonderful wanderlust"
-        },
-      ],
     }
   },
 }

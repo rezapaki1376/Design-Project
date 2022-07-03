@@ -39,17 +39,18 @@
           <hr />
           <div class="d-flex justify-content-around">
             <div>
-              <i
+              
+              Opening hours: <i
                 class="bi bi-clock"
                 style="font-size: 1.2rem; color: black"
-              ></i>
-              Opening hours: {{ item.openinHours }}
+              ></i> {{ item.openinHours }}
             </div>
           </div>
           <div class="d-flex justify-content-around">
             <div>
-              <i class="bi bi-geo-alt"></i>Address:
+              Address: <i class="bi bi-geo-alt"></i>
               {{ item.address }}
+              
           </div>
           </div>
           <!-- again a group link for going back to previous page -->
