@@ -36,6 +36,18 @@ export default {
     return {
     }
   },
+  head() {
+    return {
+      title: this.name,
+      meta: [
+        {
+          hid:"description",
+          name: 'description',
+          content: 'Rome Points of interest',
+        },
+      ],
+    }
+  },
 }
 </script>
 

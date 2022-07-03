@@ -69,7 +69,7 @@
 
 <script>
 export default {
-  name: 'ItineraryDetail',
+  name: 'ItineraryPreviewsDetail',
   props: {
     id: {
       type: Number,

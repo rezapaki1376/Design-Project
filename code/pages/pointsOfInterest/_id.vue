@@ -77,11 +77,12 @@ export default {
   },
   head() {
     return {
-      title: this.name,
+      title: this.Poi.title,
       meta: [
         {
-          name: 'asdasd',
-          content: 'asdasd',
+          hid:"description",
+          name: 'description',
+          content: this.title,
         },
       ],
     }

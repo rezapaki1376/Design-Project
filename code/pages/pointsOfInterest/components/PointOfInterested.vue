@@ -46,7 +46,7 @@
 </template>
 <script>
 export default {
-  name: 'PoiDetail',
+  name: 'PoiRivieComponent',
   props: {
     id: {
       type: Number,
@@ -79,6 +79,7 @@ export default {
       this.$router.push(`/points-of-interest/${this.id}`)
     },
   },
+  
 }
 </script>
 <style scoped>
