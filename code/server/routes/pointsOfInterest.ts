@@ -3,9 +3,9 @@ const controller = require('../controllers/pointsOfInterest')
 
 const router = Router()
 
-router.get('/', controller.getAll).get('/:id', controller.getOne)
-// .post('/', adminAuth.verifyAdmin, controller.createOne)
-// .put('/:id', adminAuth.verifyAdmin, controller.updateOne)
-// .delete('/:id', adminAuth.verifyAdmin, controller.deleteOne)
+router
+  .get('/', controller.getAll)
+  .get('/:id', controller.getOne)
+  .get('/:id/events', controller.getEventsById)
 
 module.exports = router

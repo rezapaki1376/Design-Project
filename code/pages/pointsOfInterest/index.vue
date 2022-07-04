@@ -1,29 +1,26 @@
 
 <template>
-<div class="container">
+  <div class="container">
     <div class="row">
-      <PointOfInterested
-          v-for="(Poi, index) of POIs"
-          :id="Poi.id"
-          :key="`service-index-${index}`"
-          :img="Poi.imageUrl"
-          :title="Poi.title"
-          :description="Poi.description"
-          :address="Poi.address"
-          :openinghours="Poi.openingHours"
-          
-        />
+      <PointOfInterestedPreview
+        v-for="(Poi, index) of POIs"
+        :id="Poi.id"
+        :key="`service-index-${index}`"
+        :img="Poi.imageUrl"
+        :title="Poi.title"
+        :description="Poi.description"
+        :address="Poi.address"
+        :openinghours="Poi.openingHours"
+      />
     </div>
   </div>
-
 </template>
 <script>
-
-import PointOfInterested from './components/PointOfInterested.vue'
+import PointOfInterestedPreview from './components/PointOfInterestedPreview.vue'
 export default {
   name: 'PoiPage',
   components: {
-    PointOfInterested,
+    PointOfInterestedPreview,
   },
   async asyncData({ $axios }) {
     const { data } = await $axios.get('/points-of-interest')
@@ -33,15 +30,14 @@ export default {
     }
   },
   data() {
-    return {
-    }
+    return {}
   },
   head() {
     return {
       title: this.name,
       meta: [
         {
-          hid:"description",
+          hid: 'description',
           name: 'description',
           content: 'Rome Points of interest',
         },

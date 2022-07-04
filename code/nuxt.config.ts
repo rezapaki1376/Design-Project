@@ -17,7 +17,12 @@ const config: NuxtConfig = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Find your rome website a tourist website for finding your interested events and point of interests and itineraries' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Find your rome website a tourist website for finding your interested events and point of interests and itineraries',
+      },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [
@@ -86,6 +91,23 @@ const config: NuxtConfig = {
         {
           path: '/points_of_interest',
           component: resolve(__dirname, 'pages/pointsOfInterest/index.vue'),
+        },
+        {
+          path: '/points_of_interest/:id',
+          component: resolve(__dirname, 'pages/pointsOfInterest/_id.vue'),
+          // children: [
+          //   {
+          //     path: 'event:eventId',
+          //     component: resolve(__dirname, 'pages/login.vue'),
+          //   },
+          // ],
+        },
+        {
+          path: '/points_of_interest/:id/event/:eventId',
+          component: resolve(
+            __dirname,
+            'pages/pointsOfInterest/_event/_eventId.vue'
+          ),
         },
         {
           path: '/about_us',

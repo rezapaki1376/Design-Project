@@ -3,7 +3,9 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <nuxt-link :to="`/points_of_interest`" :alt="Poi.title"> Points of interest </nuxt-link>
+          <nuxt-link :to="`/points_of_interest`" :alt="Poi.title">
+            Points of interest
+          </nuxt-link>
         </li>
         <li class="breadcrumb-item active" aria-current="page">
           {{ Poi.title }}
@@ -48,7 +50,6 @@
         <hr />
         <div class="d-flex justify-content-between flex-wrap">
           <p class="lead mx-1 my-0">Created: {{ Poi.createdAt }}</p>
-          
         </div>
       </div>
 
@@ -59,20 +60,44 @@
         </button>
       </div>
     </div>
+    <!-- <div class="row p-4 pb-0 pt-lg-5 pb-lg-5 pe-lg-5 justify-content-center"> -->
+    <div v-if="eventsPresent" class="row mb-5 justify-content-center">
+      <EventPreviewCard
+        v-for="(event, eventIndex) of poiEvents"
+        :id="event.id"
+        :key="`event-index-${eventIndex}`"
+        :title="event.title"
+        :description="event.description"
+        :image-url="event.imageUrl"
+        :price="event.price"
+        :preregister-neccessary="event.preregisterNeccessary"
+        :date="event.date"
+        :time="event.time"
+      />
+    </div>
+    <div v-else class="row my-3 justify-content-center">
+      <div class="col-lg-3 col-md-5 col-10 empty-card">No events available</div>
+    </div>
   </div>
 </template>
 
 <script>
-// import CommonMixin from '~/mixins/common'
+import EventPreviewCard from './components/EventCardPreview.vue'
 export default {
   name: 'PoiDetailsPage',
-  // mixins: [CommonMixin],
+  components: {
+    EventPreviewCard,
+  },
   async asyncData({ route, $axios }) {
     const { id } = route.params
     const { data } = await $axios.get('/points-of-interest/' + id)
-    console.log(data)
+    const { data: poiEvents } = await $axios.get(
+      '/points-of-interest/' + id + '/events'
+    )
+    console.log(poiEvents)
     return {
       Poi: data,
+      poiEvents,
     }
   },
   head() {
@@ -80,14 +105,22 @@ export default {
       title: this.Poi.title,
       meta: [
         {
-          hid:"description",
+          hid: 'description',
           name: 'description',
           content: this.title,
         },
       ],
     }
   },
-
+  computed: {
+    eventsPresent() {
+      if (this.poiEvents.length === 0) {
+        return false
+      } else {
+        return true
+      }
+    },
+  },
   methods: {
     backToList() {
       this.$router.push('/points_of_interest')

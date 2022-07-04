@@ -12,8 +12,18 @@ exports.getAll = async (req, res, next) => {
 
 exports.getOne = async (req, res, next) => {
   try {
-    const driver = await PointOfInterest.findByPk(req.params.id)
-    return res.status(200).json(driver)
+    const poi = await PointOfInterest.findByPk(req.params.id)
+    return res.status(200).json(poi)
+  } catch (error) {
+    return res.status(500).json(error)
+  }
+}
+
+exports.getEventsById = async (req, res, next) => {
+  try {
+    const poi = await PointOfInterest.findByPk(req.params.id)
+    const events = await poi.getEvents()
+    return res.status(200).json(events)
   } catch (error) {
     return res.status(500).json(error)
   }
