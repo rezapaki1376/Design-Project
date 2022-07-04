@@ -89,9 +89,7 @@ export default {
   data() {
     return {
       seasons: [
-        { name: 'SPRNG', label: 'Spring' },
         { name: 'SUMMER', label: 'Summer' },
-        { name: 'AUTUMN', label: 'Autumn' },
         { name: 'WINTER', label: 'Winter' },
       ],
       selectedSeason: false,
