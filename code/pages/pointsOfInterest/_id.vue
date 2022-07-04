@@ -172,7 +172,7 @@ export default {
   },
   methods: {
     backToList() {
-      this.$router.push('/points-of-interest')
+      this.$router.push('/points_of_interest')
     },
   },
 }
