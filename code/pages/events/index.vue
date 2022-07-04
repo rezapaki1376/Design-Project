@@ -7,9 +7,53 @@
         Duis mollis, est non commodo luctus.
       </p>
     </div>
+    <div class="d-flex justify-content-between flex-wrap">
+      <div
+        class="btn-group"
+        role="group"
+        aria-label="Basic radio toggle button group"
+      >
+        <div class="top">
+          <template v-for="(season, index) in seasons">
+            <input
+              :key="`events-index-${index}`"
+              :id="season.name"
+              v-model="selectedSeason"
+              :value="season.name"
+              type="radio"
+              class="btn-check"
+            />
+            <label
+              :key="`events-label-index-${index}`"
+              class="btn btn-outline-primary"
+              :for="`btnradio-${season.name}`"
+              @click="handleFilterEvents(season.name)"
+              >{{ season.label }}</label
+            >
+          </template>
+        </div>
+        <button class="reset-filter-btn" @click="handleFilterEvents(null)">
+          <div>Reset</div>
+          <i class="bi bi-funnel" style="font-size: 1.5rem; color: grey"></i>
+        </button>
+      </div>
+
+      <!-- <div class="">
+        <ul class="pagination">
+          <li class="page-item disabled">
+            <a class="page-link" href="#">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item active"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </div> -->
+    </div>
+
     <div class="row mb-5 justify-content-center">
       <EventDetail
-        v-for="(event, eventIndex) of events"
+        v-for="(event, eventIndex) of filteredEvents"
         :id="event.id"
         :key="`event-index-${eventIndex}`"
         :title="event.title"
@@ -36,15 +80,75 @@ export default {
     const { data } = await $axios.get('/events')
     return {
       events: data,
+      filteredEvents: data,
     }
   },
   data() {
     return {
-      // catList: []
+      seasons: [
+        { name: 'SPRNG', label: 'Spring' },
+        { name: 'SUMMER', label: 'Summer' },
+        { name: 'AUTUMN', label: 'Autumn' },
+        { name: 'WINTER', label: 'Winter' },
+      ],
+      filteredEvents: this.events,
+      selectedSeason: false,
     }
   },
-  mounted: () => {
-    // console.log('HI')
+  computed: {
+    filteredEventsList() {
+      console.log(this.seasons)
+      return true
+    },
+  },
+
+  methods: {
+    handleFilterEvents(eventFilter) {
+      console.log(eventFilter)
+      if (eventFilter == null) {
+        this.filteredEvents = this.events
+        this.selectedSeason = false
+      } else {
+        this.filteredEvents = this.events.filter(
+          (element) => element.season === eventFilter
+        )
+        this.selectedSeason = eventFilter
+      }
+    },
   },
 }
 </script>
+<style scoped>
+.btn-group {
+  display: inline-flex !important;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: -0.5rem;
+  margin-left: -1rem;
+}
+
+.top {
+  margin-left: 1rem;
+  margin-top: 0.5rem !important;
+}
+.btn-custom {
+  color: #0d6efd !important;
+  border-color: #0d6efd !important;
+}
+.btn-custom:active,
+.btn-custom.active .btn-custom:hover {
+  color: white !important;
+  background-color: #0d6efd !important;
+}
+.reset-filter-btn {
+  align-items: center !important;
+  display: flex;
+  margin-left: 1rem;
+  border-radius: 0.25rem;
+  margin-top: 0.5rem !important;
+  padding: 0 0.5rem;
+  border: 1px solid grey;
+  color: grey;
+  background: white;
+}
+</style>

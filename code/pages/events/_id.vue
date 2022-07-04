@@ -52,16 +52,17 @@
             </p>
             <p class="lead mx-1 my-0">Duration: {{ event.timeDuration }}min</p>
             <p class="lead mx-1 my-0">
-               Cost:
-            <span v-if="event.price > 0" >
-            <i class="bi bi-currency-euro" style="font-size: 1.2rem; color: black"
-            ></i>
-            {{ event.price }}
-            </span>
-            <span v-if="event.price == 0" >
-            
-            Free
-            </span>
+              Cost:
+              <span v-if="event.price > 0">
+                <i
+                  class="bi bi-currency-euro"
+                  style="font-size: 1.2rem; color: black"
+                ></i>
+                {{ event.price }}
+              </span>
+              <span v-if="event.price == 0"> Free </span>
+            </p>
+
             <p class="lead m-0">
               Prebooking:
 
@@ -93,11 +94,13 @@
           <p class="lead mx-1 my-0">Created: {{ event.createdAt }}</p>
           <p class="lead mx-1 my-0">EventType: {{ event.eventType }}</p>
           <p class="lead mx-1 my-0">
-           
             Season: {{ event.season }}
-             <i v-if="event.season == 'SUMMER'" class="bi bi-brightness-high"></i>
+            <i
+              v-if="event.season == 'SUMMER'"
+              class="bi bi-brightness-high"
+            ></i>
             <i v-if="event.season == 'WINTER'" class="bi bi-snow2"></i>
-            </p>
+          </p>
         </div>
       </div>
 

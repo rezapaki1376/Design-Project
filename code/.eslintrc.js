@@ -20,6 +20,7 @@ module.exports = {
   // add your custom rules here
   rules: {
     'vue/multi-word-component-names': 'off',
+    'vue/v-bind-style': 'off',
     'no-console': 'off',
     'no-unused-vars': 'off',
     'no-use-before-define': 'off',
