@@ -4,7 +4,7 @@
       <!-- <nuxt-link :to="`/events/${id}`"> -->
       <img
         class="card-img-top"
-        :src="require(`@/assets/img/itinerary/${imageUrl}`)"
+        :src="require(`@/assets/img/POIs/${img}`)"
         :alt="title"
       />
       <div
@@ -18,46 +18,24 @@
         </div>
         <div class="mb-3 d-flex flex-column">
           <hr />
-          <!-- <div class="d-flex justify-content-around">
-            <div>
+          <div class="d-flex justify-content-around">
+            <!-- <div>
               <i
                 class="bi bi-calendar-event"
                 style="font-size: 1.2rem; color: black"
               ></i>
               {{ date }}
-            </div>
-            <div><i class="bi bi-clock"></i> {{ time }}</div>
-          </div> -->
-          <!-- <div>
-            Cost:
-            <span v-if="price > 0" >
-            <i class="bi bi-currency-euro" style="font-size: 1.2rem; color: black"
-            ></i>
-            {{ price }}
-            </span>
-            <span v-if="price == 0" >
+            </div> -->
+            <div>Opening hours: <i class="bi bi-clock"></i> {{openinghours}} </div>
             
-            Free
-            </span>
-          </div> -->
-          <div>
-            Total duration: {{totalDuration}}
-
-            <!-- <i
-              v-if="preregisterNeccessary"
-              class="bi bi-check-lg"
-              style="font-size: 1.2rem; color: red"
-            />
-            <i
-              v-else
-              class="bi bi-x-lg"
-              style="font-size: 1.2rem; color: green"
-            /> -->
           </div>
           <div>
-            Suggested audience: {{suggestedAudience}}
+              Address: <i class="bi bi-geo-alt"></i>
+              {{ address }}
+              
           </div>
-          <nuxt-link :to="`/itineraries/${id}`" :alt="`details of itinerary-${id}`">
+          
+          <nuxt-link :to="`/pointsOfInterest/${id}`" :alt="`Details of point of interest-${id}`">
             <div class="btn btn-primary mt-3">See Details</div>
           </nuxt-link>
         </div>
@@ -66,13 +44,16 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
-  name: 'ItineraryPreviewsDetail',
+  name: 'PoiRivieComponent',
   props: {
     id: {
       type: Number,
+      required: true,
+    },
+    img: {
+      type: String,
       required: true,
     },
     title: {
@@ -83,39 +64,24 @@ export default {
       type: String,
       required: true,
     },
-    imageUrl: {
+    openinghours: {
       type: String,
       required: true,
     },
-    totalDuration: {
+    address: {
       type: String,
       required: true,
     },
-    suggestedAudience: {
-      type: String,
-      required: true,
-    },
-    journey: {
-      type: String,
-      required: true,
-    },
-    tags: {
-      type: String,
-      required: false,
-      default: '',
-    },
-  },
-  mounted() {
-    console.log(this.context)
+    
   },
   methods: {
     goToDetails() {
-      this.$router.push(`/itinerarydetail/${this.id}`)
+      this.$router.push(`/points-of-interest/${this.id}`)
     },
   },
+  
 }
 </script>
-
 <style scoped>
 .cut-text {
   /* width: 160px;  */
@@ -172,4 +138,3 @@ a:active {
   color: inherit;
 }
 </style>
-
