@@ -51,7 +51,7 @@
       </div> -->
     </div>
 
-    <div class="row mb-5 justify-content-center">
+    <div v-if="cardsPresent" class="row mb-5 justify-content-center">
       <EventDetail
         v-for="(event, eventIndex) of filteredEvents"
         :id="event.id"
@@ -64,6 +64,9 @@
         :date="event.date"
         :time="event.time"
       />
+    </div>
+    <div v-else class="row my-3 justify-content-center">
+      <div class="col-lg-3 col-md-5 col-10 empty-card">No events available</div>
     </div>
   </div>
 </template>
@@ -91,20 +94,23 @@ export default {
         { name: 'AUTUMN', label: 'Autumn' },
         { name: 'WINTER', label: 'Winter' },
       ],
-      filteredEvents: this.events,
       selectedSeason: false,
+      filteredEvents: this.events,
     }
   },
   computed: {
-    filteredEventsList() {
-      console.log(this.seasons)
-      return true
+    cardsPresent() {
+      if (this.filteredEvents.length === 0) {
+        return false
+      } else {
+        return true
+      }
     },
   },
 
   methods: {
     handleFilterEvents(eventFilter) {
-      console.log(eventFilter)
+      console.log(this.filteredEvents.length === 0)
       if (eventFilter == null) {
         this.filteredEvents = this.events
         this.selectedSeason = false
@@ -126,7 +132,15 @@ export default {
   margin-top: -0.5rem;
   margin-left: -1rem;
 }
-
+.empty-card {
+  border: 0.5px solid black;
+  border-radius: 0.25rem;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .top {
   margin-left: 1rem;
   margin-top: 0.5rem !important;
