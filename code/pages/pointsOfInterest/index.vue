@@ -23,7 +23,7 @@ export default {
     PointOfInterestedPreview,
   },
   async asyncData({ $axios }) {
-    const { data } = await $axios.get('/points-of-interest')
+    const { data } = await $axios.get('/points_of_interest')
     // console.log(data)
     return {
       POIs: data,

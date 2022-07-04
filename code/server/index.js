@@ -10,7 +10,7 @@ app.use(express.json())
 
 app.use('/events', require('./routes/events'))
 app.use('/itineraries', require('./routes/itineraries'))
-app.use('/points-of-interest', require('./routes/pointsOfInterest'))
+app.use('/points_of_interest', require('./routes/pointsOfInterest'))
 app.use('/services', require('./routes/services'))
 try {
   // const host = process.env.HOST || '127.0.0.1'

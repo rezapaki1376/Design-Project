@@ -8,7 +8,6 @@ export default async function databaseSeeding() {
     Promise.all(
       element.eventList.map(async (eventItem) => {
         const createdEventItem = await poiInstance.createEvent(eventItem)
-        console.log(createdEventItem)
       })
     )
   })
@@ -24,11 +23,20 @@ export default async function databaseSeeding() {
   //   })
   // })
   // const eventsData = require('../database/data/events.json')
-  // const Events = require('../database/models/events')
+  const Events = require('../database/models/events')
   // const eventsItems = await Events.bulkCreate(eventsData)
 
-  // const itinerariesData = require('../database/data/itineraries.json')
-  // const Itinerary = require('../database/models/itineraries')
+  const itinerariesData = require('../database/data/itineraries.json')
+  const Itinerary = require('../database/models/itineraries')
+  await itinerariesData.forEach(async (element) => {
+    const createdItinerary = await Itinerary.create(element)
+    element.journey.map(async (journeyItem) => {
+      const createdPointOfInterest = await PointOfInterest.findOne({
+        where: { verboseIdentifier: journeyItem },
+      })
+      await createdPointOfInterest.addItinerary(createdItinerary)
+    })
+  })
   // const itinerariesItems = await Itinerary.bulkCreate(itinerariesData)
 
   const serviceData = require('../database/data/services.json')

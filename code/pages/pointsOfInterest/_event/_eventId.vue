@@ -130,7 +130,7 @@ export default {
   async asyncData({ route, $axios }) {
     const { id, eventId } = route.params
     const { data } = await $axios.get('/events/' + eventId)
-    const { data: poi } = await $axios.get('/points-of-interest/' + id)
+    const { data: poi } = await $axios.get('/points_of_interest/' + id)
 
     return {
       event: data,
@@ -151,7 +151,7 @@ export default {
 
   methods: {
     backToPoi() {
-      this.$router.push(`/points_of_interest/${this.poi.id}`)
+      this.$router.push(`/points-of-interest/${this.poi.id}`)
     },
   },
 }
@@ -172,7 +172,7 @@ img {
   border: 1px solid;
 }
 .btn-white:hover {
-  background-color: #00c58e !important;
+  background-color: #0d6efd !important;
   color: white !important;
 }
 </style>

@@ -28,6 +28,15 @@ exports.getEventsById = async (req, res, next) => {
     return res.status(500).json(error)
   }
 }
+exports.getItinerariesByPoi = async (req, res, next) => {
+  try {
+    const poi = await PointOfInterest.findByPk(req.params.id)
+    const itineraries = await poi.getItineraries()
+    return res.status(200).json(itineraries)
+  } catch (error) {
+    return res.status(500).json(error)
+  }
+}
 
 // exports.createOne = async (req, res, next) => {
 //   try {

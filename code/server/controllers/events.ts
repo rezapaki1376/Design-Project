@@ -21,6 +21,16 @@ exports.getOne = async (req, res, next) => {
   }
 }
 
+exports.getPointOfInterest = async (req, res, next) => {
+  try {
+    const event = await Event.findByPk(req.params.id)
+    const relatedPoi = await event.getPointOfInterest()
+    return res.status(200).json(relatedPoi)
+  } catch (error) {
+    return res.status(500).json(error)
+  }
+}
+
 // exports.createOne = async (req, res, next) => {
 //   try {
 //     const truck_model: Omit<

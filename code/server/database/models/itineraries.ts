@@ -7,14 +7,13 @@ import {
 } from 'sequelize'
 
 const { sequelize } = require('../database')
-
+const PointOfInterest = require('./pointsOfInterest')
 export interface ItineraryInterface {
   id: number
   title: string
   description: string
   imageUrl: string
   totalDuration: string
-  journey: Array<unknown>
   tags: Array<string>
   suggestedAudience: Array<string>
   createdAt: Date
@@ -29,7 +28,6 @@ class Itinerary extends Model<
   declare description: string
   declare imageUrl: string
   declare totalDuration: string
-  declare journey: Array<unknown>
   declare tags: Array<string>
   declare suggestedAudience: Array<string>
   declare createdAt: CreationOptional<Date>
@@ -59,11 +57,6 @@ Itinerary.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    journey: {
-      type: DataTypes.JSONB,
-      defaultValue: null,
-      allowNull: true,
-    },
     tags: {
       type: DataTypes.JSONB,
       defaultValue: null,
@@ -83,17 +76,11 @@ Itinerary.init(
     sequelize,
   }
 )
+Itinerary.belongsToMany(PointOfInterest, {
+  through: 'PoiItinerary',
+})
+PointOfInterest.belongsToMany(Itinerary, {
+  through: 'PoiItinerary',
+})
 
-// Order.belongsTo(Customer, {
-//   foreignKey: {
-//     allowNull: true,
-//     name: 'customerId',
-//   },
-// })
-// Customer.hasMany(Order, {
-//   foreignKey: {
-//     allowNull: true,
-//     name: 'customerId',
-//   },
-// })
 module.exports = Itinerary

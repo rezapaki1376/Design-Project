@@ -103,13 +103,55 @@
           </p>
         </div>
       </div>
-
-      <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-        <button type="button" class="btn btn-white px-4" @click="backToList">
-          <i class="bi bi-arrow-return-left"></i>
-          Return to all events
-        </button>
+    </div>
+    <div class="my-4">
+      <h1 class="display-5 lh-1 text-left">
+        Related Point of Interest: {{ pointsOfInterest.title }}
+      </h1>
+      <div class="row mb-5 mt-4 justify-content-center">
+        <div class="col-lg-4 text-center">
+          <img
+            class="rounded-lg-3"
+            :src="require(`@/assets/img/POIs/${pointsOfInterest.imageUrl}`)"
+            :alt="pointsOfInterest.title"
+          />
+        </div>
+        <div class="col-lg-7">
+          <p class="lead mt-2">
+            {{ pointsOfInterest.description }}
+          </p>
+          <hr />
+          <div class="d-flex justify-content-center">
+            <div class="col">
+              <b>Opening hours:</b>
+              <p class="lead">
+                <i class="bi bi-clock"></i> {{ pointsOfInterest.openingHours }}
+              </p>
+            </div>
+            <div class="col">
+              <b>Address:</b>
+              <p class="lead">
+                <i class="bi bi-geo-alt"></i>{{ pointsOfInterest.address }}
+              </p>
+            </div>
+          </div>
+          <a :href="'//' + pointsOfInterest.eventUrl" target="_blank">
+            <p class="lead btn btn-primary">Visit Website</p></a
+          >
+          <hr />
+          <div class="d-flex justify-content-between flex-wrap">
+            <p class="lead mx-1 my-0">
+              Created: {{ pointsOfInterest.createdAt }}
+            </p>
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+      <button type="button" class="btn btn-white px-4" @click="backToList">
+        <i class="bi bi-arrow-return-left"></i>
+        Return to all events
+      </button>
     </div>
   </div>
 </template>
@@ -122,9 +164,13 @@ export default {
   async asyncData({ route, $axios }) {
     const { id } = route.params
     const { data } = await $axios.get('/events/' + id)
-    console.log(data)
+    const { data: poi } = await $axios.get(
+      '/events/' + id + '/point_of_interest'
+    )
+    console.log(poi)
     return {
       event: data,
+      pointsOfInterest: poi,
     }
   },
   head() {
@@ -162,7 +208,7 @@ img {
   border: 1px solid;
 }
 .btn-white:hover {
-  background-color: #00c58e !important;
+  background-color: #0d6efd !important;
   color: white !important;
 }
 </style>
