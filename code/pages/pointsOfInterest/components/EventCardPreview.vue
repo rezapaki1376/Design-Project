@@ -58,7 +58,7 @@
             />
           </div>
           <nuxt-link
-            :to="`/points_of_interest/${this.$route.params.id}/event/${id}`"
+            :to="`/points_of_interest/${$route.params.id}/event/${id}`"
             :alt="`Details of point of interest-${id}`"
           >
             <div class="btn btn-primary mt-3">See Details</div>

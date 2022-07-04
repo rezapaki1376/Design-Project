@@ -36,7 +36,7 @@
           </div>
 
           <nuxt-link
-            :to="`/points_of_interest/${id}`"
+            :to="`/itineraries/${$route.params.id}/point_of_interest/${id}`"
             :alt="`Details of point of interest-${id}`"
           >
             <div class="btn btn-primary mt-3">See Details</div>
@@ -78,7 +78,7 @@ export default {
   },
   methods: {
     goToDetails() {
-      this.$router.push(`/points-of-interest/${this.id}`)
+      this.$router.push(`/points_of_interest/${this.id}`)
     },
   },
 }

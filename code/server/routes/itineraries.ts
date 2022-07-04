@@ -3,7 +3,10 @@ const controller = require('../controllers/itineraries')
 
 const router = Router()
 
-router.get('/', controller.getAll).get('/:id', controller.getOne)
+router
+  .get('/', controller.getAll)
+  .get('/:id', controller.getOne)
+  .get('/:id/points_of_interest', controller.getPointsOfInterestByItineraryId)
 // .post('/', adminAuth.verifyAdmin, controller.createOne)
 // .put('/:id', adminAuth.verifyAdmin, controller.updateOne)
 // .delete('/:id', adminAuth.verifyAdmin, controller.deleteOne)

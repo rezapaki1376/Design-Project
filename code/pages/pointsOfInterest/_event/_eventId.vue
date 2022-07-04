@@ -9,7 +9,7 @@
         </li>
         <li class="breadcrumb-item">
           <nuxt-link
-            :to="`/points_of_interest/${this.$route.params.id}`"
+            :to="`/points_of_interest/${$route.params.id}`"
             :alt="event.title"
           >
             {{ poi.title }}
@@ -151,7 +151,7 @@ export default {
 
   methods: {
     backToPoi() {
-      this.$router.push(`/points-of-interest/${this.poi.id}`)
+      this.$router.push(`/points_of_interest/${this.poi.id}`)
     },
   },
 }

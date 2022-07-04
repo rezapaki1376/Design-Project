@@ -14,8 +14,17 @@ exports.getAll = async (req, res, next) => {
 
 exports.getOne = async (req, res, next) => {
   try {
-    const driver = await Itinerary.findByPk(req.params.id)
-    return res.status(200).json(driver)
+    const itinerary = await Itinerary.findByPk(req.params.id)
+    return res.status(200).json(itinerary)
+  } catch (error) {
+    return res.status(500).json(error)
+  }
+}
+exports.getPointsOfInterestByItineraryId = async (req, res, next) => {
+  try {
+    const itinerary = await Itinerary.findByPk(req.params.id)
+    const itineraries = await itinerary.getPointOfInterests()
+    return res.status(200).json(itineraries)
   } catch (error) {
     return res.status(500).json(error)
   }

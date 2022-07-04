@@ -110,6 +110,20 @@ const config: NuxtConfig = {
           ),
         },
         {
+          path: '/points_of_interest/:id/itinerary/:itineraryId',
+          component: resolve(
+            __dirname,
+            'pages/pointsOfInterest/_itinerary/_itineraryId.vue'
+          ),
+        },
+        {
+          path: '/itineraries/:id/point_of_interest/:pointOfInterestId',
+          component: resolve(
+            __dirname,
+            'pages/itineraries/_pointOfInterest/_pointOfInterestId.vue'
+          ),
+        },
+        {
           path: '/about_us',
           component: resolve(__dirname, 'pages/aboutUs/index.vue'),
         },

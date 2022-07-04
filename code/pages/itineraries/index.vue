@@ -2,9 +2,7 @@
   <div class="page container mt-5">
     <div class="mb-5">
       <h1 class="display-4">Itineraries</h1>
-      <p class="lead">
-        Find your interested itineraries.
-      </p>
+      <p class="lead">Find your interested itineraries.</p>
     </div>
     <div class="row mb-5 justify-content-center">
       <ItineraryDetail
@@ -15,7 +13,6 @@
         :description="itinerarie.description"
         :image-url="itinerarie.imageUrl"
         :total-duration="itinerarie.totalDuration"
-        :journey="itinerarie.journey"
         :tags="itinerarie.tags"
         :suggested-audience="itinerarie.suggestedAudience"
       />
@@ -38,16 +35,14 @@ export default {
     }
   },
   data() {
-    return {
-      
-    }
+    return {}
   },
   head() {
     return {
       title: this.name,
       meta: [
         {
-          hid:"description",
+          hid: 'description',
           name: 'description',
           content: 'Rome itineraries',
         },
@@ -58,6 +53,5 @@ export default {
   mounted: () => {
     // console.log('HI')
   },
-  
 }
 </script>

@@ -7,6 +7,14 @@
             Itineraries
           </nuxt-link>
         </li>
+        <li class="breadcrumb-item">
+          <nuxt-link
+            :to="`/points_of_interest/${$route.params.id}`"
+            :alt="poi.title"
+          >
+            {{ poi.title }}
+          </nuxt-link>
+        </li>
         <li class="breadcrumb-item active" aria-current="page">
           {{ itinerary.title }}
         </li>
@@ -109,33 +117,7 @@
             </p> -->
         </div>
       </div>
-      <div class="container">
-        <div class="my-5">
-          <h1 class="display-4 lh-1 text-center">
-            Points of interest involving the itinerary
-          </h1>
-          <div
-            v-if="itinerariesPresent"
-            class="row mb-5 justify-content-center"
-          >
-            <PointOfInterestedPreview
-              v-for="(Poi, index) of poi"
-              :id="Poi.id"
-              :key="`service-index-${index}`"
-              :img="Poi.imageUrl"
-              :title="Poi.title"
-              :description="Poi.description"
-              :address="Poi.address"
-              :openinghours="Poi.openingHours"
-            />
-          </div>
-          <div v-else class="row my-3 justify-content-center">
-            <div class="col-lg-3 col-md-5 col-10 empty-card">
-              No point of interestss available
-            </div>
-          </div>
-        </div>
-      </div>
+
       <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
         <button type="button" class="btn btn-white px-4" @click="backToList">
           <i class="bi bi-arrow-return-left"></i>
@@ -147,22 +129,15 @@
 </template>
 
 <script>
-import PointOfInterestedPreview from './components/PointOfInterestedPreview.vue'
-
+import CommonMixin from '~/mixins/common'
 export default {
   name: 'ItinaryDetailsPage',
   // mixins: [CommonMixin],
-  components: {
-    PointOfInterestedPreview,
-  },
   async asyncData({ route, $axios }) {
     const { id } = route.params
+    const { data: poi } = await $axios.get('/points_of_interest/' + id)
     const { data } = await $axios.get('/itineraries/' + id)
-    const { data: poi } = await $axios.get(
-      '/itineraries/' + id + '/points_of_interest'
-    )
-    console.log('dataconnecte')
-    console.log(poi)
+    console.log(data)
     return {
       itinerary: data,
       poi,
@@ -180,18 +155,10 @@ export default {
       ],
     }
   },
-  computed: {
-    itinerariesPresent() {
-      if (this.poi.length === 0) {
-        return false
-      } else {
-        return true
-      }
-    },
-  },
+
   methods: {
-    backToList() {
-      this.$router.push('/itineraries')
+    backToPoi() {
+      this.$router.push(`/points_of_interest/${this.poi.id}`)
     },
   },
 }
@@ -207,7 +174,7 @@ img {
 }
 .btn-white {
   background-color: white !important;
-  /* color: #0d6efd !important; */
+  /* color: #00c58e !important; */
   border-color: black;
   border: 1px solid;
 }

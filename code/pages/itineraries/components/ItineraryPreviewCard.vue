@@ -41,7 +41,7 @@
             </span>
           </div> -->
           <div>
-            Total duration: {{totalDuration}}
+            Total duration: {{ totalDuration }}
 
             <!-- <i
               v-if="preregisterNeccessary"
@@ -54,10 +54,11 @@
               style="font-size: 1.2rem; color: green"
             /> -->
           </div>
-          <div>
-            Suggested audience: {{suggestedAudience}}
-          </div>
-          <nuxt-link :to="`/itineraries/${id}`" :alt="`details of itinerary-${id}`">
+          <div>Suggested audience: {{ suggestedAudience }}</div>
+          <nuxt-link
+            :to="`/itineraries/${id}`"
+            :alt="`details of itinerary-${id}`"
+          >
             <div class="btn btn-primary mt-3">See Details</div>
           </nuxt-link>
         </div>
@@ -95,10 +96,7 @@ export default {
       type: String,
       required: true,
     },
-    journey: {
-      type: String,
-      required: true,
-    },
+
     tags: {
       type: String,
       required: false,

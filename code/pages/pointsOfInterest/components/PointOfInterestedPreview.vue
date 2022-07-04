@@ -78,7 +78,7 @@ export default {
   },
   methods: {
     goToDetails() {
-      this.$router.push(`/points-of-interest/${this.id}`)
+      this.$router.push(`/points_of_interest/${this.id}`)
     },
   },
 }
