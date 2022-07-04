@@ -16,8 +16,8 @@
         <div class="top">
           <template v-for="(season, index) in seasons">
             <input
-              :key="`events-index-${index}`"
               :id="season.name"
+              :key="`events-index-${index}`"
               v-model="selectedSeason"
               :value="season.name"
               type="radio"
@@ -33,7 +33,7 @@
           </template>
         </div>
         <button class="reset-filter-btn" @click="handleFilterEvents(null)">
-          <div>Reset</div>
+          <div>All Events</div>
           <i class="bi bi-funnel" style="font-size: 1.5rem; color: grey"></i>
         </button>
       </div>

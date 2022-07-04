@@ -1,122 +1,304 @@
 [
   {
+    "verboseIdentifier": "colosseumPoi",
     "title": "Colosseum",
     "description": "The building was begun by Vespasian in AD 72, and after his son Titus enlarged it by adding the fourth story, it was inaugurated in the year AD 80 with a series of splendid games. The Colosseum was large enough for theatrical performances, festivals, circuses, or games, which the Imperial Court and high officials watched from the lowest level, aristocratic Roman families on the second, the populace on the third and fourth.",
     "imageUrl": "colosseum-and-arch-of-constantine.jpg",
     "address": " Piazza del Colosseo 1, Rome",
     "openingHours": "7-22",
-    "tags": []
+    "eventList": [
+      {
+        "title": "Pride Parade in Rome!",
+        "description": "In a statement, Roma Pride spokesperson Mario Colamarino said that greater protection was required 'for our community, in particular for transgender people, who are too often discriminated against and victims of violence, inside and outside the workplace.",
+        "imageUrl": "e5.jpg",
+        "poiId": "colosseumPoi",
+        "date": "9.07.2022",
+        "time": "15:30",
+        "timeDuration": 120,
+        "eventUrl": "google.de",
+        "price": 10,
+        "eventType": "click",
+        "address": "Via dei Fori Imperiali",
+        "organisation": "LGBT community",
+        "season": "SUMMER"
+      }
+    ]
   },
   {
+    "verboseIdentifier": "pantheonPoi",
     "title": "The Pantheon",
     "description": "The Pantheon was rebuilt after damage by fire in AD 80, and the resulting brickwork shows the extraordinarily high technical mastery of Roman builders. Its 43-meter dome, the supreme achievement of Roman interior architecture, hangs suspended without visible supports – these are well hidden inside the walls – and its nine-meter central opening is the building's only light source.",
     "imageUrl": "pantheon.jpg",
     "address": "Piazza della Rotonda, Rome",
     "openingHours": "7:30-21",
-    "tags": []
+    "eventList": [
+      {
+        "title": "Taste of Roma",
+        "description": "If you’re in town at the end of September, Taste of Roma should be on your to-do list. This enormous food festival is a great way to eat your way through the city and sample the cuisines of Rome’s best chefs and emerging food personalities. Expect more details closer to the date of the event.",
+        "imageUrl": "e9.jpg",
+        "poiId": "pantheonPoi",
+        "date": "10.21.2022",
+        "time": "13:00",
+        "timeDuration": 110,
+        "eventUrl": "google.de",
+        "price": 0,
+        "eventType": "click",
+        "address": "Via Colonnello Galliano 58",
+        "organisation": "ByteAff2airs",
+        "season": "WINTER"
+      }
+    ]
   },
   {
-    "title": "Roman Forum",
+    "verboseIdentifier": "forumRomanumPoi",
+    "title": "Forum Romanum",
     "description": "Walking through the forum, now in the middle of a throbbing modern city, is like stepping back two millennia into the heart of ancient Rome. Although what survives of this center of Roman life and government shows only a small fraction of its original splendor, the standing and fallen columns, its triumphal arches, and remains of its walls still impress, especially when you consider that for centuries, the history of the Forum was the history of the Roman Empire and of the Western world.",
     "imageUrl": "roman-forum-2.jpg",
     "address": "Via della Salara Vecchia, 5/6, Roma",
     "openingHours": "7-21",
-    "tags": []
+    "eventList": [
+      {
+        "title": "Natale di Roma",
+        "description": "According to legend, Rome was founded by Romulus on April 21, 753 BC and the city continues to mark its date of birth with a series of festivities and eventlist, including concerts, a parade and historical reenactments at Circo Massimo. Events vary widely (this year, Rome’s birthday falls on Easter, for instance) but you can expect fireworks and gladiators on display in the city centre.",
+        "poiId": "forumRomanumPoi",
+        "imageUrl": "e1.jpg",
+        "date": "12.11.2022",
+        "time": "17:00",
+        "timeDuration": 90,
+        "eventUrl": "google.de",
+        "eventType": "click",
+        "price": 50,
+        "address": "Via Cipro, 4L, Rome",
+        "organisation": "Italy national",
+        "season": "WINTER"
+      },
+      {
+        "title": "Ides of March",
+        "description": "Each year on March 15, or the Ides of March, Rome marks the anniversary of Julius Caesar’s untimely death with a period reenactment. Caesar was one of Rome's most important dictators and he was murdered by his own senators during a meeting in 44 BC near the Largo Argentina archaeological site",
+        "imageUrl": "e3.jpg",
+        "poiId": "forumRomanumPoi",
+        "date": "4.12.2022",
+        "time": "18:00",
+        "timeDuration": 60,
+        "eventUrl": "google.de",
+        "price": 10,
+        "address": "Via Loreto 147, Rome",
+        "eventType": "click",
+        "organisation": "Church",
+        "season": "SUMMER"
+      }
+    ]
   },
   {
+    "verboseIdentifier": "treviFountainPoi",
     "title": "Trevi Fountain",
     "description": "One of the city's most popular tourist attractions, this 17th-century masterpiece has been immortalized in films until it is almost a required visit. Throwing a coin (not three) into the Trevi Fountain (Fontana di Trevi) is a tradition that is supposed to assure your return to Rome.Rome's largest fountain, Fontana di Trevi is supplied by an aqueduct originally constructed by Agrippa, the great art patron of the first century BC, to bring water to his baths. The fountain was created for Pope Clement XII between 1732 and 1751 by Nicolò Salvi, and built against the rear wall of the palace of the Dukes of Poli.",
     "imageUrl": "trevi-fountain-1.jpg",
     "address": "Piazzi di Trevi, Rome",
     "openingHours": "8-24",
-    "tags": []
+    "eventList": []
   },
   {
+    "verboseIdentifier": "vittorioMonumentpoi",
     "title": "Vittorio Emanuele II Monument",
     "description": "It's ironic that this grandiose monument, considered one of the national symbols of Italy, is rarely admired by Romans, who liken it to a wedding cake or a giant typewriter. Like it or not, the vast neo-classical structure crowns Capitoline Hill, symbolic center of ancient Rome, overlooking the later city across Piazza Venezia. Built between 1885 and 1935, it is a monument to King Vittorio Emanuele II, the first king of the unified Italy, represented here in an equestrian statue.",
     "imageUrl": "vittorio-emanuele-monument.jpg",
     "address": "Piazza Venezia, Rome",
     "openingHours": "7-21",
-    "tags": []
+    "eventList": []
   },
   {
+    "verboseIdentifier": "spanishStepsPoi",
     "title": "Centro Storico & the Spanish Steps",
     "description": "Take a look at a Rome tourist map, and you'll see one area so filled with things to do that it's hard to read the street names. This is the Centro Storico, the historic center of Rome, with so many art-filled churches, resplendent palaces, and lively squares that you could spend your whole vacation strolling its ancient streets and lanes. Spend some time just to absorb the neighborhood's atmosphere instead of going from one of its must-see sights to the next.",
     "imageUrl": "centro-storico-spanish-steps.jpg",
     "address": "Piazza di Spagna, Rome",
     "openingHours": "7:30-20",
-    "tags": []
+    "eventList": [
+      {
+        "title": "Movies that were shot in Rome!",
+        "description": "Over the past century, there have been numerous films set in Rome, and the city has a particularly strong cinematic tradition. The city hosts the Cinecittà Studios, the largest film and television production facility in continental Europe and the centre of the Italian cinema, where a large number of today's biggest box office hits are filmed.",
+        "imageUrl": "e6.jpg",
+        "poiId": "spanishStepsPoi",
+        "date": "12.09.2022",
+        "time": "16:00",
+        "timeDuration": 200,
+        "eventUrl": "google.de",
+        "price": 45,
+        "eventType": "click",
+        "address": "Via di Santa Melania 55",
+        "organisation": "RomeCinema",
+        "season": "WINTER"
+      }
+    ]
   },
   {
+    "verboseIdentifier": "mariaMaggiorePoi",
     "title": "Santa Maria Maggiore",
     "description": "One of Rome's most majestic churches, Santa Maria Maggiore has stood here since the fourth-century Pope Liberius had a vision of the Virgin directing him to build a church where snow fell the following day. Although it was August, snow did fall on the Esquiline hill the next morning, so here the great basilica was built. Mass has been celebrated here every day since the fifth century. The three aisles of its 86-meter-long interior are separated by 40 columns of marble and four of granite, and the apse added in the 13th century is lined with mosaics of Old and New Testament themes, masterpieces of Rome's famous mosaic artists.",
     "imageUrl": "santa-maria-maggiore.jpg",
     "address": "Piazza di Santa Maria Maggiore, Rome",
     "openingHours": "8-22",
-    "tags": []
+    "eventList": [
+      {
+        "title": "Russia's War in Ukraine and the Future of Transatlantic Relations",
+        "description": "John Cabot University's Guarini Institute for Public Affairs and Temple University's Rome campus present a discussion on Russia's War in Ukraine and the Future of Transatlantic Re",
+        "imageUrl": "e4.jpg",
+        "poiId": "mariaMaggiorePoi",
+        "date": "07.03.2022",
+        "time": "18:30",
+        "timeDuration": 120,
+        "eventUrl": "https://calendar.johncabot.edu/event/russias-war-in-ukraine-and-the-future-of-the-transatlantic-relations/",
+        "price": 0,
+        "eventType": "click",
+        "address": "Secchia Roof Terrace Guarini Campus Via della Lungara, 233, Rome",
+        "organisation": "Johncabot",
+        "season": "SUMMER"
+      },
+      {
+        "title": "Festa Madonna della Neve",
+        "description": "Legend has it that, in 358 BC, a nobleman and his childless wife vowed to donate their possessions to the Virgin Mary and prayed for a sign on how to proceed. The Virgin Mary appeared to the couple in a dream and left a snowfall on the Esquiline Hill, instructing them to erect a church in her honour: the present-day Basilica di Santa Maria Maggiore.",
+        "imageUrl": "e10.jpg",
+        "poiId": "mariaMaggiorePoi",
+        "date": "10.19.2022",
+        "time": "13:00",
+        "timeDuration": 70,
+        "eventUrl": "google.de",
+        "price": 20,
+        "eventType": "click",
+        "address": " Via Nolana 59",
+        "organisation": "Italy national",
+        "season": "WINTER"
+      }
+    ]
   },
   {
+    "verboseIdentifier": "piazzaNavonaPoi",
     "title": "Piazza Navona",
     "description": "One of Rome's most characteristic Baroque squares, Piazza Navona still has the outline of the Roman stadium built here by Emperor Domitian. It was still used for festivals and horse races during the Middle Ages, and was rebuilt in the Baroque style by Borromini, who also designed the magnificent series of palaces and the church of Sant'Agnese, on its west side. Its facade, campanile, and dome highlight the way Baroque architecture weaves convex and concave surfaces, gables, windows, columns, and piers into a unified design.",
     "imageUrl": "piazza-navona.jpg",
     "address": "Piazza Navona, Rome",
     "openingHours": "7:30-21",
-    "tags": []
+    "eventList": []
   },
   {
+    "verboseIdentifier": "santAngeloPoi",
     "title": "Castel Sant'Angelo National Museum",
     "description": "Begun in AD 135 as a mausoleum for the Emperor Hadrian and his family, Castel Sant'Angelo is a massive drum-shaped structure overlooking the Tiber near the Vatican. Over the millennia of its existence, Castel Sant'Angelo has been used as a papal residence and a fortress, and more recently as a National Museum. In AD 271, Emperor Aurelian took advantage of its position guarding the northern approaches to the city and incorporated it into his new system of walls surrounding the city. As a bastion it protected the city from barbarian attacks, and by the Middle Ages had become a substantial fortress. In times of peril, popes fled here across a secret elevated corridor, the Passetto di Borgo, and stored their most precious riches in the castle's treasury.",
     "imageUrl": "castel-sant-angelo-national-museum.jpg",
     "address": "Lungotevere Castello 50, Rome",
     "openingHours": "8:30-21",
-    "tags": []
+    "eventList": []
   },
   {
+    "verboseIdentifier": "palatineHillPoi",
     "title": "Palatine Hill",
     "description": "Strategically set 50 meters above the Tiber, the Palatine Hill shows evidence of Rome's earliest settlement: rock-cuttings found in front of the Temple of Cybele show human activity as long ago as the ninth century BC. Later, this was the site chosen by the emperors and great aristocratic families for their palaces. The Farnese Gardens were laid out on the hill in the 16th century for Cardinal Alessandro Farnese, a pleasure park of terraces, pavilions, lawns, flowerbeds, trees, and fountains designed as a kind of stage-setting for social gatherings.",
     "imageUrl": "palatine-hill.jpg",
     "address": "Piazza Venezia, Rome",
     "openingHours": "6:30-20",
-    "tags": []
+    "eventList": [
+      {
+        "title": "VinòForum",
+        "description": "When in Rome, you can’t miss the chance to taste all the wines, and a great place to do just that is at Palatine Hill, a wine festival held in the north of Rome each June. The event features over 2,500 wines from 500 producers, along with pop-up restaurants serving gourmet foods prepared by Michelin-starred chefs.",
+        "poiId": "palatineHillPoi",
+        "imageUrl": "e2.jpg",
+        "date": "8.12.2022",
+        "time": "14:00",
+        "timeDuration": 100,
+        "eventUrl": "google.de",
+        "price": 20,
+        "eventType": "click",
+        "address": "Via Buccari, 14, Rome",
+        "organisation": "ByteAffairs",
+        "season": "SUMMER"
+      }
+    ]
   },
   {
+    "verboseIdentifier": "capitolineMuseumPoi",
     "title": "Capitoline Museum",
     "description": "Two palaces on Piazza del Campidoglio house Europe's oldest public collection of art, founded in 1471. Primarily devoted to sculptures from across the ancient world, the highlights of its treasures include the realistic Hellenistic bronze Boy with a Thorn; Capitoline Venus, from a 4th-century BC original by Praxiteles; a 4.24-meter-tall Roman equestrian statue of Marcus Aurelius; a Roman sculpture of the Dying Gaul; and the Capitoline She-Wolf, an Etruscan work from the 6th century BC. More 'modern' sculptures include a head of Medusa, by the 17th-century Baroque sculptor Gian Lorenzo Bernini. Although the Capitoline Museum is best known for its outstanding collection of classical sculptures, its Capitoline Picture Gallery exhibits paintings by Titian, Veronese, and Rubens, along with Caravaggio's compelling John the Baptist.",
     "imageUrl": "capitoline-museum-statue.jpg",
     "address": "Piazza del Campidoglio, Rome",
     "openingHours": "7:15-19:15",
-    "tags": []
+    "eventList": []
   },
   {
+    "verboseIdentifier": "palazzoDoriaPoi",
     "title": "Palazzo Doria Pamphilj",
     "description": "Rome's finest private collection of art is displayed in the magnificent Baroque galleries, state rooms, and chapel of the Palazzo Doria Pamphilj. Representing works by European masters from the 15th through the 18th centuries, the collections include paintings by Filippo Lippi, Brueghel the Elder, Correggio, and Raphael, along with major works by Caravaggio (Rest in the Flight into Egypt) and Titian (Salome with the Head of John the Baptist). Velázquez's Portrait of Innocent X is one of the collection's highlights. Another image of the same Pope is a sculpture by Bernini. The palace itself almost outshines its contents, with frescoed ceilings and Baroque decoration; a good audio guide in English enlivens the tour. The gardens are beautiful, with an intricately patterned parterre with labyrinth elements.",
     "imageUrl": "palazzo-doria-pamphilj.jpg",
     "address": "Via del Corso 305, Rome",
     "openingHours": "7-22",
-    "tags": []
+    "eventList": []
   },
   {
+    "verboseIdentifier": "sanClementePoi",
     "title": "Church of San Clemente",
     "description": "One of Rome's oldest churches and with the city's most beautifully decorated apse, covered in mosaics of Old and New Testament scenes, San Clemente has a further fascination: the multiple layers of its history as each era built upon the last. You can descend from the 12th-century church into a previous church, a 4th-century basilica with Romanesque frescoes of New Testament scenes. Below that are the excavated foundations of a Roman home from the 2nd century AD, with a shrine to the sun god Mithra, with a carved relief on the altar. From the foundations of the house, you can walk on ancient streets of this former Roman neighborhood. But do take time to look around the upper church, to see the mosaics, the inlaid marble floors, and the early Renaissance frescoes by Masolino in the St. Catherine's Chapel.",
     "imageUrl": "church-san-clemente-mosaic.jpg",
     "address": "Via San Giovanni in Laterano 108, Rome",
     "openingHours": "8-20",
-    "tags": []
+    "eventList": []
   },
   {
+    "verboseIdentifier": "sanGiovanniLateranoPoi",
     "title": "San Giovanni in Laterano",
     "description": "As you might expect for the episcopal church of the Pope, St. John Lateran is one of Rome's most impressive churches. After centuries of alterations, it still retains its original form from the age of Constantine, when it was built. Its façade, by contrast, is a purely Baroque embellishment and a fine example of that period. Along with the mosaics in the apse, be sure to notice the beautiful 16th-century wooden ceiling. If the octagonal baptistery, San Giovanni in Fonte, looks a bit familiar, it's because it provided the model for later ones throughout Europe. Built by Constantine, it is the world's oldest Christian baptistery. Across the piazza, in the church of the Scala Santa, is the Holy Staircase, 28 steps believed to have been brought to Rome in the fourth century by St. Helen, from Pilate's palace in Jerusalem.",
     "imageUrl": "basilica-of-st-john-lateran-1.jpg",
     "address": " Piazza del Laterano, 4, Rome",
     "openingHours": "6:30-23",
-    "tags": []
+    "eventList": []
   },
   {
+    "verboseIdentifier": "piazzaPopoloPoi",
     "title": "Piazza del Popolo",
     "description": "Symmetrically situated at the apex of a triangle of streets that include Via Corso, Rome's main shopping street, Piazza del Popolo was designed in the early 19th century as the northern entrance to the city center. At its center, the Egyptian obelisk, called Flaminio, rises above a fountain, where four white marble lions spout fans of water into four round travertine pools. Facing one side like mirror images at either side of Via Coorso are the twin churches of Santa Maria dei Miracoli and Santa Maria in Montesanto, and at the opposite side of the grand piazza is the Augustinian Basilica of Santa Maria del Popolo.",
     "imageUrl": "piazza-del-popolo-santa-maria-popolo.jpg",
     "address": " Piazza del Popolo, Rome",
     "openingHours": "7:30-21",
-    "tags": []
+    "eventList": []
+  },
+
+  {
+    "verboseIdentifier": "auditoriumParcoPoi",
+    "title": "Auditorium Parco della Musica",
+    "description": "Parco della Musica is a public music complex in Rome, Italy, with three concert halls and an outdoor theater in a park setting. It was designed by Italian architect Renzo Piano. Jürgen Reinhold of Müller-BBM was in charge of acoustics for the halls; Franco Zagari was landscape architect for the outdoor spaces. Parco della Musica lies where the 1960 Summer Olympic Games were held, somewhat north of Rome's ancient center, and is home to most of the facilities of the Accademia Nazionale di Santa Cecilia.",
+    "imageUrl": "piazza-del-popolo-santa-maria-popolo.jpg",
+    "address": " Via Pietro de Coubertin, 10, 00196 Roma RM",
+    "openingHours": "7:30-21",
+    "eventList": [
+      {
+        "title": "Festival del Verde e del Paesaggio",
+        "description": "If you've got a green thumb and love basking in the sun come springtime, you should make it to Rome's annual garden festival held at Parco della Musica in North Rome. Designed by famed architect Renzo Piano, this impressive music complex is the perfect location for a festival that exalts plants, flowers and nature in all their glory.",
+        "imageUrl": "e7.jpg",
+        "poiId": "auditoriumParcoPoi",
+        "date": "10.04.2022",
+        "time": "13:00",
+        "timeDuration": 100,
+        "eventUrl": "google.de",
+        "price": 30,
+        "eventType": "click",
+        "address": "Via San Cosmo fuori Porta Nolana 123",
+        "organisation": "RomeLegend",
+        "season": "WINTER"
+      },
+      {
+        "title": "Festa Del Cinema di Roma",
+        "description": "Since 2006, Rome Film Fest has turned the contemporary Auditorium Parco della Musica into one of the world’s largest red-carpet events, complete with dozens of screenings and retrospectives, plus tributes and panels led by Italian and international celebrities from the world of cinema.",
+        "imageUrl": "e8.jpg",
+        "poiId": "auditoriumParcoPoi",
+        "date": "11.07.2022",
+        "time": "14:20",
+        "timeDuration": 80,
+        "eventUrl": "google.de",
+        "price": 25,
+        "eventType": "click",
+        "address": "Via Archimede 82",
+        "organisation": "RomeCinema",
+        "season": "SUMMER"
+      }
+    ]
   }
 ]

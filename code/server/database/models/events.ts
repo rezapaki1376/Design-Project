@@ -18,7 +18,7 @@ export enum SeasonType {
 }
 export interface EventInterface {
   id: number
-  poiId: number
+  poiId: string
   description: string
   imageUrl: string
   eventType: string
@@ -32,6 +32,7 @@ export interface EventInterface {
   organisation: string
   season: SeasonType
   title: string
+  pointOfInterestId: number
   createdAt: Date
   updatedAt: Date
 }
@@ -41,7 +42,7 @@ class Event extends Model<
   InferCreationAttributes<Event>
 > {
   declare id: CreationOptional<number>
-  declare poiId: number
+  declare poiId: string
   declare description: string
   declare imageUrl: string
   declare date: Date
@@ -67,7 +68,7 @@ Event.init(
       primaryKey: true,
     },
     poiId: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     description: {
@@ -115,7 +116,7 @@ Event.init(
       allowNull: false,
     },
     season: {
-      type: DataTypes.ENUM('SPRING', 'SUMMER', 'AUTUMN', 'WINTER'),
+      type: DataTypes.ENUM('SUMMER', 'WINTER'),
       allowNull: false,
     },
     title: {
@@ -128,6 +129,7 @@ Event.init(
   {
     timestamps: true,
     tableName: 'events',
+    modelName: 'Event',
     sequelize,
   }
 )
