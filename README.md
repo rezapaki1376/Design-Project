@@ -7,49 +7,49 @@ This is the introduction field for our repo
 ## Team Members contribution (in hour): This mentioned time is an approximate time
 
 
-Amin Gerard Hofmann: person code: 10853020 email: amingerard.hofmann@mail.polimi.it
-
-Document design:
-Backend design:
-Data base design and filling the information: 
-Front design:
-Final evaluation:
-SEO optimization:
-Accessibility and usability test:
-
-
-Mohammad Mahdi Safari: person code: 10772564 email: mohammadmahdi.safari@mail.polimi.it
-
-Document design: 4h
-Backend design:---
-Data base design and filling the information: 3:30h
-Front design: 15h
-Final evaluation: 2h
-SEO optimization: 2h
-Accessibility and usability test: 1h
+Amin Gerard Hofmann: person code: 10853020 email: amingerard.hofmann@mail.polimi.it<br />
+<br />
+Document design:<br />
+Backend design:<br />
+Data base design and filling the information: <br />
+Front design:<br />
+Final evaluation:<br />
+SEO optimization:<br />
+Accessibility and usability test:<br />
 
 
-Reza Paki: person code: 10832693 emal:Reza.paki@mail.polimi.it
+Mohammad Mahdi Safari: person code: 10772564 email: mohammadmahdi.safari@mail.polimi.it<br />
+<br />
+Document design: 4h<br />
+Backend design:---<br />
+Data base design and filling the information: 3:30h<br />
+Front design: 15h<br />
+Final evaluation: 2h<br />
+SEO optimization: 2h<br />
+Accessibility and usability test: 1h<br />
+<br /><br />
 
-Document design: 2h
-Backend design:-----
-Data base design and filling the information: 1h
-Front design: 25h
-Final evaluation: 1h
-SEO optimization: 1h
-Accessibility and usability test: 1h
+Reza Paki: person code: 10832693 emal:Reza.paki@mail.polimi.it<br />
+<br />
+Document design: 2h<br />
+Backend design:-----<br />
+Data base design and filling the information: 1h<br />
+Front design: 25h<br />
+Final evaluation: 1h<br />
+SEO optimization: 1h<br />
+Accessibility and usability test: 1h<br />
+<br /><br />
 
-
-Sajad Hamzenejadi: person code: 10818436 email: Sajad.hamzenejadi@mail.polimi.it
-
-Document design: 4h
-Backend design: -----
-Data base design and filling the information: 2h 
-Front design: 15h
-Final evaluation: 2h
-SEO optimization: 2h
-Accessibility and usability test: 2h
-
+Sajad Hamzenejadi: person code: 10818436 email: Sajad.hamzenejadi@mail.polimi.it<br />
+<br />
+Document design: 4h <br />
+Backend design: -----<br />
+Data base design and filling the information: 2h <br />
+Front design: 15h<br />
+Final evaluation: 2h<br />
+SEO optimization: 2h<br />
+Accessibility and usability test: 2h<br />
+<br /><br />
 #### **A1: Content Design - C-IDM Diagram**
 
 Create C-IDM schema in the large and content in the small dables
