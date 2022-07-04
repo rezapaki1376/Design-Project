@@ -4,22 +4,51 @@
 
 This is the introduction field for our repo
 
-## Team Members:
+## Team Members contribution (in hour): This mentioned time is an approximate time
 
-Mohammad Mahdi Safari
 
-Reza Paki:
+Amin Gerard Hofmann: person code: 10853020 email: amingerard.hofmann@mail.polimi.it
 
-Sajad Hamzenejadi:
+Document design:
+Backend design:
+Data base design and filling the information: 
+Front design:
+Final evaluation:
+SEO optimization:
+Accessibility and usability test:
 
-Amin Gerard Hofmann:
 
-## Requried Deliverables
+Mohammad Mahdi Safari: person code: 10772564 email: mohammadmahdi.safari@mail.polimi.it
 
-Link to final report:
-https://www.overleaf.com/read/zcfhmfgwwwbq
+Document design: 4h
+Backend design:---
+Data base design and filling the information: 3:30h
+Front design: 15h
+Final evaluation: 2h
+SEO optimization: 2h
+Accessibility and usability test: 1h
 
-### Deliverable: Design Document
+
+Reza Paki: person code: 10832693 emal:Reza.paki@mail.polimi.it
+
+Document design: 2h
+Backend design:-----
+Data base design and filling the information: 1h
+Front design: 25h
+Final evaluation: 1h
+SEO optimization: 1h
+Accessibility and usability test: 1h
+
+
+Sajad Hamzenejadi: person code: 10818436 email: Sajad.hamzenejadi@mail.polimi.it
+
+Document design: 4h
+Backend design: -----
+Data base design and filling the information: 2h 
+Front design: 15h
+Final evaluation: 2h
+SEO optimization: 2h
+Accessibility and usability test: 2h
 
 #### **A1: Content Design - C-IDM Diagram**
 
