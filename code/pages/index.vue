@@ -4,7 +4,7 @@
       <div class="container top_section">
         <div class="row">
           <div class="col-lg-6">
-            <h1>Let's see Rome with us</h1>
+            <h1>Find your <br> Rome</h1>
           </div>
           <div class="col-lg-6">
             <p>
@@ -16,7 +16,7 @@
               wandering soul!
             </p>
           </div>
-        </div>
+        </div> 
         <div class="row image-box">
           <div class="col-lg-4">
             <img src="@/assets/img/index1.jpg" alt=" rome image" />

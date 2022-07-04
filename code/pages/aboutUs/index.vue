@@ -5,8 +5,8 @@
     <div class="row about-us">
       <div class="jumbotron col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <h1>
-          Find Your <br />
-          Rome
+          Lets see Rome <br />
+          with us
         </h1>
       </div>
       <div class="jumbotron col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -25,43 +25,40 @@
     <div class="container description">
       <div class="row">
         <div class="jumbotron col-lg-6">
-          <h1>Our Mission</h1>
+          <h1>Ancient Rome</h1>
           <p class="lead">
-            The Internet’s far-reaching access has moved more people to travel
-            than ever before. Beautiful pictures of unknown places incite a
-            desire to travel. The internet also makes traveling much easier and
-            less stressful. People can discover where to go and what to do
-            there. They can book flights, hotels, rental cars, and more.The
-            internet provides access to every tidbit of information about a
-            foreign destination. We are here to provide all of these facilities
-            for you. Just select your favorit itineraries and point of
-            interesteds and leave every thing to us.
+            In modern historiography, ancient Rome refers to Roman civilization 
+            from the founding of the city of Rome in the 8th century BC to the collapse of 
+            the Western Roman Empire in the 5th century AD. It encompasses the Roman Kingdom (753–509 BC), 
+            Roman Republic (509–27 BC) and Roman Empire (27 BC–476 AD) until the fall of the western empire. Ancient 
+            Rome began as an Italic settlement, traditionally dated to 753 BC, beside the River Tiber in the 
+            Italian Peninsula. The settlement grew into the city and polity of Rome, and came to control its neighbours 
+            through a combination of treaties and military strength. It eventually dominated the Italian peninsula, 
+            and acquired an Empire that took in much of Europe and the lands and peoples surrounding the Mediterranean Sea.
           </p>
         </div>
 
         <div class="jumbotron col-lg-6">
-          <img class="IMG_styles" src="@/assets/img/about-us/AU1.png" alt="" />
+          <img class="IMG_styles" src="@/assets/img/about-us/AU1.jpg" alt="" />
         </div>
       </div>
 
       
       <div class="row">
         <div class="jumbotron col-lg-6">
-          <img class="IMG_styles" src="@/assets/img/about-us/aboutus2.jpg" alt="" />
+          <img class="IMG_styles" src="@/assets/img/about-us/CU4.jpg" alt="" />
         </div>
 
         <div class="jumbotron col-lg-6">
-          <h1>What we do?</h1>
+          <h1>Rome in Modern World</h1>
           <p class="lead">
-            From the beginning, travel businesses have used imagery in flyers,
-            brochures, and postcards. Images are an effective way to stimulate
-            the desire to travel. People can explore destinations virtually,
-            through high-definition pictures, 360° views, and videos.A tourism
-            website also needs to attract attention and foment trust. If a user
-            trusts your website they will be more likely to apply the
-            recommendations and make a purchase. A clean design will help you
-            accomplish this.Tourism websites employ different design trends to
-            display content in an organized way.
+            The glorious history of ancient Rome holds a collection of the most fascinating ideas 
+            that were once revolutionary and that we still use today. Rome is ingrained in our political, 
+            cultural, literary traditions and quite frankly in our everyday life. And although many of the Roman 
+            inventions were a case of adaptation and improvement rather than originality, mainly because of 
+            the great influence ancient Greece had, yet some inventions remain truly unique to Rome. As you are 
+            about to find out, some had a crucial role in shaping the world we know today and some may come as a 
+            surprise to have originated so long ago.
           </p>
         </div>
       </div>
@@ -69,20 +66,19 @@
       
       <div class="row">
         <div class="jumbotron col-lg-6">
-          <h1>Our history</h1>
+          <h1>Art and Architecture</h1>
           <p class="lead">
-            This travel site is the official tourism guide to the city Rome in
-            Italy. This website uses stunning images to grab attention. It
-            maintains a good balance between images and text. The prime focus is
-            on the views and activities available. We suggest you all events
-            that held in Rome and interested. As well as this you can finde many
-            interested places to visit. Visitors can book reservations on the
-            home page which allows them to act as soon as possible.
+            Roman architecture is an interesting example of Greek influence, where they have borrowed certain 
+            designs and ideas only to make them better. Such an example is the use of columns which in their 
+            case was more decorative and less structural. Their further creations were curved roofs and arches 
+            which are considered to be the most important among Roman inventions. Arches revolutionized architecture 
+            and therefore made possible foundations for massive constructions such as bridges, aqueducts and amphitheatres. 
+            Two of the very important monuments that bear arches are the Colosseum and the Trajan’s Market.
           </p>
         </div>
 
         <div class="jumbotron col-lg-6">
-          <img class="IMG_styles" src="@/assets/img/about-us/aboutus3.jpg" alt="" />
+          <img class="IMG_styles" src="@/assets/img/about-us/AU3.jpg" alt="" />
         </div>
       </div>
 
