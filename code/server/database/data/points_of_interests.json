@@ -15,11 +15,26 @@
         "date": "9.07.2022",
         "time": "15:30",
         "timeDuration": 120,
-        "eventUrl": "google.de",
+        "eventUrl": "https://www.gaytravel4u.com/event/rome-pride",
         "price": 10,
-        "eventType": "click",
+        "eventType": "Fun",
         "address": "Via dei Fori Imperiali",
         "organisation": "LGBT community",
+        "season": "SUMMER"
+      },
+      {
+        "title": "Russia's War in Ukraine and the Future of Transatlantic Relations",
+        "description": "John Cabot University's Guarini Institute for Public Affairs and Temple University's Rome campus present a discussion on Russia's War in Ukraine and the Future of Transatlantic Re",
+        "imageUrl": "e4.jpg",
+        "poiId": "mariaMaggiorePoi",
+        "date": "07.03.2022",
+        "time": "18:30",
+        "timeDuration": 120,
+        "eventUrl": "https://calendar.johncabot.edu/event/russias-war-in-ukraine-and-the-future-of-the-transatlantic-relations/",
+        "price": 0,
+        "eventType": "National",
+        "address": "Secchia Roof Terrace Guarini Campus Via della Lungara, 233, Rome",
+        "organisation": "Johncabot",
         "season": "SUMMER"
       }
     ]
@@ -33,19 +48,34 @@
     "openingHours": "7:30-21",
     "eventList": [
       {
-        "title": "Taste of Roma",
-        "description": "If you’re in town at the end of September, Taste of Roma should be on your to-do list. This enormous food festival is a great way to eat your way through the city and sample the cuisines of Rome’s best chefs and emerging food personalities. Expect more details closer to the date of the event.",
-        "imageUrl": "e9.jpg",
-        "poiId": "pantheonPoi",
-        "date": "10.21.2022",
-        "time": "13:00",
-        "timeDuration": 110,
-        "eventUrl": "google.de",
-        "price": 0,
-        "eventType": "click",
-        "address": "Via Colonnello Galliano 58",
-        "organisation": "ByteAff2airs",
-        "season": "WINTER"
+        "title": "Ides of March",
+        "description": "Each year on March 15, or the Ides of March, Rome marks the anniversary of Julius Caesar’s untimely death with a period reenactment. Caesar was one of Rome's most important dictators and he was murdered by his own senators during a meeting in 44 BC near the Largo Argentina archaeological site",
+        "imageUrl": "e3.jpg",
+        "poiId": "forumRomanumPoi",
+        "date": "4.12.2022",
+        "time": "18:00",
+        "timeDuration": 60,
+        "eventUrl": "https://www.wantedinrome.com/news/ides-of-march-rome-remembers-julius-caesar.html",
+        "price": 10,
+        "address": "Via Loreto 147, Rome",
+        "eventType": "Dance",
+        "organisation": "Church",
+        "season": "SUMMER"
+      },
+      {
+        "title": "Pride Parade in Rome!",
+        "description": "In a statement, Roma Pride spokesperson Mario Colamarino said that greater protection was required 'for our community, in particular for transgender people, who are too often discriminated against and victims of violence, inside and outside the workplace.",
+        "imageUrl": "e5.jpg",
+        "poiId": "colosseumPoi",
+        "date": "9.07.2022",
+        "time": "15:30",
+        "timeDuration": 120,
+        "eventUrl": "https://www.gaytravel4u.com/event/rome-pride",
+        "price": 10,
+        "eventType": "Fun",
+        "address": "Via dei Fori Imperiali",
+        "organisation": "LGBT community",
+        "season": "SUMMER"
       }
     ]
   },
@@ -58,34 +88,34 @@
     "openingHours": "7-21",
     "eventList": [
       {
-        "title": "Natale di Roma",
-        "description": "According to legend, Rome was founded by Romulus on April 21, 753 BC and the city continues to mark its date of birth with a series of festivities and eventlist, including concerts, a parade and historical reenactments at Circo Massimo. Events vary widely (this year, Rome’s birthday falls on Easter, for instance) but you can expect fireworks and gladiators on display in the city centre.",
-        "poiId": "forumRomanumPoi",
-        "imageUrl": "e1.jpg",
-        "date": "12.11.2022",
-        "time": "17:00",
-        "timeDuration": 90,
-        "eventUrl": "google.de",
-        "eventType": "click",
-        "price": 50,
-        "address": "Via Cipro, 4L, Rome",
-        "organisation": "Italy national",
+        "title": "Movies that were shot in Rome!",
+        "description": "Over the past century, there have been numerous films set in Rome, and the city has a particularly strong cinematic tradition. The city hosts the Cinecittà Studios, the largest film and television production facility in continental Europe and the centre of the Italian cinema, where a large number of today's biggest box office hits are filmed.",
+        "imageUrl": "e6.jpg",
+        "poiId": "spanishStepsPoi",
+        "date": "12.09.2022",
+        "time": "16:00",
+        "timeDuration": 200,
+        "eventUrl": "https://www.romeprivateguides.com/en/blog/about-rome/10-movies-set-in-rome.html",
+        "price": 45,
+        "eventType": "Movie",
+        "address": "Via di Santa Melania 55",
+        "organisation": "RomeCinema",
         "season": "WINTER"
       },
       {
-        "title": "Ides of March",
-        "description": "Each year on March 15, or the Ides of March, Rome marks the anniversary of Julius Caesar’s untimely death with a period reenactment. Caesar was one of Rome's most important dictators and he was murdered by his own senators during a meeting in 44 BC near the Largo Argentina archaeological site",
-        "imageUrl": "e3.jpg",
-        "poiId": "forumRomanumPoi",
-        "date": "4.12.2022",
-        "time": "18:00",
-        "timeDuration": 60,
-        "eventUrl": "google.de",
-        "price": 10,
-        "address": "Via Loreto 147, Rome",
-        "eventType": "click",
-        "organisation": "Church",
-        "season": "SUMMER"
+        "title": "Festival del Verde e del Paesaggio",
+        "description": "If you've got a green thumb and love basking in the sun come springtime, you should make it to Rome's annual garden festival held at Parco della Musica in North Rome. Designed by famed architect Renzo Piano, this impressive music complex is the perfect location for a festival that exalts plants, flowers and nature in all their glory.",
+        "imageUrl": "e7.jpg",
+        "poiId": "auditoriumParcoPoi",
+        "date": "10.04.2022",
+        "time": "13:00",
+        "timeDuration": 100,
+        "eventUrl": "https://www.festivaldelverdeedelpaesaggio.it/",
+        "price": 30,
+        "eventType": "Dance",
+        "address": "Via San Cosmo fuori Porta Nolana 123",
+        "organisation": "RomeLegend",
+        "season": "WINTER"
       }
     ]
   },
@@ -96,7 +126,38 @@
     "imageUrl": "trevi-fountain-1.jpg",
     "address": "Piazzi di Trevi, Rome",
     "openingHours": "8-24",
-    "eventList": []
+    "eventList": [
+      {
+        "title": "Festa Del Cinema di Roma",
+        "description": "Since 2006, Rome Film Fest has turned the contemporary Auditorium Parco della Musica into one of the world’s largest red-carpet events, complete with dozens of screenings and retrospectives, plus tributes and panels led by Italian and international celebrities from the world of cinema.",
+        "imageUrl": "e8.jpg",
+        "poiId": "auditoriumParcoPoi",
+        "date": "11.07.2022",
+        "time": "14:20",
+        "timeDuration": 80,
+        "eventUrl": "https://www.romacinemafest.it/en/events/",
+        "price": 25,
+        "eventType": "Movie",
+        "address": "Via Archimede 82",
+        "organisation": "RomeCinema",
+        "season": "SUMMER"
+      },
+      {
+        "title": "Taste of Roma",
+        "description": "If you’re in town at the end of September, Taste of Roma should be on your to-do list. This enormous food festival is a great way to eat your way through the city and sample the cuisines of Rome’s best chefs and emerging food personalities. Expect more details closer to the date of the event.",
+        "imageUrl": "e9.jpg",
+        "poiId": "pantheonPoi",
+        "date": "10.21.2022",
+        "time": "13:00",
+        "timeDuration": 110,
+        "eventUrl": "https://tasteofroma.it/",
+        "price": 0,
+        "eventType": "National",
+        "address": "Via Colonnello Galliano 58",
+        "organisation": "ByteAff2airs",
+        "season": "WINTER"
+      }
+    ]
   },
   {
     "verboseIdentifier": "vittorioMonumentpoi",
@@ -105,7 +166,23 @@
     "imageUrl": "vittorio-emanuele-monument.jpg",
     "address": "Piazza Venezia, Rome",
     "openingHours": "7-21",
-    "eventList": []
+    "eventList": [
+      {
+        "title": "Festa Madonna della Neve",
+        "description": "Legend has it that, in 358 BC, a nobleman and his childless wife vowed to donate their possessions to the Virgin Mary and prayed for a sign on how to proceed. The Virgin Mary appeared to the couple in a dream and left a snowfall on the Esquiline Hill, instructing them to erect a church in her honour: the present-day Basilica di Santa Maria Maggiore.",
+        "imageUrl": "e10.jpg",
+        "poiId": "mariaMaggiorePoi",
+        "date": "10.19.2022",
+        "time": "13:00",
+        "timeDuration": 70,
+        "eventUrl": "https://www.facebook.com/events/970295300493391/970295320493389/",
+        "price": 20,
+        "eventType": "Fun",
+        "address": " Via Nolana 59",
+        "organisation": "Italy national",
+        "season": "WINTER"
+      }
+    ]
   },
   {
     "verboseIdentifier": "spanishStepsPoi",
@@ -116,19 +193,19 @@
     "openingHours": "7:30-20",
     "eventList": [
       {
-        "title": "Movies that were shot in Rome!",
-        "description": "Over the past century, there have been numerous films set in Rome, and the city has a particularly strong cinematic tradition. The city hosts the Cinecittà Studios, the largest film and television production facility in continental Europe and the centre of the Italian cinema, where a large number of today's biggest box office hits are filmed.",
-        "imageUrl": "e6.jpg",
-        "poiId": "spanishStepsPoi",
-        "date": "12.09.2022",
-        "time": "16:00",
-        "timeDuration": 200,
-        "eventUrl": "google.de",
-        "price": 45,
-        "eventType": "click",
-        "address": "Via di Santa Melania 55",
+        "title": "Festa Del Cinema di Roma",
+        "description": "Since 2006, Rome Film Fest has turned the contemporary Auditorium Parco della Musica into one of the world’s largest red-carpet events, complete with dozens of screenings and retrospectives, plus tributes and panels led by Italian and international celebrities from the world of cinema.",
+        "imageUrl": "e8.jpg",
+        "poiId": "auditoriumParcoPoi",
+        "date": "11.07.2022",
+        "time": "14:20",
+        "timeDuration": 80,
+        "eventUrl": "https://www.romacinemafest.it/en/events/",
+        "price": 25,
+        "eventType": "Movie",
+        "address": "Via Archimede 82",
         "organisation": "RomeCinema",
-        "season": "WINTER"
+        "season": "SUMMER"
       }
     ]
   },
@@ -150,25 +227,25 @@
         "timeDuration": 120,
         "eventUrl": "https://calendar.johncabot.edu/event/russias-war-in-ukraine-and-the-future-of-the-transatlantic-relations/",
         "price": 0,
-        "eventType": "click",
+        "eventType": "National",
         "address": "Secchia Roof Terrace Guarini Campus Via della Lungara, 233, Rome",
         "organisation": "Johncabot",
         "season": "SUMMER"
       },
       {
-        "title": "Festa Madonna della Neve",
-        "description": "Legend has it that, in 358 BC, a nobleman and his childless wife vowed to donate their possessions to the Virgin Mary and prayed for a sign on how to proceed. The Virgin Mary appeared to the couple in a dream and left a snowfall on the Esquiline Hill, instructing them to erect a church in her honour: the present-day Basilica di Santa Maria Maggiore.",
-        "imageUrl": "e10.jpg",
-        "poiId": "mariaMaggiorePoi",
-        "date": "10.19.2022",
-        "time": "13:00",
-        "timeDuration": 70,
-        "eventUrl": "google.de",
+        "title": "VinòForum",
+        "description": "When in Rome, you can’t miss the chance to taste all the wines, and a great place to do just that is at Palatine Hill, a wine festival held in the north of Rome each June. The event features over 2,500 wines from 500 producers, along with pop-up restaurants serving gourmet foods prepared by Michelin-starred chefs.",
+        "poiId": "palatineHillPoi",
+        "imageUrl": "e2.jpg",
+        "date": "8.12.2022",
+        "time": "14:00",
+        "timeDuration": 100,
+        "eventUrl": "https://sv-se.facebook.com/vinoforumroma/photos/a.10150198851095368/10164845349580368/?type=3",
         "price": 20,
-        "eventType": "click",
-        "address": " Via Nolana 59",
-        "organisation": "Italy national",
-        "season": "WINTER"
+        "eventType": "Night party",
+        "address": "Via Buccari, 14, Rome",
+        "organisation": "ByteAffairs",
+        "season": "SUMMER"
       }
     ]
   },
@@ -179,7 +256,23 @@
     "imageUrl": "piazza-navona.jpg",
     "address": "Piazza Navona, Rome",
     "openingHours": "7:30-21",
-    "eventList": []
+    "eventList": [
+      {
+        "title": "VinòForum",
+        "description": "When in Rome, you can’t miss the chance to taste all the wines, and a great place to do just that is at Palatine Hill, a wine festival held in the north of Rome each June. The event features over 2,500 wines from 500 producers, along with pop-up restaurants serving gourmet foods prepared by Michelin-starred chefs.",
+        "poiId": "palatineHillPoi",
+        "imageUrl": "e2.jpg",
+        "date": "8.12.2022",
+        "time": "14:00",
+        "timeDuration": 100,
+        "eventUrl": "https://sv-se.facebook.com/vinoforumroma/photos/a.10150198851095368/10164845349580368/?type=3",
+        "price": 20,
+        "eventType": "Night party",
+        "address": "Via Buccari, 14, Rome",
+        "organisation": "ByteAffairs",
+        "season": "SUMMER"
+      }
+    ]
   },
   {
     "verboseIdentifier": "santAngeloPoi",
@@ -188,7 +281,23 @@
     "imageUrl": "castel-sant-angelo-national-museum.jpg",
     "address": "Lungotevere Castello 50, Rome",
     "openingHours": "8:30-21",
-    "eventList": []
+    "eventList": [
+      {
+        "title": "Natale di Roma",
+        "description": "According to legend, Rome was founded by Romulus on April 21, 753 BC and the city continues to mark its date of birth with a series of festivities and events, including concerts, a parade and historical reenactments at Circo Massimo. Events vary widely (this year, Rome’s birthday falls on Easter, for instance) but you can expect fireworks and gladiators on display in the city centre.",
+        "poiId": "forumRomanumPoi",
+        "imageUrl": "e1.jpg",
+        "date": "12.11.2022",
+        "time": "17:00",
+        "timeDuration": 90,
+        "eventUrl": "https://www.natalidiroma.it/",
+        "eventType": "National",
+        "price": 50,
+        "address": "Via Cipro, 4L, Rome",
+        "organisation": "Italy national",
+        "season": "WINTER"
+      }
+    ]
   },
   {
     "verboseIdentifier": "palatineHillPoi",
@@ -199,6 +308,21 @@
     "openingHours": "6:30-20",
     "eventList": [
       {
+        "title": "Natale di Roma",
+        "description": "According to legend, Rome was founded by Romulus on April 21, 753 BC and the city continues to mark its date of birth with a series of festivities and events, including concerts, a parade and historical reenactments at Circo Massimo. Events vary widely (this year, Rome’s birthday falls on Easter, for instance) but you can expect fireworks and gladiators on display in the city centre.",
+        "poiId": "forumRomanumPoi",
+        "imageUrl": "e1.jpg",
+        "date": "12.11.2022",
+        "time": "17:00",
+        "timeDuration": 90,
+        "eventUrl": "https://www.natalidiroma.it/",
+        "eventType": "National",
+        "price": 50,
+        "address": "Via Cipro, 4L, Rome",
+        "organisation": "Italy national",
+        "season": "WINTER"
+      },
+      {
         "title": "VinòForum",
         "description": "When in Rome, you can’t miss the chance to taste all the wines, and a great place to do just that is at Palatine Hill, a wine festival held in the north of Rome each June. The event features over 2,500 wines from 500 producers, along with pop-up restaurants serving gourmet foods prepared by Michelin-starred chefs.",
         "poiId": "palatineHillPoi",
@@ -206,9 +330,9 @@
         "date": "8.12.2022",
         "time": "14:00",
         "timeDuration": 100,
-        "eventUrl": "google.de",
+        "eventUrl": "https://sv-se.facebook.com/vinoforumroma/photos/a.10150198851095368/10164845349580368/?type=3",
         "price": 20,
-        "eventType": "click",
+        "eventType": "Night party",
         "address": "Via Buccari, 14, Rome",
         "organisation": "ByteAffairs",
         "season": "SUMMER"
@@ -222,7 +346,23 @@
     "imageUrl": "capitoline-museum-statue.jpg",
     "address": "Piazza del Campidoglio, Rome",
     "openingHours": "7:15-19:15",
-    "eventList": []
+    "eventList": [
+      {
+        "title": "Russia's War in Ukraine and the Future of Transatlantic Relations",
+        "description": "John Cabot University's Guarini Institute for Public Affairs and Temple University's Rome campus present a discussion on Russia's War in Ukraine and the Future of Transatlantic Re",
+        "imageUrl": "e4.jpg",
+        "poiId": "mariaMaggiorePoi",
+        "date": "07.03.2022",
+        "time": "18:30",
+        "timeDuration": 120,
+        "eventUrl": "https://calendar.johncabot.edu/event/russias-war-in-ukraine-and-the-future-of-the-transatlantic-relations/",
+        "price": 0,
+        "eventType": "National",
+        "address": "Secchia Roof Terrace Guarini Campus Via della Lungara, 233, Rome",
+        "organisation": "Johncabot",
+        "season": "SUMMER"
+      }
+    ]
   },
   {
     "verboseIdentifier": "palazzoDoriaPoi",
@@ -231,7 +371,23 @@
     "imageUrl": "palazzo-doria-pamphilj.jpg",
     "address": "Via del Corso 305, Rome",
     "openingHours": "7-22",
-    "eventList": []
+    "eventList": [
+      {
+        "title": "Pride Parade in Rome!",
+        "description": "In a statement, Roma Pride spokesperson Mario Colamarino said that greater protection was required 'for our community, in particular for transgender people, who are too often discriminated against and victims of violence, inside and outside the workplace.",
+        "imageUrl": "e5.jpg",
+        "poiId": "colosseumPoi",
+        "date": "9.07.2022",
+        "time": "15:30",
+        "timeDuration": 120,
+        "eventUrl": "https://www.gaytravel4u.com/event/rome-pride",
+        "price": 10,
+        "eventType": "Fun",
+        "address": "Via dei Fori Imperiali",
+        "organisation": "LGBT community",
+        "season": "SUMMER"
+      }
+    ]
   },
   {
     "verboseIdentifier": "sanClementePoi",
@@ -240,7 +396,23 @@
     "imageUrl": "church-san-clemente-mosaic.jpg",
     "address": "Via San Giovanni in Laterano 108, Rome",
     "openingHours": "8-20",
-    "eventList": []
+    "eventList": [
+      {
+        "title": "Festival del Verde e del Paesaggio",
+        "description": "If you've got a green thumb and love basking in the sun come springtime, you should make it to Rome's annual garden festival held at Parco della Musica in North Rome. Designed by famed architect Renzo Piano, this impressive music complex is the perfect location for a festival that exalts plants, flowers and nature in all their glory.",
+        "imageUrl": "e7.jpg",
+        "poiId": "auditoriumParcoPoi",
+        "date": "10.04.2022",
+        "time": "13:00",
+        "timeDuration": 100,
+        "eventUrl": "https://www.festivaldelverdeedelpaesaggio.it/",
+        "price": 30,
+        "eventType": "Dance",
+        "address": "Via San Cosmo fuori Porta Nolana 123",
+        "organisation": "RomeLegend",
+        "season": "WINTER"
+      }
+    ]
   },
   {
     "verboseIdentifier": "sanGiovanniLateranoPoi",
@@ -249,7 +421,38 @@
     "imageUrl": "basilica-of-st-john-lateran-1.jpg",
     "address": " Piazza del Laterano, 4, Rome",
     "openingHours": "6:30-23",
-    "eventList": []
+    "eventList": [
+      {
+        "title": "Festa Del Cinema di Roma",
+        "description": "Since 2006, Rome Film Fest has turned the contemporary Auditorium Parco della Musica into one of the world’s largest red-carpet events, complete with dozens of screenings and retrospectives, plus tributes and panels led by Italian and international celebrities from the world of cinema.",
+        "imageUrl": "e8.jpg",
+        "poiId": "auditoriumParcoPoi",
+        "date": "11.07.2022",
+        "time": "14:20",
+        "timeDuration": 80,
+        "eventUrl": "https://www.romacinemafest.it/en/events/",
+        "price": 25,
+        "eventType": "Movie",
+        "address": "Via Archimede 82",
+        "organisation": "RomeCinema",
+        "season": "SUMMER"
+      },
+      {
+        "title": "Taste of Roma",
+        "description": "If you’re in town at the end of September, Taste of Roma should be on your to-do list. This enormous food festival is a great way to eat your way through the city and sample the cuisines of Rome’s best chefs and emerging food personalities. Expect more details closer to the date of the event.",
+        "imageUrl": "e9.jpg",
+        "poiId": "pantheonPoi",
+        "date": "10.21.2022",
+        "time": "13:00",
+        "timeDuration": 110,
+        "eventUrl": "https://tasteofroma.it/",
+        "price": 0,
+        "eventType": "National",
+        "address": "Via Colonnello Galliano 58",
+        "organisation": "ByteAff2airs",
+        "season": "WINTER"
+      }
+    ]
   },
   {
     "verboseIdentifier": "piazzaPopoloPoi",
@@ -258,7 +461,23 @@
     "imageUrl": "piazza-del-popolo-santa-maria-popolo.jpg",
     "address": " Piazza del Popolo, Rome",
     "openingHours": "7:30-21",
-    "eventList": []
+    "eventList": [
+      {
+        "title": "Festa Madonna della Neve",
+        "description": "Legend has it that, in 358 BC, a nobleman and his childless wife vowed to donate their possessions to the Virgin Mary and prayed for a sign on how to proceed. The Virgin Mary appeared to the couple in a dream and left a snowfall on the Esquiline Hill, instructing them to erect a church in her honour: the present-day Basilica di Santa Maria Maggiore.",
+        "imageUrl": "e10.jpg",
+        "poiId": "mariaMaggiorePoi",
+        "date": "10.19.2022",
+        "time": "13:00",
+        "timeDuration": 70,
+        "eventUrl": "https://www.facebook.com/events/970295300493391/970295320493389/",
+        "price": 20,
+        "eventType": "Fun",
+        "address": " Via Nolana 59",
+        "organisation": "Italy national",
+        "season": "WINTER"
+      }
+    ]
   },
 
   {
@@ -270,34 +489,34 @@
     "openingHours": "7:30-21",
     "eventList": [
       {
-        "title": "Festival del Verde e del Paesaggio",
-        "description": "If you've got a green thumb and love basking in the sun come springtime, you should make it to Rome's annual garden festival held at Parco della Musica in North Rome. Designed by famed architect Renzo Piano, this impressive music complex is the perfect location for a festival that exalts plants, flowers and nature in all their glory.",
-        "imageUrl": "e7.jpg",
-        "poiId": "auditoriumParcoPoi",
-        "date": "10.04.2022",
-        "time": "13:00",
-        "timeDuration": 100,
-        "eventUrl": "google.de",
-        "price": 30,
-        "eventType": "click",
-        "address": "Via San Cosmo fuori Porta Nolana 123",
-        "organisation": "RomeLegend",
+        "title": "Movies that were shot in Rome!",
+        "description": "Over the past century, there have been numerous films set in Rome, and the city has a particularly strong cinematic tradition. The city hosts the Cinecittà Studios, the largest film and television production facility in continental Europe and the centre of the Italian cinema, where a large number of today's biggest box office hits are filmed.",
+        "imageUrl": "e6.jpg",
+        "poiId": "spanishStepsPoi",
+        "date": "12.09.2022",
+        "time": "16:00",
+        "timeDuration": 200,
+        "eventUrl": "https://www.romeprivateguides.com/en/blog/about-rome/10-movies-set-in-rome.html",
+        "price": 45,
+        "eventType": "Movie",
+        "address": "Via di Santa Melania 55",
+        "organisation": "RomeCinema",
         "season": "WINTER"
       },
       {
-        "title": "Festa Del Cinema di Roma",
-        "description": "Since 2006, Rome Film Fest has turned the contemporary Auditorium Parco della Musica into one of the world’s largest red-carpet events, complete with dozens of screenings and retrospectives, plus tributes and panels led by Italian and international celebrities from the world of cinema.",
-        "imageUrl": "e8.jpg",
-        "poiId": "auditoriumParcoPoi",
-        "date": "11.07.2022",
-        "time": "14:20",
-        "timeDuration": 80,
-        "eventUrl": "google.de",
-        "price": 25,
-        "eventType": "click",
-        "address": "Via Archimede 82",
-        "organisation": "RomeCinema",
-        "season": "SUMMER"
+        "title": "Festa Madonna della Neve",
+        "description": "Legend has it that, in 358 BC, a nobleman and his childless wife vowed to donate their possessions to the Virgin Mary and prayed for a sign on how to proceed. The Virgin Mary appeared to the couple in a dream and left a snowfall on the Esquiline Hill, instructing them to erect a church in her honour: the present-day Basilica di Santa Maria Maggiore.",
+        "imageUrl": "e10.jpg",
+        "poiId": "mariaMaggiorePoi",
+        "date": "10.19.2022",
+        "time": "13:00",
+        "timeDuration": 70,
+        "eventUrl": "https://www.facebook.com/events/970295300493391/970295320493389/",
+        "price": 20,
+        "eventType": "Fun",
+        "address": " Via Nolana 59",
+        "organisation": "Italy national",
+        "season": "WINTER"
       }
     ]
   }
