@@ -4,7 +4,7 @@
     "description": "On this small group tour of 20 people or fewer, you can experience this historic Rome icon to the fullest with access to areas that are typically closed to the public—the underground chambers. After skipping the main entrance line, explore the Colosseum with an informative guide, who shares stories about life in Ancient Rome. Read more about Colosseum Underground Small Group Tour with Roman Forum & Gladiator Arena",
     "imageUrl": "i_1_1.jpg",
     "totalDuration": "10 hours",
-    "journey": ["colosseumPoi", "pantheonPoi", "forumRomanumPoi"],
+    "journey": ["colosseumPoi", "pantheonPoi", "forumRomanumPoi", "treviFountainPoi", "vittorioMonumentpoi"],
     "tags": [],
     "suggestedAudience": "Families"
   },
@@ -13,9 +13,9 @@
     "description": "Discover the sacred and artistic treasures of the Vatican on an immersive tour led by an art historian guide. Skip the long lines with priority access, and see some of the most important masterpieces in the Vatican Museum’s immense collection. Stand in awe beneath Michelangelo’s frescoes in the Sistine Chapel, and learn the stories behind the art through an audio headset so you don’t miss a word of your guide’s commentary. Read more about Skip-the-Line Vatican Museums & Sistine Chapel Group Tour - https://www.viator.com/tours/Rome/Skip-the-Line-Vatican-Museums-and-Sistine-Chapel-Tour/d511-7356P1?mcid=56757",
     "imageUrl": "i_2_1.jpg",
     "totalDuration": "7 hours",
-    "journey": ["santAngeloPoi", "pantheonPoi", "forumRomanumPoi"],
+    "journey": ["spanishStepsPoi", "mariaMaggiorePoi", "piazzaNavonaPoi","santAngeloPoi","palatineHillPoi"],
     "tags": [],
-    "suggestedAudience": "Families"
+    "suggestedAudience": "All people"
   },
   {
     "title": "Pompeii, Amalfi Coast and Positano Guided Small-Group Day Trip from Rome",
@@ -23,8 +23,10 @@
     "imageUrl": "i_3_1.jpg",
     "totalDuration": "12 hours",
     "journey": [
+      "capitolineMuseumPoi",
+      "palazzoDoriaPoi",
+      "sanClementePoi",
       "sanGiovanniLateranoPoi",
-      "auditoriumParcoPoi",
       "piazzaPopoloPoi"
     ],
     "tags": [],

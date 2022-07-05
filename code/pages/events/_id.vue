@@ -135,9 +135,7 @@
               </p>
             </div>
           </div>
-          <a :href="'//' + pointsOfInterest.eventUrl" target="_blank">
-            <p class="lead btn btn-primary">Visit Website</p></a
-          >
+          
           <hr />
           <div class="d-flex justify-content-between flex-wrap">
             <p class="lead mx-1 my-0">
