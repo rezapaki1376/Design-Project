@@ -14,7 +14,6 @@ export interface ItineraryInterface {
   description: string
   imageUrl: string
   totalDuration: string
-  tags: Array<string>
   suggestedAudience: Array<string>
   createdAt: Date
   updatedAt: Date
@@ -28,7 +27,6 @@ class Itinerary extends Model<
   declare description: string
   declare imageUrl: string
   declare totalDuration: string
-  declare tags: Array<string>
   declare suggestedAudience: Array<string>
   declare createdAt: CreationOptional<Date>
   declare updatedAt: CreationOptional<Date>
@@ -56,11 +54,6 @@ Itinerary.init(
     totalDuration: {
       type: DataTypes.STRING,
       allowNull: false,
-    },
-    tags: {
-      type: DataTypes.JSONB,
-      defaultValue: null,
-      allowNull: true,
     },
     suggestedAudience: {
       type: DataTypes.JSONB,

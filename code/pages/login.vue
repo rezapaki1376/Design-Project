@@ -1,138 +1,151 @@
 <template>
-<!-- Login page for administrator -->
-<!-- this page is not mandatory part but we considered to show in this way admins could login -->
-<!-- Login template starts from here  -->
-<div class="login ">
-  <div class="blur row justify-content-center">
-<div class="form col-lg-3 col-md-4 col-sm-7 col-xs-10">
-  <div class="form-header">
-  <h1> Login</h1>
-  <h4>Have an account?</h4>
-  </div>
-<form>
-  <div class="form-group">
-    
-    <input id="exampleInputEmail1" type="email" class="form-control transparent-input"  aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    
-    <input id="exampleInputPassword1" type="password" class="form-control transparent-input"  placeholder="Password">
-  </div>
-  
-  <button type="submit" class="btn">SIGN IN</button>
-  <div class="form-group form-check">
-    <input id="exampleCheck1" type="checkbox" class="form-check-input" checked>
-    <label class="form-check-label transparent-input" for="exampleCheck1">Remember Me</label>
-    <div class="w-50 text-md-right">
-<a href="#" style="color: #fff">Forgot Password</a>
-</div>
-  </div>
-</form>
+  <!-- Login page for administrator -->
+  <!-- this page is not mandatory part but we considered to show in this way admins could login -->
+  <!-- Login template starts from here  -->
+  <div class="login">
+    <div class="row justify-content-center">
+      <div class="form col-lg-3 col-md-4 col-sm-7 col-xs-10">
+        <div class="form-header">
+          <h1 class="display-4 lh-1">Login for Admin</h1>
+        </div>
+        <form @submit="onSubmit">
+          <div class="form-group">
+            <input
+              id="exampleInputEmail1"
+              type="email"
+              class="form-control"
+              aria-describedby="emailHelp"
+              placeholder="Email"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              id="exampleInputPassword1"
+              type="password"
+              class="form-control"
+              placeholder="Password"
+            />
+          </div>
 
-
-</div>
-</div>
-</div>
-<!-- Login template finishes here  -->
+          <button type="submit" class="btn">SIGN IN</button>
+          <div class="form-group form-check">
+            <input
+              id="exampleCheck1"
+              type="checkbox"
+              class="form-check-input"
+              checked
+            />
+            <label
+              class="form-check-label transparent-input"
+              for="exampleCheck1"
+              >Remember Me</label
+            >
+            <div class="w-50 text-md-right">
+              <a href="#" style="color: #fff">Forgot Password</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Login template finishes here  -->
 </template>
 
 <script>
-
 export default {
   name: 'LoginPage',
-  components: {
-    
-  },
-  
+  components: {},
+
   head() {
     return {
       title: this.name,
       meta: [
         {
-          hid:"description",
+          hid: 'description',
           name: 'description',
           content: 'Login page',
         },
       ],
     }
   },
+  methods: {
+    onSubmit(e) {
+      e.preventDefault()
+      if (!this.name) {
+        alert(
+          'You would have logged in but this is merely a dummy to show the intentions. Enjoy the website!!!'
+        )
+        return null
+      }
+    },
+  },
 }
 </script>
 <style scoped>
-.text-md-right{
+.text-md-right {
   text-align: right;
   display: inline;
   float: right;
 }
-.btn{
-  background:#fbceb5;
-  color:black;
+.btn {
+  background: #0d6efd;
+  color: white;
   width: 100%;
-  border-radius: 25px;
+  border-radius: 15px;
   height: 50px;
 }
-input.transparent-input{
-  background-color:rgba(0, 0, 0, 0.15) !important;
-       
-}
-input.transparent-input:hover{
-  background-color:rgba(0, 0, 0, 0.0) !important;
-       
-  }
-.form-control{
-  border-radius: 25px;
+
+.form-control {
+  border-radius: 15px;
   border: 1px solid rgb(174, 174, 174);
   height: 50px;
-  
+  color: black;
 }
-.form-check-label{
-  color:#fbceb5;
+.form-check-label {
+  color: #0d6efd;
 }
-.form-group{
-  margin: 20px 0 ;
+.form-group {
+  margin: 20px 0;
 }
-.form-check-input{
+.form-check-input {
   height: 20px;
   width: 20px;
-  background-color: #fbceb5;
+  background-color: #0d6efd;
   border: none;
 }
-::placeholder { 
+::placeholder {
   font-size: 17px;
-  color: rgb(255, 255, 255);
-  opacity: 1; 
+  color: black;
+  opacity: 1;
 }
-.text-muted{
+.text-muted {
   color: black !important;
 }
-.form-header{
-  text-align:center;
+.form-header {
+  text-align: center;
   margin: 30px 0;
 }
-.form-header >*{
+.form-header > * {
   margin: 25px 0;
 }
-.row{
+.row {
   padding: 0;
   margin: 0;
-  
 }
 /*  here we are defining the background image */
-.login{
-  height:100vh;
+.login {
+  height: 100vh;
   width: 100%;
-  background-image: url("@/assets/img/login4.jpg");
+
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   backdrop-filter: blur(5px);
 }
-.blur{
-  background: rgba(240, 240, 240, 0.295); 
-  backdrop-filter: blur(1px); 
+.blur {
+  background: rgba(240, 240, 240, 0.295);
+  backdrop-filter: blur(1px);
   height: 100vh;
-
 }
 </style>
 

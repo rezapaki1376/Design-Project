@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to the Repository for the mandatory assignment of Hypermedia Applications. The repository is devided into two sections, the **codebase** as well as the **documentation**.
+Welcome to the Repository for the mandatory assignment of Hypermedia Applications. The repository is divided into two sections, **codebase** as well as **documentation**.
 
 ## Choices of Implementation and choices of Architecture
 
