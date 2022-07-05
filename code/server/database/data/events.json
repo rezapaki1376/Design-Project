@@ -126,7 +126,7 @@
     "poiId": "pantheonPoi",
     "date": "10.21.2022",
     "time": "13:00",
-    "timeDuration": 110,
+    "timeDuration": 110,  
     "eventUrl": "https://tasteofroma.it/",
     "price": 0,
     "eventType": "National",

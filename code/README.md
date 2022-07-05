@@ -1,4 +1,4 @@
-# Final Project template
+# Final Project
 
 ## Build Setup
 
@@ -61,8 +61,7 @@ Example: `/static/robots.txt` is mapped as `/robots.txt`.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
 
-### `store`
+### `server`
 
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+This directory contains all files related to the application server enabled by Nuxt.
+The folder is subdivided into controllers, a models and routes as well as initialization/seeing files and configuration files.

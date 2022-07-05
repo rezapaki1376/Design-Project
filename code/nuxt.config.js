@@ -1,6 +1,4 @@
-import { NuxtConfig } from '@nuxt/types'
-
-const config: NuxtConfig = {
+const config = {
   // Global page headers: https://go.nuxtjs.dev/config-head
   ssr: true,
   serverMiddleware: [
