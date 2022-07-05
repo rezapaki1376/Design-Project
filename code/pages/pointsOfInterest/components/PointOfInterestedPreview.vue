@@ -1,7 +1,6 @@
 <template>
   <div class="col-lg-3 col-md-5 col-10 my-3">
     <div class="card h-100">
-      <!-- <nuxt-link :to="`/events/${id}`"> -->
       <img
         class="card-img-top"
         :src="require(`@/assets/img/POIs/${img}`)"
@@ -19,13 +18,6 @@
         <div class="mb-3 d-flex flex-column">
           <hr />
           <div class="d-flex justify-content-around">
-            <!-- <div>
-              <i
-                class="bi bi-calendar-event"
-                style="font-size: 1.2rem; color: black"
-              ></i>
-              {{ date }}
-            </div> -->
             <div>
               Opening hours: <i class="bi bi-clock"></i> {{ openinghours }}
             </div>
@@ -43,13 +35,12 @@
           </nuxt-link>
         </div>
       </div>
-      <!-- </nuxt-link> -->
     </div>
   </div>
 </template>
 <script>
 export default {
-  name: 'PoiRivieComponent',
+  name: 'PointOfInterestPreview',
   props: {
     id: {
       type: Number,

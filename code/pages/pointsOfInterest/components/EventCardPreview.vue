@@ -1,7 +1,6 @@
 <template>
   <div class="col-lg-3 col-md-5 col-10 my-3">
     <div class="card h-100">
-      <!-- <nuxt-link :to="`/events/${id}`"> -->
       <img
         class="card-img-top"
         :src="require(`@/assets/img/events/${imageUrl}`)"
@@ -37,11 +36,7 @@
               ></i>
               {{ price }}
             </span>
-            <span v-if="price == 0">
-              <!-- <i class="bi bi-currency-euro" style="font-size: 1.2rem; color: black"
-            ></i> -->
-              Free
-            </span>
+            <span v-if="price == 0"> Free </span>
           </div>
           <div>
             Pre booking:
@@ -65,14 +60,13 @@
           </nuxt-link>
         </div>
       </div>
-      <!-- </nuxt-link> -->
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'EventDetail',
+  name: 'EventCardPreview',
   props: {
     id: {
       type: Number,
@@ -107,21 +101,6 @@ export default {
       required: false,
       default: '',
     },
-  },
-  data({ route }) {
-    console.log('routeID')
-    console.log(route)
-    return {}
-  },
-  computed: {
-    slugId({ route }) {
-      console.log('this.route')
-      console.log(route)
-      return true
-    },
-  },
-  mounted() {
-    console.log(this.route)
   },
   methods: {
     goToDetails() {
@@ -159,14 +138,6 @@ p {
 .card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   /* background: rgb(243, 243, 243); */
-}
-.row {
-  padding: 5px;
-}
-.line {
-  height: 1px;
-  width: 12%;
-  visibility: hidden;
 }
 .btn {
   /* background-color: #00c58e !important; */
