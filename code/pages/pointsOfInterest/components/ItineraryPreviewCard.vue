@@ -1,7 +1,6 @@
 <template>
   <div class="col-lg-3 col-md-5 col-10 my-3">
     <div class="card h-100">
-      <!-- <nuxt-link :to="`/events/${id}`"> -->
       <img
         class="card-img-top"
         :src="require(`@/assets/img/itinerary/${imageUrl}`)"
@@ -18,42 +17,7 @@
         </div>
         <div class="mb-3 d-flex flex-column">
           <hr />
-          <!-- <div class="d-flex justify-content-around">
-            <div>
-              <i
-                class="bi bi-calendar-event"
-                style="font-size: 1.2rem; color: black"
-              ></i>
-              {{ date }}
-            </div>
-            <div><i class="bi bi-clock"></i> {{ time }}</div>
-          </div> -->
-          <!-- <div>
-            Cost:
-            <span v-if="price > 0" >
-            <i class="bi bi-currency-euro" style="font-size: 1.2rem; color: black"
-            ></i>
-            {{ price }}
-            </span>
-            <span v-if="price == 0" >
-            
-            Free
-            </span>
-          </div> -->
-          <div>
-            Total duration: {{ totalDuration }}
-
-            <!-- <i
-              v-if="preregisterNeccessary"
-              class="bi bi-check-lg"
-              style="font-size: 1.2rem; color: red"
-            />
-            <i
-              v-else
-              class="bi bi-x-lg"
-              style="font-size: 1.2rem; color: green"
-            /> -->
-          </div>
+          <div>Total duration: {{ totalDuration }}</div>
           <div>Suggested audience: {{ suggestedAudience }}</div>
           <nuxt-link
             :to="`/points_of_interest/${$route.params.id}/itinerary/${id}`"
@@ -63,14 +27,13 @@
           </nuxt-link>
         </div>
       </div>
-      <!-- </nuxt-link> -->
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'ItineraryPreviewsDetail',
+  name: 'ItineraryCardPreview',
   props: {
     id: {
       type: Number,
@@ -101,9 +64,6 @@ export default {
       required: false,
       default: '',
     },
-  },
-  mounted() {
-    console.log(this.context)
   },
   methods: {
     goToDetails() {

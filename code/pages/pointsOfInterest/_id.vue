@@ -3,12 +3,12 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <nuxt-link :to="`/points_of_interest`" :alt="Poi.title">
+          <nuxt-link :to="`/points_of_interest`" :alt="poi.title">
             Points of interest
           </nuxt-link>
         </li>
         <li class="breadcrumb-item active" aria-current="page">
-          {{ Poi.title }}
+          {{ poi.title }}
         </li>
       </ol>
     </nav>
@@ -28,31 +28,31 @@
       <div class="col-lg-4 text-center">
         <img
           class="rounded-lg-3"
-          :src="require(`@/assets/img/POIs/${Poi.imageUrl}`)"
-          :alt="Poi.title"
+          :src="require(`@/assets/img/POIs/${poi.imageUrl}`)"
+          :alt="poi.title"
         />
       </div>
       <div class="col-lg-7">
-        <h1 class="display-4 lh-1">{{ Poi.title }}</h1>
+        <h1 class="display-4 lh-1">{{ poi.title }}</h1>
         <p class="lead mt-2">
-          {{ Poi.description }}
+          {{ poi.description }}
         </p>
         <hr />
         <div class="d-flex justify-content-center">
           <div class="col">
             <b>Opening hours:</b>
             <p class="lead">
-              <i class="bi bi-clock"></i> {{ Poi.openingHours }}
+              <i class="bi bi-clock"></i> {{ poi.openingHours }}
             </p>
           </div>
           <div class="col">
             <b>Address:</b>
-            <p class="lead"><i class="bi bi-geo-alt"></i>{{ Poi.address }}</p>
+            <p class="lead"><i class="bi bi-geo-alt"></i>{{ poi.address }}</p>
           </div>
         </div>
-        
+
         <div class="d-flex justify-content-between flex-wrap">
-          <p class="lead mx-1 my-0">Created: {{ Poi.createdAt }}</p>
+          <p class="lead mx-1 my-0">Created: {{ poi.createdAt }}</p>
         </div>
       </div>
     </div>
@@ -132,16 +132,15 @@ export default {
     const { data: relatedItineraries } = await $axios.get(
       '/points_of_interest/' + id + '/itineraries_by_id'
     )
-    console.log(poiEvents)
     return {
-      Poi: data,
+      poi: data,
       poiEvents,
       relatedItineraries,
     }
   },
   head() {
     return {
-      title: this.Poi.title,
+      title: this.poi.title,
       meta: [
         {
           hid: 'description',
