@@ -20,7 +20,6 @@
         </li>
       </ol>
     </nav>
-
     <div
       class="
         row
@@ -49,77 +48,22 @@
           <hr />
           <b>Details:</b>
           <div class="d-flex justify-content-between flex-wrap">
-            <!-- <p class="lead mx-1 my-0">
-              <i
-                class="bi bi-calendar-event"
-                style="font-size: 1.2rem; color: black"
-              ></i>
-              {{ itinerary.date }}
-            </p> -->
-            <!-- <p class="lead mx-1 my-0">
-              <i class="bi bi-clock"></i>
-              {{ itinerary.time }}
-            </p> -->
             <p class="lead mx-1 my-0">
               Duration: {{ itinerary.totalDuration }}min
             </p>
-
             <p class="lead">
               Suggeste audience: {{ itinerary.suggestedAudience }}
             </p>
-            <!-- <p class="lead mx-1 my-0">
-               Cost:
-            <span v-if="itinerary.price > 0" >
-            <i class="bi bi-currency-euro" style="font-size: 1.2rem; color: black"
-            ></i>
-            {{ itinerary.price }}
-            </span>
-            <span v-if="itinerary.price == 0" >
-            
-            Free
-            </span>
-            </p> -->
-            <!-- <p class="lead m-0">
-              Prebooking:
-
-              <i
-                v-if="itinerary.preregisterNeccessary"
-                class="bi bi-check-lg"
-                style="font-size: 1.2rem; color: red"
-              />
-              <i
-                v-else
-                class="bi bi-x-lg"
-                style="font-size: 1.2rem; color: green"
-              />
-            </p> -->
           </div>
         </div>
-
-        <!-- <b>Organisation:</b>
-        <p class="lead">{{ itinerary.organisation }}</p> -->
-
-        <!-- <i class="bi bi-geo-alt"></i><b>Address:</b>
-        <p class="lead">{{ itinerary.address }}</p> -->
-
-        <!-- <a :href="'//' + itinerary.eventUrl" target="_blank">
-          <p class="lead btn btn-primary">Visit Website</p></a
-        > -->
         <hr />
         <div class="d-flex justify-content-between flex-wrap">
           <p class="lead mx-1 my-0">Created: {{ itinerary.createdAt }}</p>
-          <!--<p class="lead mx-1 my-0">EventType: {{ itinerary.eventType }}</p>
-           <p class="lead mx-1 my-0">
-           
-            Season: {{ itinerary.season }}
-             <i v-if="itinerary.season == 'SUMMER'" class="bi bi-brightness-high"></i>
-            <i v-if="itinerary.season == 'WINTER'" class="bi bi-snow2"></i>
-            </p> -->
         </div>
       </div>
 
       <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-        <button type="button" class="btn btn-white px-4" @click="backToList">
+        <button type="button" class="btn btn-white px-4" @click="backToPoi">
           <i class="bi bi-arrow-return-left"></i>
           Return to Point of interest
         </button>
@@ -129,15 +73,13 @@
 </template>
 
 <script>
-import CommonMixin from '~/mixins/common'
 export default {
   name: 'ItinaryDetailsPage',
-  // mixins: [CommonMixin],
   async asyncData({ route, $axios }) {
     const { id } = route.params
     const { data: poi } = await $axios.get('/points_of_interest/' + id)
     const { data } = await $axios.get('/itineraries/' + id)
-    console.log(data)
+
     return {
       itinerary: data,
       poi,
@@ -145,12 +87,12 @@ export default {
   },
   head() {
     return {
-      title: this.itinerary.title,
+      title: 'this.itinerary.title',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: this.itinerary.description,
+          // content: this.itinerary.description,
         },
       ],
     }

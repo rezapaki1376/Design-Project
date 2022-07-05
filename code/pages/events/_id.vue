@@ -155,17 +155,14 @@
 </template>
 
 <script>
-import CommonMixin from '~/mixins/common'
 export default {
   name: 'DetailsPage',
-  // mixins: [CommonMixin],
   async asyncData({ route, $axios }) {
     const { id } = route.params
     const { data } = await $axios.get('/events/' + id)
     const { data: poi } = await $axios.get(
       '/events/' + id + '/point_of_interest'
     )
-    console.log(poi)
     return {
       event: data,
       pointsOfInterest: poi,
@@ -178,7 +175,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'This ',
+          content: this.event.description,
         },
       ],
     }

@@ -32,7 +32,6 @@ export default {
   },
   async asyncData({ $axios }) {
     const { data } = await $axios.get('/points_of_interest')
-    // console.log(data)
     return {
       POIs: data,
     }

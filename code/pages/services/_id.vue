@@ -99,7 +99,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.service.title,
+          content: this.service.description,
         },
       ],
     }

@@ -123,6 +123,7 @@ export default {
     EventPreviewCard,
     ItineraryDetail,
   },
+  // All relevant asynchronous data is fetched that is needed for the components
   async asyncData({ route, $axios }) {
     const { id } = route.params
     const { data } = await $axios.get('/points_of_interest/' + id)

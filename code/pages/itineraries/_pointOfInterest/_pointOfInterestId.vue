@@ -58,7 +58,7 @@
             <p class="lead"><i class="bi bi-geo-alt"></i>{{ Poi.address }}</p>
           </div>
         </div>
-        
+
         <hr />
         <div class="d-flex justify-content-between flex-wrap">
           <p class="lead mx-1 my-0">Created: {{ Poi.createdAt }}</p>
@@ -66,7 +66,11 @@
       </div>
     </div>
     <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-      <button type="button" class="btn btn-white px-4" @click="backToList">
+      <button
+        type="button"
+        class="btn btn-white px-4"
+        @click="backToItineraries"
+      >
         <i class="bi bi-arrow-return-left"></i>
         Return to itinerary
       </button>
@@ -78,21 +82,19 @@
 export default {
   name: 'PoiDetailsPage',
   async asyncData({ route, $axios }) {
-    const { id } = route.params
-    const { data } = await $axios.get('/points_of_interest/' + id)
-    const { data: poiEvents } = await $axios.get(
-      '/points_of_interest/' + id + '/events'
+    const { id, pointOfInterestId } = route.params
+    console.log('route_params')
+    console.log(route.params)
+    const { data } = await $axios.get(
+      '/points_of_interest/' + pointOfInterestId
     )
-    const { data: relatedItineraries } = await $axios.get(
-      '/points_of_interest/' + id + '/itineraries_by_id'
-    )
+
     const { data: itinerary } = await $axios.get('/itineraries/' + id)
-    console.log(poiEvents)
+
     return {
       Poi: data,
-      poiEvents,
-      relatedItineraries,
       itinerary,
+      id,
     }
   },
   head() {
@@ -107,25 +109,9 @@ export default {
       ],
     }
   },
-  computed: {
-    eventsPresent() {
-      if (this.poiEvents.length === 0) {
-        return false
-      } else {
-        return true
-      }
-    },
-    itinerariesPresent() {
-      if (this.relatedItineraries.length === 0) {
-        return false
-      } else {
-        return true
-      }
-    },
-  },
   methods: {
-    backToList() {
-      this.$router.push('/points_of_interest')
+    backToItineraries() {
+      this.$router.push(`/itineraries/${this.id}`)
     },
   },
 }
