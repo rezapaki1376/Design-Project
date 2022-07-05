@@ -2,10 +2,20 @@
 
 ## Introduction
 
-This is the introduction field for our repo
+Welcome to the Repository for the mandatory assignment of Hypermedia Applications. The repository is devided into two sections, the **codebase** as well as the **documentation**.
+
+## Choices of Implementation and choices of Architecture
+
+The implenetation of the prototype has been written in using the Framework NuxtJs, Sequelize as well as Express.js.
+To support engineers in the development phase as well as ensure typesafetly, we introduced Typescript in most of backend related files.
+
+We have decided to enable server side rendering for the application with the target **server**.
+The decision was made based on the following requirement/assumptions:
+
+- Search Engine optimization plays a cruital role for high ranking scores of the website thus to support server side rendered files were seen as neccessary to fulfill the requirements.
+- The website contains data (such as events) that is of short longevity. A admin is required to regularly upload new data items to keep the webpage relevant and up-to-date. Taking this into consideration, we decided that the website needs a lightweight content management systemt (that requires login) through which the webmaster can easily edit, create and delete content published on the website. To realize that, a applicaiton server that processes the data is required.
 
 ## Team Members contribution (in hour): This mentioned time is an approximate time
-
 
 Amin Gerard Hofmann: person code: 10853020 email: amingerard.hofmann@mail.polimi.it<br />
 <br />
@@ -16,7 +26,6 @@ Front design:<br />
 Final evaluation:<br />
 SEO optimization:<br />
 Accessibility and usability test:<br />
-
 
 Mohammad Mahdi Safari: person code: 10772564 email: mohammadmahdi.safari@mail.polimi.it<br />
 <br />
@@ -50,6 +59,7 @@ Final evaluation: 2h<br />
 SEO optimization: 2h<br />
 Accessibility and usability test: 2h<br />
 <br /><br />
+
 #### **A1: Content Design - C-IDM Diagram**
 
 Create C-IDM schema in the large and content in the small dables
