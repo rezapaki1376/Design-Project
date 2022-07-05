@@ -67,15 +67,15 @@
               Pre booking:
 
               <i
-              v-if="preregisterNeccessary"
-              class="bi bi-check-lg"
-              style="font-size: 1.2rem; color: green"
-            />
-            <i
-              v-else
-              class="bi bi-x-lg"
-              style="font-size: 1.2rem; color: red"
-            />
+                v-if="preregisterNeccessary"
+                class="bi bi-check-lg"
+                style="font-size: 1.2rem; color: green"
+              />
+              <i
+                v-else
+                class="bi bi-x-lg"
+                style="font-size: 1.2rem; color: red"
+              />
             </p>
           </div>
         </div>
@@ -135,7 +135,7 @@
               </p>
             </div>
           </div>
-          
+
           <hr />
           <div class="d-flex justify-content-between flex-wrap">
             <p class="lead mx-1 my-0">
@@ -173,11 +173,12 @@ export default {
   },
   head() {
     return {
-      title: this.name,
+      title: this.event.title,
       meta: [
         {
-          name: 'asdasd',
-          content: 'asdasd',
+          hid: 'description',
+          name: 'description',
+          content: 'This ',
         },
       ],
     }

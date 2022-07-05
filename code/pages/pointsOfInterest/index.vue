@@ -45,7 +45,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Rome Points of interest',
+          content: 'Best Points of interest for your stay in Rome.',
         },
       ],
     }

@@ -3,7 +3,10 @@
     <div class="mb-5">
       <h1 class="display-4">Events</h1>
       <p class="lead">
-        Looking for something to do in Rome? Whether you're a local, new in town or just cruising through we've got loads of great tips and events. You can explore by location, what's popular, our top picks, free stuff... you got this. Ready?
+        Looking for something to do in Rome? Whether you're a local, new in town
+        or just cruising through we've got loads of great tips and events. You
+        can explore by location, what's popular, our top picks, free stuff...
+        you got this. Ready?
       </p>
     </div>
     <div class="d-flex justify-content-between flex-wrap">
@@ -75,9 +78,11 @@ import EventDetail from './components/EventPreviewCard.vue'
 
 export default {
   name: 'EventPage',
+
   components: {
     EventDetail,
   },
+
   async asyncData({ $axios }) {
     const { data } = await $axios.get('/events')
     return {
@@ -93,6 +98,19 @@ export default {
       ],
       selectedSeason: false,
       filteredEvents: this.events,
+    }
+  },
+  head() {
+    return {
+      title: 'Events in Rome!',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'This page offers a overview of selected events in Rome and its surrounding.',
+        },
+      ],
     }
   },
   computed: {

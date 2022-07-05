@@ -19,7 +19,7 @@ const config = {
         hid: 'description',
         name: 'description',
         content:
-          'Find your rome website a tourist website for finding your interested events and point of interests and itineraries',
+          'Find your rome website is a tourist website for finding events, point of interests and itineraries and neccessaies information on services to make your stay in Rome unforgettable!',
       },
       { name: 'format-detection', content: 'telephone=no' },
     ],
