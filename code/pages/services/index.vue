@@ -1,8 +1,10 @@
 <template>
 <!-- service page starts from here  -->
-  <div class="container">
-    <h1>All possible services</h1>
-    <p> If you faced a problem or need a service, don't worry, we provided you a list of different services.</p>
+  <div class="container mt-5">
+    <div class="md-5">
+    <h1 class="display-4">All possible services</h1>
+    <p class="lead"> If you faced a problem or need a service, don't worry, we provided you a list of different services.</p>
+    </div>
     <div class="row">
       <!-- passing data to the service component  -->
       <Service

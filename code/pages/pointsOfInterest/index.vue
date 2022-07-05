@@ -1,14 +1,15 @@
 
 <template>
-  <div class="container">
-    <h1>All points of interest</h1>
-    <p>
+  <div class="container mt-5">
+    <div class="mb-5">
+    <h1 class="display-4">All points of interest</h1>
+    <p class="lead">
       With your lover or family, Rome is the perfect place to spend a 2-3 days
       weekend, especially since the city can be easily visited on foot! In order
       to help you plan your stay, I have written this guide of the best things
       to do in Rome, with all the must-see attractions and points of interest.
     </p>
-
+</div>
     <div class="row">
       <PointOfInterestedPreview
         v-for="(Poi, index) of POIs"
