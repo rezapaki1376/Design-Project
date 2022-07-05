@@ -91,9 +91,7 @@
     <!-- 5: Copyright license and link to contact us -->
     <div class="d-flex justify-content-center py-2">
       <div class="px-2 vl">Copyright © 2022 Find-your-Rome</div>
-      <nuxt-link to="/sitemap" class="px-2 nav-link py-0 vl">
-        Sitemap</nuxt-link
-      >
+      
       <nuxt-link to="/contact_us" class="px-2 nav-link py-0">
         Contact us</nuxt-link
       >

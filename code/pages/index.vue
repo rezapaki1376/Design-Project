@@ -8,12 +8,15 @@
           </div>
           <div class="col-lg-6">
             <p>
-              As we planned our first international trip with baby J we sought
-              inspiration and motivation from our favourite family travel
-              quotes: from bravery inducing adventure travel quotes to wonderful
-              wanderlust quotes, we hope that our collection of the best family
-              travel quotes will inspire you on your travels and encourage your
-              wandering soul!
+              The Internet’s far-reaching access has moved more people to travel
+            than ever before. Beautiful pictures of unknown places incite a
+            desire to travel. The internet also makes traveling much easier and
+            less stressful. People can discover where to go and what to do
+            there. They can book flights, hotels, rental cars, and more.The
+            internet provides access to every tidbit of information about a
+            foreign destination. We are here to provide all of these facilities
+            for you. Just select your favorit itineraries and point of
+            interesteds and leave every thing to us.
             </p>
           </div>
         </div> 

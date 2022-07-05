@@ -1,6 +1,6 @@
 <template>
 <!-- website header starts from here  -->
-  <nav class="navbar navbar-expand-lg navbar-light px-3 header">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light px-3 header">
     <!--  our website main navigations included here -->
     <nuxt-link to="/" class="nav-link link px-3 py-0" alt="link to main page">
     <!-- defining the logo -->

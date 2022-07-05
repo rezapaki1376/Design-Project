@@ -3,8 +3,7 @@
     <div class="mb-5">
       <h1 class="display-4">Events</h1>
       <p class="lead">
-        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-        Duis mollis, est non commodo luctus.
+        Looking for something to do in Rome? Whether you're a local, new in town or just cruising through we've got loads of great tips and events. You can explore by location, what's popular, our top picks, free stuff... you got this. Ready?
       </p>
     </div>
     <div class="d-flex justify-content-between flex-wrap">

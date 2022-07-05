@@ -121,7 +121,7 @@
       <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
         <button type="button" class="btn btn-white px-4" @click="backToList">
           <i class="bi bi-arrow-return-left"></i>
-          Return to all itineraries
+          Return to Point of interest
         </button>
       </div>
     </div>

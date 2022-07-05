@@ -2,7 +2,8 @@
   <div class="page container mt-5">
     <div class="mb-5">
       <h1 class="display-4">Itineraries</h1>
-      <p class="lead">Find your interested itineraries.</p>
+      <p>Are you looking for an exciting itineraries? You had the best choice. Here you can find variety of trip plans in Rome. Just select it and enjoy. </p>
+
     </div>
     <div class="row mb-5 justify-content-center">
       <ItineraryDetail
@@ -15,6 +16,7 @@
         :total-duration="itinerarie.totalDuration"
         :tags="itinerarie.tags"
         :suggested-audience="itinerarie.suggestedAudience"
+        :journey="itinerarie.journey"
       />
     </div>
   </div>
