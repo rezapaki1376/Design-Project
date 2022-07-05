@@ -12,20 +12,20 @@ To support engineers in the development phase as well as ensure typesafetly, we 
 We have decided to enable server side rendering for the application with the target **server**.
 The decision was made based on the following requirement/assumptions:
 
-- Search Engine optimization plays a cruital role for high ranking scores of the website thus to support server side rendered files were seen as neccessary to fulfill the requirements.
-- The website contains data (such as events) that is of short longevity. A admin is required to regularly upload new data items to keep the webpage relevant and up-to-date. Taking this into consideration, we decided that the website needs a lightweight content management systemt (that requires login) through which the webmaster can easily edit, create and delete content published on the website. To realize that, a applicaiton server that processes the data is required.
+- Search Engine optimization plays a cruital role for high ranking scores of the website. To facilitate that, rendering the HTML on the server side is neccessray.
+- The website contains data (such as events) that is of short longevity. A admin is required to regularly upload new data items to keep the webpage relevant and up-to-date. Taking this into consideration, we decided that the website needs a lightweight content management systemt (that requires login) through which the webmaster can easily edit, create and delete content published on the website. To realize that, a applicaiton server that receives, processes and updatesconcent on the website is needed. **Static Site Generation** could have been an alternative but the fact that there needs to be an involvement of the engineer (pushing it to branch and redeploying the application) made this option not very suitable.
 
 ## Team Members contribution (in hour): This mentioned time is an approximate time
 
 Amin Gerard Hofmann: person code: 10853020 email: amingerard.hofmann@mail.polimi.it<br />
 <br />
-Document design:<br />
-Backend design:<br />
-Data base design and filling the information: <br />
-Front design:<br />
-Final evaluation:<br />
-SEO optimization:<br />
-Accessibility and usability test:<br />
+Document design: 2h<br />
+Backend design: 20h<br />
+Data base design and filling the information: 5h<br />
+Front design: 5h<br />
+Final evaluation: 1h<br />
+SEO optimization:---<br />
+Accessibility and usability test: ---<br />
 
 Mohammad Mahdi Safari: person code: 10772564 email: mohammadmahdi.safari@mail.polimi.it<br />
 <br />
@@ -36,7 +36,7 @@ Front design: 15h<br />
 Final evaluation: 2h<br />
 SEO optimization: 2h<br />
 Accessibility and usability test: 1h<br />
-<br /><br />
+<br />
 
 Reza Paki: person code: 10832693 emal:Reza.paki@mail.polimi.it<br />
 <br />
@@ -47,7 +47,7 @@ Front design: 25h<br />
 Final evaluation: 1h<br />
 SEO optimization: 1h<br />
 Accessibility and usability test: 1h<br />
-<br /><br />
+<br />
 
 Sajad Hamzenejadi: person code: 10818436 email: Sajad.hamzenejadi@mail.polimi.it<br />
 <br />
@@ -58,7 +58,11 @@ Front design: 15h<br />
 Final evaluation: 2h<br />
 SEO optimization: 2h<br />
 Accessibility and usability test: 2h<br />
-<br /><br />
+<br />
+
+# Evaluation of the Project
+
+The project will be evaluated based on the following characteristics:
 
 #### **A1: Content Design - C-IDM Diagram**
 
