@@ -1,7 +1,8 @@
 <template>
-  <!-- after clicking on each services we are comming this section for seeing more services in that specific type with setails -->
-  <!-- service details starts from here -->
-  <div class="container my-5">
+<!-- after clicking on each services we are comming this section for seeing more services in that specific type with setails -->
+<!-- service details starts from here -->
+  <div class="container my-5" style="margin-bottom: 15px;">
+    
     <!-- creating group links for going to previous page -->
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
@@ -14,19 +15,20 @@
       </ol>
     </nav>
     <!--  details related to each specific service -->
-    <h1>{{ service.title }}</h1>
-    <span>
-      Here you can find all posible
-      <span style="text-transform: lowercase">{{ service.title }} </span>
-      services. Just click on see details bottom and transfer to main website.
-    </span>
+    <div class="md-5">
 
+    
+    <h1 class="display-4">{{service.title}}</h1>
+    <span class="lead"> 
+      Here you can find all posible <span style="text-transform: lowercase;">{{service.title}} </span> services. Just click on see details bottom and transfer to main website.
+    </span>
+    </div>
     <div class="row">
       <div
         v-for="(item, index) in service.locations"
         :key="index"
         class="col-lg-3 col-md-5 col-10 my-3"
-      >
+      > 
         <div class="card h-100">
           <img
             class="card-img-top"

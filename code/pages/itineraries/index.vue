@@ -2,7 +2,7 @@
   <div class="page container mt-5">
     <div class="mb-5">
       <h1 class="display-4">Itineraries</h1>
-      <p>Are you looking for an exciting itineraries? You had the best choice. Here you can find variety of trip plans in Rome. Just select it and enjoy. </p>
+      <p class="lead">Are you looking for an exciting itineraries? You had the best choice. Here you can find variety of trip plans in Rome. Just select it and enjoy. </p>
 
     </div>
     <div class="row mb-5 justify-content-center">
