@@ -3,23 +3,18 @@
     <div class="main_index">
       <div class="container top_section">
         <div class="row">
-          <div class="col-lg-6">
-            <h1>Find your <br> Rome</h1>
-          </div>
-          <div class="col-lg-6">
-            <p>
-              The Internet’s far-reaching access has moved more people to travel
+          <h1>Find your Rome - with us!</h1>
+          <p>
+            The Internet’s far-reaching access has moved more people to travel
             than ever before. Beautiful pictures of unknown places incite a
-            desire to travel. The internet also makes traveling much easier and
-            less stressful. People can discover where to go and what to do
-            there. They can book flights, hotels, rental cars, and more.The
-            internet provides access to every tidbit of information about a
-            foreign destination. We are here to provide all of these facilities
-            for you. Just select your favorit itineraries and point of
-            interesteds and leave every thing to us.
-            </p>
-          </div>
-        </div> 
+            desire to travel. Nowadays traveling has become much easier and less
+            stressful. People can discover where to go and what to do there.
+            They can book flights, hotels, rental cars, and more. We are here to
+            provide you all neccessary information for your next Rome trip!.
+            Just select your favorit itineraries and point of interesteds and
+            leave every thing to us.
+          </p>
+        </div>
         <div class="row image-box">
           <div class="col-lg-4">
             <img src="@/assets/img/index1.jpg" alt=" rome image" />
@@ -44,7 +39,9 @@
                 <!-- <h4 class="card-title">Our top news</h4> -->
                 <p class="card-text">Look at our top news in Rome.</p>
                 <h4 class="blog">
-                  <nuxt-link to="/" alt="link to blog"> Join to our blog. </nuxt-link>
+                  <nuxt-link to="/" alt="link to blog">
+                    Join to our blog.
+                  </nuxt-link>
                 </h4>
               </div>
             </div>
@@ -71,7 +68,7 @@ export default {
   components: {
     NewsCard,
   },
-  
+
   data() {
     return {
       newslist: [
@@ -118,19 +115,18 @@ export default {
       title: this.name,
       meta: [
         {
-          hid:"description",
+          hid: 'description',
           name: 'description',
           content: 'Home page, Find your Rome, Tourist, ',
         },
       ],
     }
   },
-  
 }
 </script>
 <style scoped>
 .main_index {
-  background: #292d33;
+  background: #404041;
   color: white;
   padding: 5% 0;
 }
@@ -161,7 +157,7 @@ p {
   height: auto;
 }
 .news {
-  background: #eaf0f6;
+  background: white;
   padding: 10px 0;
 }
 .first_news {

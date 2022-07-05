@@ -1,10 +1,15 @@
 <template>
-<!-- website header starts from here  -->
+  <!-- website header starts from here  -->
   <nav class="navbar sticky-top navbar-expand-lg navbar-light px-3 header">
     <!--  our website main navigations included here -->
     <nuxt-link to="/" class="nav-link link px-3 py-0" alt="link to main page">
-    <!-- defining the logo -->
-      <img src="../assets/img/logo/logo2_r.jpg" width="70" height="70" alt="website logo" />
+      <!-- defining the logo -->
+      <img
+        src="../assets/img/logo/logo2_r.jpg"
+        width="70"
+        height="70"
+        alt="website logo"
+      />
     </nuxt-link>
     <button
       class="navbar-toggler"
@@ -25,7 +30,7 @@
             to="/"
             class="nav-link-custom nav-link"
             prefetch
-            style="color: black"
+            style="color: black !important"
             alt="Home"
           >
             Home
@@ -69,7 +74,7 @@
 <script>
 export default {
   name: 'TheHeader',
-  // here we are defining the navbar links statically 
+  // here we are defining the navbar links statically
   data() {
     return {
       currentTab: 0,
@@ -104,6 +109,9 @@ export default {
   font-size: 32px;
 }
 .nuxt-link-exact-active {
+  color: #0d6efd !important;
+}
+.nuxt-link-active {
   color: #0d6efd !important;
 }
 .header {
