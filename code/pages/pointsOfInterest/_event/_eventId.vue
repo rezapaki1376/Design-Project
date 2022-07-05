@@ -74,18 +74,18 @@
             </p>
 
             <p class="lead m-0">
-              Prebooking:
+              Pre booking:
 
               <i
-                v-if="event.preregisterNeccessary"
-                class="bi bi-check-lg"
-                style="font-size: 1.2rem; color: red"
-              />
-              <i
-                v-else
-                class="bi bi-x-lg"
-                style="font-size: 1.2rem; color: green"
-              />
+              v-if="event.preregisterNeccessary"
+              class="bi bi-check-lg"
+              style="font-size: 1.2rem; color: green"
+            />
+            <i
+              v-else
+              class="bi bi-x-lg"
+              style="font-size: 1.2rem; color: red"
+            />
             </p>
           </div>
         </div>

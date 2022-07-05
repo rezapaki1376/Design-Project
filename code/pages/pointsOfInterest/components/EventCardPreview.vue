@@ -44,17 +44,17 @@
             </span>
           </div>
           <div>
-            Prebooking:
+            Pre booking:
 
             <i
               v-if="preregisterNeccessary"
               class="bi bi-check-lg"
-              style="font-size: 1.2rem; color: red"
+              style="font-size: 1.2rem; color: green"
             />
             <i
               v-else
               class="bi bi-x-lg"
-              style="font-size: 1.2rem; color: green"
+              style="font-size: 1.2rem; color: red"
             />
           </div>
           <nuxt-link
