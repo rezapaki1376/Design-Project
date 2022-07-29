@@ -17,7 +17,7 @@ The decision was made based on the following requirement/assumptions:
 
 ## Team Members contribution (in hour): This mentioned time is an approximate time
 
-Amin Gerard Hofmann: person code: 10853020 email: amingerard.hofmann@mail.polimi.it<br />
+Amin Gerard Hofmann:<br />
 <br />
 Document design: 2h<br />
 Backend design: 20h<br />
@@ -27,7 +27,7 @@ Final evaluation: 1h<br />
 SEO optimization:---<br />
 Accessibility and usability test: ---<br />
 
-Mohammad Mahdi Safari: person code: 10772564 email: mohammadmahdi.safari@mail.polimi.it<br />
+Mohammad Mahdi Safari:<br />
 <br />
 Document design: 4h<br />
 Backend design:---<br />
@@ -38,7 +38,7 @@ SEO optimization: 2h<br />
 Accessibility and usability test: 1h<br />
 <br />
 
-Reza Paki: person code: 10832693 emal:Reza.paki@mail.polimi.it<br />
+Reza Paki:<br />
 <br />
 Document design: 2h<br />
 Backend design:-----<br />
@@ -49,7 +49,7 @@ SEO optimization: 1h<br />
 Accessibility and usability test: 1h<br />
 <br />
 
-Sajad Hamzenejadi: person code: 10818436 email: Sajad.hamzenejadi@mail.polimi.it<br />
+Sajad Hamzenejadi:<br />
 <br />
 Document design: 4h <br />
 Backend design: -----<br />
